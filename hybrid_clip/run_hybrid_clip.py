@@ -35,7 +35,7 @@ from typing import Callable, Optional
 import torch
 from torchvision.datasets import VisionDataset
 from torchvision.io import ImageReadMode, read_image
-from torchvision.transforms import CenterCrop, ConvertImageDtype, Normalize, Resize
+from torchvision.transforms import CenterCrop, ConvertImageDtype, Normalize, Resize, ColorJitter, RandomHorizontalFlip, RandomRotation
 from torchvision.transforms.functional import InterpolationMode
 from tqdm import tqdm
 
@@ -173,14 +173,25 @@ class DataTrainingArguments:
 # We use torchvision for faster image pre-processing.
 # We need to ensure faster processing speed as it can become a bottleneck on TPU
 class Transform(torch.nn.Module):
-    def __init__(self, image_size):
+    def __init__(self, image_size, augment=False):
         super().__init__()
-        self.transforms = torch.nn.Sequential(
-            Resize([image_size], interpolation=InterpolationMode.BICUBIC),
-            CenterCrop(image_size),
-            ConvertImageDtype(torch.float),
-            Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
-        )
+        if not augment:
+            self.transforms = torch.nn.Sequential(
+                Resize([image_size], interpolation=InterpolationMode.BICUBIC),
+                CenterCrop(image_size),
+                ConvertImageDtype(torch.float),
+                Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
+            )
+        else:
+            self.transforms = torch.nn.Sequential(
+                Resize([image_size], interpolation=InterpolationMode.BICUBIC),
+                CenterCrop(image_size),
+                ColorJitter(), 
+                RandomHorizontalFlip(), 
+                RandomRotation(15),
+                ConvertImageDtype(torch.float),
+                Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
+            )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         with torch.no_grad():
@@ -344,22 +355,25 @@ def main():
     set_seed(training_args.seed)
 
     # Initialize torchvision transforms and jit them for faster processing
-    preprocess = Transform(config.vision_config.image_size)
-    preprocess = torch.jit.script(preprocess)
+    train_preprocess = Transform(config.vision_config.image_size, augment=True)
+    train_preprocess = torch.jit.script(preprocess)
+    
+    val_preprocess = Transform(config.vision_config.image_size)
+    val_preprocess = torch.jit.script(preprocess)
 
     # Initialize the image-text dataset
     train_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.train_file,
         captions_per_image=2,
-        transform=preprocess,
+        transform=train_preprocess,
     )
 
     eval_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.validation_file,
         captions_per_image=1,
-        transform=preprocess,
+        transform=val_preprocess,
     )
 
     # Store some constant
