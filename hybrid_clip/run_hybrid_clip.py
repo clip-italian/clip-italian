@@ -359,7 +359,7 @@ def main():
     train_preprocess = torch.jit.script(preprocess)
     
     val_preprocess = Transform(config.vision_config.image_size)
-    val_preprocess = torch.jit.script(preprocess)
+    val_preprocess = torch.jit.script(val_preprocess)
 
     # Initialize the image-text dataset
     train_dataset = ImageTextDataset(
