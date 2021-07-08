@@ -35,7 +35,7 @@ from typing import Callable, Optional
 import torch
 from torchvision.datasets import VisionDataset
 from torchvision.io import ImageReadMode, read_image
-from torchvision.transforms import CenterCrop, ConvertImageDtype, Normalize, Resize, ColorJitter, RandomHorizontalFlip, RandomRotation
+from torchvision.transforms import CenterCrop, ConvertImageDtype, Normalize, Resize, ColorJitter, RandomHorizontalFlip, RandomRotation, RandomCrop
 from torchvision.transforms.functional import InterpolationMode
 from tqdm import tqdm
 
@@ -184,8 +184,9 @@ class Transform(torch.nn.Module):
             )
         else:
             self.transforms = torch.nn.Sequential(
-                Resize([image_size], interpolation=InterpolationMode.BICUBIC),
-                CenterCrop(image_size),
+                Resize(image_size, interpolation=InterpolationMode.BICUBIC),
+                # CenterCrop(image_size),
+                RandomCrop(size, pad_if_needed=True, padding_mode='edge')
                 ColorJitter(), 
                 RandomHorizontalFlip(), 
                 RandomRotation(15),
