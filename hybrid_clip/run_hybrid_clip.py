@@ -566,7 +566,7 @@ def main():
         if jax.process_index() == 0:
             params = jax.device_get(unreplicate(state.params))
             model.save_pretrained(
-                training_args.output_dir,
+                training_args.output_dir + f'/{epoch+1}/',
                 params=params,
                 push_to_hub=training_args.push_to_hub,
                 commit_message=f"Saving weights and logs of epoch {epoch+1}",
