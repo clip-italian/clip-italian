@@ -184,11 +184,11 @@ class Transform(torch.nn.Module):
             )
         else:
             self.transforms = torch.nn.Sequential(
-                Resize(image_size, interpolation=InterpolationMode.BICUBIC),
+                Resize([image_size], interpolation=InterpolationMode.BICUBIC),
                 # CenterCrop(image_size),
-                RandomCrop(size, pad_if_needed=True, padding_mode='edge')
-                ColorJitter(), 
-                RandomHorizontalFlip(), 
+                RandomCrop([image_size], pad_if_needed=True, padding_mode='edge'),
+                ColorJitter(),
+                RandomHorizontalFlip(),
                 RandomRotation(15),
                 ConvertImageDtype(torch.float),
                 Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
@@ -357,7 +357,7 @@ def main():
 
     # Initialize torchvision transforms and jit them for faster processing
     train_preprocess = Transform(config.vision_config.image_size, augment=True)
-    train_preprocess = torch.jit.script(preprocess)
+    train_preprocess = torch.jit.script(train_preprocess)
     
     val_preprocess = Transform(config.vision_config.image_size)
     val_preprocess = torch.jit.script(val_preprocess)
@@ -366,7 +366,7 @@ def main():
     train_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.train_file,
-        captions_per_image=2,
+        captions_per_image=1,
         transform=train_preprocess,
     )
 
