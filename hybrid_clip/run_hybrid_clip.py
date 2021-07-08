@@ -210,7 +210,7 @@ class ImageTextDataset(VisionDataset):
         self,
         root: str,
         file_path: str,
-        captions_per_image=2,
+        captions_per_image=1,
         transform: Optional[Callable] = None,
         target_transform: Optional[Callable] = None,
         transforms: Optional[Callable] = None,
@@ -351,7 +351,7 @@ def main():
     train_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.train_file,
-        captions_per_image=2,
+        captions_per_image=1,
         transform=preprocess,
     )
 
