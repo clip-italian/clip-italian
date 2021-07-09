@@ -399,6 +399,7 @@ def main():
         (ModelArguments, DataTrainingArguments, TrainingArguments)
     )
     parser.add_argument("--log_comet", action="store_true")
+    parser.add_argument("--eval_when", default=1)
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
         # let's parse it to get our arguments.
@@ -460,6 +461,8 @@ def main():
 
     if args.log_comet:
         comet_exp = setup_comet()
+
+    eval_when = args.eval_when
 
     model = FlaxHybridCLIP.from_text_vision_pretrained(
         model_args.text_model_name_or_path,
@@ -690,31 +693,34 @@ def main():
         )
 
         # ======================== Evaluating ==============================
-        eval_metrics = []
-        eval_steps = len(eval_dataset) // eval_batch_size
-        eval_step_progress_bar = tqdm(
-            total=eval_steps, desc="Evaluating...", position=2, leave=False
-        )
-        for batch in eval_loader:
-            # Model forward
-            batch = shard(batch)
-            metrics = p_eval_step(state.params, batch)
-            eval_metrics.append(metrics)
 
-            eval_step_progress_bar.update(1)
+        if (eval_when%eval_when) == 0:
 
-        # normalize eval metrics
-        eval_metrics = get_metrics(eval_metrics)
+            eval_metrics = []
+            eval_steps = len(eval_dataset) // eval_batch_size
+            eval_step_progress_bar = tqdm(
+                total=eval_steps, desc="Evaluating...", position=2, leave=False
+            )
+            for batch in eval_loader:
+                # Model forward
+                batch = shard(batch)
+                metrics = p_eval_step(state.params, batch)
+                eval_metrics.append(metrics)
 
-        eval_metrics = jax.tree_map(jnp.mean, eval_metrics)
+                eval_step_progress_bar.update(1)
 
-        # Print metrics and update progress bar
-        eval_step_progress_bar.close()
-        desc = (
-            f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
-        )
-        epochs.write(desc)
-        epochs.desc = desc
+            # normalize eval metrics
+            eval_metrics = get_metrics(eval_metrics)
+
+            eval_metrics = jax.tree_map(jnp.mean, eval_metrics)
+
+            # Print metrics and update progress bar
+            eval_step_progress_bar.close()
+            desc = (
+                f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
+            )
+            epochs.write(desc)
+            epochs.desc = desc
 
         # Save metrics
         if has_tensorboard and jax.process_index() == 0:
