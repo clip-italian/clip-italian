@@ -35,7 +35,16 @@ from typing import Callable, Optional
 import torch
 from torchvision.datasets import VisionDataset
 from torchvision.io import ImageReadMode, read_image
-from torchvision.transforms import CenterCrop, ConvertImageDtype, Normalize, Resize
+from torchvision.transforms import (
+    CenterCrop,
+    ConvertImageDtype,
+    Normalize,
+    Resize,
+    ColorJitter,
+    RandomHorizontalFlip,
+    RandomRotation,
+    RandomCrop,
+)
 from torchvision.transforms.functional import InterpolationMode
 from tqdm import tqdm
 
@@ -48,7 +57,13 @@ from flax.jax_utils import unreplicate
 from flax.training import train_state
 from flax.training.common_utils import get_metrics, shard, shard_prng_key
 from modeling_hybrid_clip import FlaxHybridCLIP
-from transformers import AutoTokenizer, HfArgumentParser, TrainingArguments, is_tensorboard_available, set_seed
+from transformers import (
+    AutoTokenizer,
+    HfArgumentParser,
+    TrainingArguments,
+    is_tensorboard_available,
+    set_seed,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -60,7 +75,9 @@ if has_tensorboard:
         from flax.metrics.tensorboard import SummaryWriter
     except ImportError as ie:
         has_tensorboard = False
-        print(f"Unable to display metrics through TensorBoard because some package are not installed: {ie}")
+        print(
+            f"Unable to display metrics through TensorBoard because some package are not installed: {ie}"
+        )
 
 else:
     print(
@@ -89,20 +106,33 @@ class ModelArguments:
     )
     from_pt: bool = field(
         default=True,
-        metadata={"help": "whether to load the text and vision model using PyTorch checkpoints."},
+        metadata={
+            "help": "whether to load the text and vision model using PyTorch checkpoints."
+        },
     )
     config_name: Optional[str] = field(
-        default=None, metadata={"help": "Pretrained config name or path if not the same as model_name"}
+        default=None,
+        metadata={
+            "help": "Pretrained config name or path if not the same as model_name"
+        },
     )
     tokenizer_name: Optional[str] = field(
-        default=None, metadata={"help": "Pretrained tokenizer name or path if not the same as model_name"}
+        default=None,
+        metadata={
+            "help": "Pretrained tokenizer name or path if not the same as model_name"
+        },
     )
     cache_dir: Optional[str] = field(
-        default=None, metadata={"help": "Where do you want to store the pretrained models downloaded from s3"}
+        default=None,
+        metadata={
+            "help": "Where do you want to store the pretrained models downloaded from s3"
+        },
     )
     use_fast_tokenizer: bool = field(
         default=True,
-        metadata={"help": "Whether to use one of the fast tokenizer (backed by the tokenizers library) or not."},
+        metadata={
+            "help": "Whether to use one of the fast tokenizer (backed by the tokenizers library) or not."
+        },
     )
     dtype: Optional[str] = field(
         default="float32",
@@ -118,9 +148,12 @@ class DataTrainingArguments:
     Arguments pertaining to what data we are going to input our model for training and eval.
     """
 
-    data_dir: Optional[str] = field(default=None, metadata={"help": "The data directory containing input files."})
+    data_dir: Optional[str] = field(
+        default=None, metadata={"help": "The data directory containing input files."}
+    )
     train_file: Optional[str] = field(
-        default=None, metadata={"help": "The input training data file (a jsonlines file)."}
+        default=None,
+        metadata={"help": "The input training data file (a jsonlines file)."},
     )
     validation_file: Optional[str] = field(
         default=None,
@@ -148,10 +181,12 @@ class DataTrainingArguments:
         },
     )
     overwrite_cache: bool = field(
-        default=False, metadata={"help": "Overwrite the cached training and evaluation sets"}
+        default=False,
+        metadata={"help": "Overwrite the cached training and evaluation sets"},
     )
     overwrite_cache: bool = field(
-        default=False, metadata={"help": "Overwrite the cached training and evaluation sets"}
+        default=False,
+        metadata={"help": "Overwrite the cached training and evaluation sets"},
     )
     preprocessing_num_workers: Optional[int] = field(
         default=None,
@@ -160,7 +195,9 @@ class DataTrainingArguments:
 
     def __post_init__(self):
         if self.train_file is None and self.validation_file is None:
-            raise ValueError("Need either a dataset name or a training/validation file.")
+            raise ValueError(
+                "Need either a dataset name or a training/validation file."
+            )
         else:
             if self.train_file is not None:
                 extension = self.train_file.split(".")[-1]
@@ -173,14 +210,32 @@ class DataTrainingArguments:
 # We use torchvision for faster image pre-processing.
 # We need to ensure faster processing speed as it can become a bottleneck on TPU
 class Transform(torch.nn.Module):
-    def __init__(self, image_size):
+    def __init__(self, image_size, augment=False):
         super().__init__()
-        self.transforms = torch.nn.Sequential(
-            Resize([image_size], interpolation=InterpolationMode.BICUBIC),
-            CenterCrop(image_size),
-            ConvertImageDtype(torch.float),
-            Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
-        )
+        if not augment:
+            self.transforms = torch.nn.Sequential(
+                Resize([image_size], interpolation=InterpolationMode.BICUBIC),
+                CenterCrop(image_size),
+                ConvertImageDtype(torch.float),
+                Normalize(
+                    (0.48145466, 0.4578275, 0.40821073),
+                    (0.26862954, 0.26130258, 0.27577711),
+                ),
+            )
+        else:
+            self.transforms = torch.nn.Sequential(
+                Resize([image_size], interpolation=InterpolationMode.BICUBIC),
+                # CenterCrop(image_size),
+                RandomCrop([image_size], pad_if_needed=True, padding_mode="edge"),
+                ColorJitter(),
+                RandomHorizontalFlip(),
+                RandomRotation(15),
+                ConvertImageDtype(torch.float),
+                Normalize(
+                    (0.48145466, 0.4578275, 0.40821073),
+                    (0.26862954, 0.26130258, 0.27577711),
+                ),
+            )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         with torch.no_grad():
@@ -251,7 +306,9 @@ class TrainState(train_state.TrainState):
     dropout_rng: jnp.ndarray
 
     def replicate(self):
-        return jax_utils.replicate(self).replace(dropout_rng=shard_prng_key(self.dropout_rng))
+        return jax_utils.replicate(self).replace(
+            dropout_rng=shard_prng_key(self.dropout_rng)
+        )
 
 
 def write_metric(summary_writer, train_metrics, eval_metrics, train_time, step):
@@ -268,25 +325,39 @@ def write_metric(summary_writer, train_metrics, eval_metrics, train_time, step):
 
 
 def create_learning_rate_fn(
-    train_ds_size: int, train_batch_size: int, num_train_epochs: int, num_warmup_steps: int, learning_rate: float
+    train_ds_size: int,
+    train_batch_size: int,
+    num_train_epochs: int,
+    num_warmup_steps: int,
+    learning_rate: float,
 ) -> Callable[[int], jnp.array]:
     """Returns a linear warmup, linear_decay learning rate function."""
     steps_per_epoch = train_ds_size // train_batch_size
     num_train_steps = steps_per_epoch * num_train_epochs
-    warmup_fn = optax.linear_schedule(init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps)
-    decay_fn = optax.linear_schedule(
-        init_value=learning_rate, end_value=0, transition_steps=num_train_steps - num_warmup_steps
+    warmup_fn = optax.linear_schedule(
+        init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps
     )
-    schedule_fn = optax.join_schedules(schedules=[warmup_fn, decay_fn], boundaries=[num_warmup_steps])
+    decay_fn = optax.linear_schedule(
+        init_value=learning_rate,
+        end_value=0,
+        transition_steps=num_train_steps - num_warmup_steps,
+    )
+    schedule_fn = optax.join_schedules(
+        schedules=[warmup_fn, decay_fn], boundaries=[num_warmup_steps]
+    )
     return schedule_fn
 
 
 def main():
-    parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
+    parser = HfArgumentParser(
+        (ModelArguments, DataTrainingArguments, TrainingArguments)
+    )
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
         # let's parse it to get our arguments.
-        model_args, data_args, training_args = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))
+        model_args, data_args, training_args = parser.parse_json_file(
+            json_file=os.path.abspath(sys.argv[1])
+        )
     else:
         model_args, data_args, training_args = parser.parse_args_into_dataclasses()
 
@@ -319,11 +390,15 @@ def main():
 
     if model_args.tokenizer_name:
         tokenizer = AutoTokenizer.from_pretrained(
-            model_args.tokenizer_name, cache_dir=model_args.cache_dir, use_fast=model_args.use_fast_tokenizer
+            model_args.tokenizer_name,
+            cache_dir=model_args.cache_dir,
+            use_fast=model_args.use_fast_tokenizer,
         )
     elif model_args.text_model_name_or_path:
         tokenizer = AutoTokenizer.from_pretrained(
-            model_args.text_model_name_or_path, cache_dir=model_args.cache_dir, use_fast=model_args.use_fast_tokenizer
+            model_args.text_model_name_or_path,
+            cache_dir=model_args.cache_dir,
+            use_fast=model_args.use_fast_tokenizer,
         )
     else:
         raise ValueError(
@@ -344,36 +419,51 @@ def main():
     set_seed(training_args.seed)
 
     # Initialize torchvision transforms and jit them for faster processing
-    preprocess = Transform(config.vision_config.image_size)
-    preprocess = torch.jit.script(preprocess)
+    train_preprocess = Transform(config.vision_config.image_size, augment=True)
+    train_preprocess = torch.jit.script(train_preprocess)
+
+    val_preprocess = Transform(config.vision_config.image_size)
+    val_preprocess = torch.jit.script(val_preprocess)
 
     # Initialize the image-text dataset
     train_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.train_file,
         captions_per_image=1,
-        transform=preprocess,
+        transform=train_preprocess,
     )
 
     eval_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.validation_file,
         captions_per_image=1,
-        transform=preprocess,
+        transform=val_preprocess,
     )
 
     # Store some constant
     num_epochs = int(training_args.num_train_epochs)
-    train_batch_size = int(training_args.per_device_train_batch_size) * jax.device_count()
+    train_batch_size = (
+        int(training_args.per_device_train_batch_size) * jax.device_count()
+    )
     eval_batch_size = int(training_args.per_device_eval_batch_size) * jax.device_count()
     steps_per_epoch = len(train_dataset) // train_batch_size
     total_train_steps = steps_per_epoch * num_epochs
 
     # Use collate function to tokenizer the text and convert the processed images to numpy
     def collate_fn(examples):
-        pixel_values = torch.stack([example[0] for example in examples]).permute(0, 2, 3, 1).numpy()
+        pixel_values = (
+            torch.stack([example[0] for example in examples])
+            .permute(0, 2, 3, 1)
+            .numpy()
+        )
         captions = [example[1] for example in examples]
-        inputs = tokenizer(captions, max_length=data_args.max_seq_length, padding="max_length", return_tensors="np")
+        inputs = tokenizer(
+            captions,
+            max_length=data_args.max_seq_length,
+            padding="max_length",
+            truncation=True,
+            return_tensors="np",
+        )
 
         batch = {
             "pixel_values": pixel_values,
@@ -406,7 +496,9 @@ def main():
 
     # Enable tensorboard only on the master node
     if has_tensorboard and jax.process_index() == 0:
-        summary_writer = SummaryWriter(log_dir=Path(training_args.output_dir).joinpath("logs").as_posix())
+        summary_writer = SummaryWriter(
+            log_dir=Path(training_args.output_dir).joinpath("logs").as_posix()
+        )
 
     # Initialize our training
     rng = jax.random.PRNGKey(training_args.seed)
@@ -431,7 +523,9 @@ def main():
     )
 
     # Setup train state
-    state = TrainState.create(apply_fn=model.__call__, params=model.params, tx=adamw, dropout_rng=dropout_rng)
+    state = TrainState.create(
+        apply_fn=model.__call__, params=model.params, tx=adamw, dropout_rng=dropout_rng
+    )
 
     def cross_entropy(logits, axis):
         logprobs = jax.nn.log_softmax(logits, axis=axis)
@@ -440,7 +534,9 @@ def main():
         return ce
 
     def clip_loss(similarity):
-        loss = (cross_entropy(similarity, axis=0) + cross_entropy(similarity, axis=1)) / 2
+        loss = (
+            cross_entropy(similarity, axis=0) + cross_entropy(similarity, axis=1)
+        ) / 2
         return loss
 
     # Define gradient update step fn
@@ -448,7 +544,9 @@ def main():
         dropout_rng, new_dropout_rng = jax.random.split(state.dropout_rng)
 
         def compute_loss(params):
-            logits = state.apply_fn(**batch, params=params, dropout_rng=dropout_rng, train=True)[0]
+            logits = state.apply_fn(
+                **batch, params=params, dropout_rng=dropout_rng, train=True
+            )[0]
             loss = clip_loss(logits)
             return loss
 
@@ -458,7 +556,10 @@ def main():
 
         new_state = state.apply_gradients(grads=grad, dropout_rng=new_dropout_rng)
 
-        metrics = {"loss": loss, "learning_rate": linear_decay_lr_schedule_fn(state.step)}
+        metrics = {
+            "loss": loss,
+            "learning_rate": linear_decay_lr_schedule_fn(state.step),
+        }
         metrics = jax.lax.pmean(metrics, axis_name="batch")
 
         return new_state, metrics
@@ -483,8 +584,12 @@ def main():
     logger.info("***** Running training *****")
     logger.info(f"  Num examples = {len(train_dataset)}")
     logger.info(f"  Num Epochs = {num_epochs}")
-    logger.info(f"  Instantaneous batch size per device = {training_args.per_device_train_batch_size}")
-    logger.info(f"  Total train batch size (w. parallel & distributed) = {train_batch_size}")
+    logger.info(
+        f"  Instantaneous batch size per device = {training_args.per_device_train_batch_size}"
+    )
+    logger.info(
+        f"  Total train batch size (w. parallel & distributed) = {train_batch_size}"
+    )
     logger.info(f"  Total optimization steps = {total_train_steps}")
 
     train_time = 0
@@ -501,7 +606,9 @@ def main():
         train_metrics = []
 
         steps_per_epoch = len(train_dataset) // train_batch_size
-        train_step_progress_bar = tqdm(total=steps_per_epoch, desc="Training...", position=1, leave=False)
+        train_step_progress_bar = tqdm(
+            total=steps_per_epoch, desc="Training...", position=1, leave=False
+        )
         # train
         for batch in train_loader:
             batch = shard(batch)
@@ -522,7 +629,9 @@ def main():
         # ======================== Evaluating ==============================
         eval_metrics = []
         eval_steps = len(eval_dataset) // eval_batch_size
-        eval_step_progress_bar = tqdm(total=eval_steps, desc="Evaluating...", position=2, leave=False)
+        eval_step_progress_bar = tqdm(
+            total=eval_steps, desc="Evaluating...", position=2, leave=False
+        )
         for batch in eval_loader:
             # Model forward
             batch = shard(batch)
@@ -538,20 +647,24 @@ def main():
 
         # Print metrics and update progress bar
         eval_step_progress_bar.close()
-        desc = f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
+        desc = (
+            f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
+        )
         epochs.write(desc)
         epochs.desc = desc
 
         # Save metrics
         if has_tensorboard and jax.process_index() == 0:
             cur_step = epoch * (len(train_dataset) // train_batch_size)
-            write_metric(summary_writer, train_metrics, eval_metrics, train_time, cur_step)
+            write_metric(
+                summary_writer, train_metrics, eval_metrics, train_time, cur_step
+            )
 
         # save checkpoint after each epoch and push checkpoint to the hub
         if jax.process_index() == 0:
             params = jax.device_get(unreplicate(state.params))
             model.save_pretrained(
-                training_args.output_dir,
+                training_args.output_dir + f"/{epoch+1}/",
                 params=params,
                 push_to_hub=training_args.push_to_hub,
                 commit_message=f"Saving weights and logs of epoch {epoch+1}",
