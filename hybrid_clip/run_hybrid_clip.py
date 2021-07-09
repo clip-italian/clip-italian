@@ -400,6 +400,8 @@ def main():
     )
     parser.add_argument("--log_comet", action="store_true")
     parser.add_argument("--eval_when", default=1)
+    parser.add_argument("--run_from_checkpoint", default=None)
+
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
         # let's parse it to get our arguments.
@@ -464,14 +466,18 @@ def main():
 
     eval_when = args.eval_when
 
-    model = FlaxHybridCLIP.from_text_vision_pretrained(
-        model_args.text_model_name_or_path,
-        model_args.vision_model_name_or_path,
-        seed=training_args.seed,
-        dtype=getattr(jnp, model_args.dtype),
-        text_from_pt=model_args.from_pt,
-        vision_from_pt=model_args.from_pt,
-    )
+    if args.eval_when is not None:
+        model = FlaxHybridCLIP.from_pretrained(args.run_from_checkpoint, seed=training_args.seed, dtype=getattr(jnp, model_args.dtype))
+    else:
+
+        model = FlaxHybridCLIP.from_text_vision_pretrained(
+            model_args.text_model_name_or_path,
+            model_args.vision_model_name_or_path,
+            seed=training_args.seed,
+            dtype=getattr(jnp, model_args.dtype),
+            text_from_pt=model_args.from_pt,
+            vision_from_pt=model_args.from_pt,
+        )
     config = model.config
     # set seed for torch dataloaders
     set_seed(training_args.seed)
