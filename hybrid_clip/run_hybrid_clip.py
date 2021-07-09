@@ -560,11 +560,18 @@ def main():
     rng, dropout_rng = jax.random.split(rng)
 
     # Create learning rate schedule
+    if training_args.warmup_steps:
+        warmup_steps = training_args.warmup_steps
+    elif training_args.warmup_ratio:
+        warmup_steps = int(training_args.warmup_ratio * total_train_steps)
+    else:
+        raise RuntimeError("You have to specify either the warmup_steps or warmup_ratio CLI parameter")
+
     linear_decay_lr_schedule_fn = create_learning_rate_fn(
         len(train_dataset),
         train_batch_size,
         training_args.num_train_epochs,
-        training_args.warmup_steps,
+        warmup_steps,
         training_args.learning_rate,
     )
 
@@ -646,6 +653,7 @@ def main():
         f"  Total train batch size (w. parallel & distributed) = {train_batch_size}"
     )
     logger.info(f"  Total optimization steps = {total_train_steps}")
+    logger.info(f"  Total warmup steps = {warmup_steps}")
 
     train_time = 0
     # Create sampling rng
