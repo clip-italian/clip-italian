@@ -32,6 +32,14 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable, Optional
 
+
+from dotenv import load_dotenv
+
+load_dotenv("../.env")
+
+from comet_ml import Experiment
+
+
 import torch
 from torchvision.datasets import VisionDataset
 from torchvision.io import ImageReadMode, read_image
@@ -324,6 +332,44 @@ def write_metric(summary_writer, train_metrics, eval_metrics, train_time, step):
         summary_writer.scalar(f"eval_{metric_name}", value, step)
 
 
+def log_on_comet(experiment, train_metrics, eval_metrics, train_time, step):
+    assert experiment is not None
+    experiment.log_metric("train_time", train_time, step)
+
+    train_metrics = get_metrics(train_metrics)
+    for key, vals in train_metrics.items():
+        tag = f"train_{key}"
+        for i, val in enumerate(vals):
+            experiment.log_metric(tag, val, step - len(vals) + i + 1)
+
+    for metric_name, value in eval_metrics.items():
+        experiment.log_metric(f"eval_{metric_name}", value, step)
+
+
+def setup_comet():
+    logger.info("Comet ML logging requested")
+    try:
+
+        if "COMET_API_KEY" in os.environ:
+            # Create an experiment with your api key
+            experiment = Experiment(
+                api_key=os.environ["COMET_API_KEY"],
+                project_name="clip-italian",
+                workspace="g8a9",
+                log_code=True,
+                log_graph=False,
+            )
+            experiment.add_tag("training")
+            return experiment
+        else:
+            logger.info("Can't find COMET_API_KEY env variable, disabling Comet")
+            return None
+
+    except:
+        logger.info("Something went wrong initializing Comet")
+        return None
+
+
 def create_learning_rate_fn(
     train_ds_size: int,
     train_batch_size: int,
@@ -352,6 +398,7 @@ def main():
     parser = HfArgumentParser(
         (ModelArguments, DataTrainingArguments, TrainingArguments)
     )
+    parser.add_argument("--log_comet", action="store_true")
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
         # let's parse it to get our arguments.
@@ -359,7 +406,12 @@ def main():
             json_file=os.path.abspath(sys.argv[1])
         )
     else:
-        model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+        (
+            model_args,
+            data_args,
+            training_args,
+            args,
+        ) = parser.parse_args_into_dataclasses()
 
     if (
         os.path.exists(training_args.output_dir)
@@ -405,6 +457,9 @@ def main():
             "You are instantiating a new tokenizer from scratch. This is not supported by this script."
             "You can do it from another script, save it, and load it from here, using --tokenizer_name."
         )
+
+    if args.log_comet:
+        comet_exp = setup_comet()
 
     model = FlaxHybridCLIP.from_text_vision_pretrained(
         model_args.text_model_name_or_path,
@@ -659,6 +714,9 @@ def main():
             write_metric(
                 summary_writer, train_metrics, eval_metrics, train_time, cur_step
             )
+        if comet_exp is not None and jax.process_index() == 0:
+            cur_step = epoch * (len(train_dataset) // train_batch_size)
+            log_on_comet(comet_exp, train_metrics, eval_metrics, train_time, cur_step)
 
         # save checkpoint after each epoch and push checkpoint to the hub
         if jax.process_index() == 0:
