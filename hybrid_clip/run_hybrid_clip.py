@@ -466,7 +466,7 @@ def main():
 
     eval_when = args.eval_when
 
-    if args.eval_when is not None:
+    if args.run_from_checkpoint is not None:
         model = FlaxHybridCLIP.from_pretrained(args.run_from_checkpoint, seed=training_args.seed, dtype=getattr(jnp, model_args.dtype))
     else:
 
