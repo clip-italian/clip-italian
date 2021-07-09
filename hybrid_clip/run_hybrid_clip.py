@@ -694,7 +694,7 @@ def main():
 
         # ======================== Evaluating ==============================
 
-        if (eval_when%eval_when) == 0:
+        if epoch%eval_when == 0:
 
             eval_metrics = []
             eval_steps = len(eval_dataset) // eval_batch_size
