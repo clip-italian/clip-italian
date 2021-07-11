@@ -288,7 +288,7 @@ class ImageTextDataset(VisionDataset):
         self.image_paths = []
 
         for example in examples:
-            self.captions.append(example["captions"][:captions_per_image])
+            self.captions.append(example["captions"][:min(len(example["captions"]), captions_per_image)])
             self.image_paths.append(example["image_path"])
 
     def _load_image(self, idx: int):
