@@ -65,6 +65,7 @@ from flax.jax_utils import unreplicate
 from flax.training import train_state
 from flax.training.common_utils import get_metrics, shard, shard_prng_key
 from modeling_hybrid_clip import FlaxHybridCLIP
+from configuration_hybrid_clip import HybridCLIPConfig
 from transformers import (
     AutoTokenizer,
     HfArgumentParser,
@@ -237,7 +238,7 @@ class Transform(torch.nn.Module):
                 RandomCrop([image_size], pad_if_needed=True, padding_mode="edge"),
                 ColorJitter(),
                 RandomHorizontalFlip(),
-                RandomRotation(15),
+                # RandomRotation(15),
                 ConvertImageDtype(torch.float),
                 Normalize(
                     (0.48145466, 0.4578275, 0.40821073),
@@ -399,6 +400,9 @@ def main():
         (ModelArguments, DataTrainingArguments, TrainingArguments)
     )
     parser.add_argument("--log_comet", action="store_true")
+    parser.add_argument("--eval_when", type=int, default=1)
+    parser.add_argument("--run_from_checkpoint", type=str, default=None)
+
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
         # let's parse it to get our arguments.
@@ -461,14 +465,24 @@ def main():
     if args.log_comet:
         comet_exp = setup_comet()
 
-    model = FlaxHybridCLIP.from_text_vision_pretrained(
-        model_args.text_model_name_or_path,
-        model_args.vision_model_name_or_path,
-        seed=training_args.seed,
-        dtype=getattr(jnp, model_args.dtype),
-        text_from_pt=model_args.from_pt,
-        vision_from_pt=model_args.from_pt,
-    )
+    eval_when = args.eval_when
+
+    if args.run_from_checkpoint is not None:
+        with open(f"{args.run_from_checkpoint}/config.json", "r") as fp:
+            config_dict = json.load(fp)
+        config_dict["vision_config"]["model_type"] = "clip"
+        config = HybridCLIPConfig(**config_dict)
+        model = FlaxHybridCLIP.from_pretrained(args.run_from_checkpoint, seed=training_args.seed, dtype=getattr(jnp, model_args.dtype), config=config)
+    else:
+
+        model = FlaxHybridCLIP.from_text_vision_pretrained(
+            model_args.text_model_name_or_path,
+            model_args.vision_model_name_or_path,
+            seed=training_args.seed,
+            dtype=getattr(jnp, model_args.dtype),
+            text_from_pt=model_args.from_pt,
+            vision_from_pt=model_args.from_pt,
+        )
     config = model.config
     # set seed for torch dataloaders
     set_seed(training_args.seed)
@@ -690,31 +704,34 @@ def main():
         )
 
         # ======================== Evaluating ==============================
-        eval_metrics = []
-        eval_steps = len(eval_dataset) // eval_batch_size
-        eval_step_progress_bar = tqdm(
-            total=eval_steps, desc="Evaluating...", position=2, leave=False
-        )
-        for batch in eval_loader:
-            # Model forward
-            batch = shard(batch)
-            metrics = p_eval_step(state.params, batch)
-            eval_metrics.append(metrics)
 
-            eval_step_progress_bar.update(1)
+        if epoch%eval_when == 0:
 
-        # normalize eval metrics
-        eval_metrics = get_metrics(eval_metrics)
+            eval_metrics = []
+            eval_steps = len(eval_dataset) // eval_batch_size
+            eval_step_progress_bar = tqdm(
+                total=eval_steps, desc="Evaluating...", position=2, leave=False
+            )
+            for batch in eval_loader:
+                # Model forward
+                batch = shard(batch)
+                metrics = p_eval_step(state.params, batch)
+                eval_metrics.append(metrics)
 
-        eval_metrics = jax.tree_map(jnp.mean, eval_metrics)
+                eval_step_progress_bar.update(1)
 
-        # Print metrics and update progress bar
-        eval_step_progress_bar.close()
-        desc = (
-            f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
-        )
-        epochs.write(desc)
-        epochs.desc = desc
+            # normalize eval metrics
+            eval_metrics = get_metrics(eval_metrics)
+
+            eval_metrics = jax.tree_map(jnp.mean, eval_metrics)
+
+            # Print metrics and update progress bar
+            eval_step_progress_bar.close()
+            desc = (
+                f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
+            )
+            epochs.write(desc)
+            epochs.desc = desc
 
         # Save metrics
         if has_tensorboard and jax.process_index() == 0:
