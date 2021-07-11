@@ -65,6 +65,7 @@ from flax.jax_utils import unreplicate
 from flax.training import train_state
 from flax.training.common_utils import get_metrics, shard, shard_prng_key
 from modeling_hybrid_clip import FlaxHybridCLIP
+from configuration_hybrid_clip import HybridCLIPConfig
 from transformers import (
     AutoTokenizer,
     HfArgumentParser,
@@ -237,7 +238,7 @@ class Transform(torch.nn.Module):
                 RandomCrop([image_size], pad_if_needed=True, padding_mode="edge"),
                 ColorJitter(),
                 RandomHorizontalFlip(),
-                RandomRotation(15),
+                # RandomRotation(15),
                 ConvertImageDtype(torch.float),
                 Normalize(
                     (0.48145466, 0.4578275, 0.40821073),
@@ -399,8 +400,8 @@ def main():
         (ModelArguments, DataTrainingArguments, TrainingArguments)
     )
     parser.add_argument("--log_comet", action="store_true")
-    parser.add_argument("--eval_when", default=1)
-    parser.add_argument("--run_from_checkpoint", default=None)
+    parser.add_argument("--eval_when", type=int, default=1)
+    parser.add_argument("--run_from_checkpoint", type=str, default=None)
 
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
@@ -467,7 +468,11 @@ def main():
     eval_when = args.eval_when
 
     if args.run_from_checkpoint is not None:
-        model = FlaxHybridCLIP.from_pretrained(args.run_from_checkpoint, seed=training_args.seed, dtype=getattr(jnp, model_args.dtype))
+        with open(f"{args.run_from_checkpoint}/config.json", "r") as fp:
+            config_dict = json.load(fp)
+        config_dict["vision_config"]["model_type"] = "clip"
+        config = HybridCLIPConfig(**config_dict)
+        model = FlaxHybridCLIP.from_pretrained(args.run_from_checkpoint, seed=training_args.seed, dtype=getattr(jnp, model_args.dtype), config=config)
     else:
 
         model = FlaxHybridCLIP.from_text_vision_pretrained(
