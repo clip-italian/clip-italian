@@ -274,7 +274,7 @@ class ImageTextDataset(VisionDataset):
         self,
         root: str,
         file_path: str,
-        captions_per_image=1,
+        captions_per_image=-1,
         transform: Optional[Callable] = None,
         target_transform: Optional[Callable] = None,
         transforms: Optional[Callable] = None,
@@ -288,15 +288,16 @@ class ImageTextDataset(VisionDataset):
         self.image_paths = []
 
         for example in examples:
-            self.captions.extend(example["captions"][:captions_per_image])
-            self.image_paths.extend([example["image_path"]] * captions_per_image)
+            self.captions.append(example["captions"][:captions_per_image])
+            self.image_paths.append(example["image_path"])
 
     def _load_image(self, idx: int):
         path = self.image_paths[idx]
         return read_image(path, mode=ImageReadMode.RGB)
 
     def _load_target(self, idx):
-        return self.captions[idx]
+        caption_index = np.random.randint(0, len(self.captions[idx]))
+        return self.captions[idx][caption_index]
 
     def __getitem__(self, index: int):
         image = self._load_image(index)
@@ -498,14 +499,14 @@ def main():
     train_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.train_file,
-        captions_per_image=1,
+        captions_per_image=-1,
         transform=train_preprocess,
     )
 
     eval_dataset = ImageTextDataset(
         data_args.data_dir,
         data_args.validation_file,
-        captions_per_image=1,
+        captions_per_image=-1,
         transform=val_preprocess,
     )
 
