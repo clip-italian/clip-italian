@@ -52,6 +52,10 @@ from torchvision.transforms import (
     RandomHorizontalFlip,
     RandomRotation,
     RandomCrop,
+    RandomAffine, 
+    RandomPerspective, 
+    RandomAutocontrast, 
+    RandomEqualize
 )
 from torchvision.transforms.functional import InterpolationMode
 from tqdm import tqdm
@@ -238,7 +242,19 @@ class Transform(torch.nn.Module):
                 RandomCrop([image_size], pad_if_needed=True, padding_mode="edge"),
                 ColorJitter(),
                 RandomHorizontalFlip(),
-                # RandomRotation(15),
+                # RandomRotation(15, interpolation=InterpolationMode.BILINEAR, fill=128),
+                RandomAffine(degrees=15, 
+                             translate=(0.1, 0.1), 
+                             scale=(0.8, 1.2), 
+                             shear=(-15, 15, -15, 15), 
+                             interpolation=InterpolationMode.BILINEAR, 
+                             fill=127),
+                RandomPerspective(distortion_scale=0.3, 
+                                  p=0.3, 
+                                  interpolation=InterpolationMode.BILINEAR, 
+                                  fill=127),
+                RandomAutocontrast(p=0.3),
+                RandomEqualize(p=0.3),
                 ConvertImageDtype(torch.float),
                 Normalize(
                     (0.48145466, 0.4578275, 0.40821073),
