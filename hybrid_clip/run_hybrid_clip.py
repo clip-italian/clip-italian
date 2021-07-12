@@ -28,10 +28,10 @@ import logging
 import os
 import sys
 import time
+import numpy as np
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable, Optional
-
 
 from dotenv import load_dotenv
 
@@ -290,30 +290,33 @@ class ImageTextDataset(VisionDataset):
         self,
         root: str,
         file_path: str,
-        captions_per_image=-1,
+        captions_per_image = -1,
         transform: Optional[Callable] = None,
         target_transform: Optional[Callable] = None,
         transforms: Optional[Callable] = None,
     ):
         super().__init__(root, transforms, transform, target_transform)
-
         with open(file_path, "r") as f:
             examples = [json.loads(line) for line in f.readlines()]
 
         self.captions = []
         self.image_paths = []
-
+        
         for example in examples:
-            self.captions.append(example["captions"][:min(len(example["captions"]), captions_per_image)])
+            self.captions.append(example["captions"][:min(captions_per_image, len(example["captions"]))])
             self.image_paths.append(example["image_path"])
 
     def _load_image(self, idx: int):
         path = self.image_paths[idx]
-        return read_image(path, mode=ImageReadMode.RGB)
+        im = read_image(path, mode=ImageReadMode.RGB)
+        return im
 
     def _load_target(self, idx):
-        caption_index = np.random.randint(0, len(self.captions[idx]))
-        return self.captions[idx][caption_index]
+        if len(self.captions[idx]) > 1:
+            caption_idx = np.random.randint(0, len(self.captions[idx]))
+        else:
+            caption_idx = 0
+        return self.captions[idx][caption_idx]
 
     def __getitem__(self, index: int):
         image = self._load_image(index)
@@ -389,26 +392,21 @@ def setup_comet():
 
 
 def create_learning_rate_fn(
-    train_ds_size: int,
-    train_batch_size: int,
-    num_train_epochs: int,
-    num_warmup_steps: int,
-    learning_rate: float,
+    train_ds_size: int, train_batch_size: int, num_train_epochs: int, num_warmup_steps: int, learning_rate: float, linear=False
 ) -> Callable[[int], jnp.array]:
     """Returns a linear warmup, linear_decay learning rate function."""
     steps_per_epoch = train_ds_size // train_batch_size
     num_train_steps = steps_per_epoch * num_train_epochs
-    warmup_fn = optax.linear_schedule(
-        init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps
-    )
-    decay_fn = optax.linear_schedule(
-        init_value=learning_rate,
-        end_value=0,
-        transition_steps=num_train_steps - num_warmup_steps,
-    )
-    schedule_fn = optax.join_schedules(
-        schedules=[warmup_fn, decay_fn], boundaries=[num_warmup_steps]
-    )
+    if linear:
+        warmup_fn = optax.linear_schedule(init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps)
+        decay_fn = optax.linear_schedule(
+            init_value=learning_rate, end_value=0, transition_steps=num_train_steps - num_warmup_steps
+        )
+    else:
+        warmup_fn = optax.linear_schedule(init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps)
+        decay_fn = optax.cosine_decay_schedule(init_value=learning_rate, decay_steps=num_train_steps - num_warmup_steps,
+          alpha=0.0)
+    schedule_fn = optax.join_schedules(schedules=[warmup_fn, decay_fn], boundaries=[num_warmup_steps])
     return schedule_fn
 
 
@@ -598,26 +596,34 @@ def main():
     else:
         raise RuntimeError("You have to specify either the warmup_steps or warmup_ratio CLI parameter")
 
-    linear_decay_lr_schedule_fn = create_learning_rate_fn(
+    decay_lr_schedule_fn = create_learning_rate_fn(
         len(train_dataset),
         train_batch_size,
         training_args.num_train_epochs,
         warmup_steps,
         training_args.learning_rate,
+        linear=False,  # set False to activate cosine annealing
     )
 
     # create adam optimizer
-    adamw = optax.adamw(
-        learning_rate=linear_decay_lr_schedule_fn,
-        b1=training_args.adam_beta1,
-        b2=training_args.adam_beta2,
-        eps=training_args.adam_epsilon,
-        weight_decay=training_args.weight_decay,
+#     optimizer = optax.adamw(
+#         learning_rate=decay_lr_schedule_fn,
+#         b1=training_args.adam_beta1,
+#         b2=training_args.adam_beta2,
+#         eps=training_args.adam_epsilon,
+#         weight_decay=training_args.weight_decay,
+#     )
+
+    optimizer = optax.chain(
+         optax.adaptive_grad_clip(0.01, eps=0.001),
+         optax.scale_by_belief(),
+         optax.scale_by_schedule(decay_lr_schedule_fn),
+         optax.scale(-1.0),
     )
 
     # Setup train state
     state = TrainState.create(
-        apply_fn=model.__call__, params=model.params, tx=adamw, dropout_rng=dropout_rng
+        apply_fn=model.__call__, params=model.params, tx=optimizer, dropout_rng=dropout_rng
     )
 
     def cross_entropy(logits, axis):
@@ -651,7 +657,7 @@ def main():
 
         metrics = {
             "loss": loss,
-            "learning_rate": linear_decay_lr_schedule_fn(state.step),
+            "learning_rate": decay_lr_schedule_fn(state.step),
         }
         metrics = jax.lax.pmean(metrics, axis_name="batch")
 
@@ -756,7 +762,7 @@ def main():
             write_metric(
                 summary_writer, train_metrics, eval_metrics, train_time, cur_step
             )
-        if comet_exp is not None and jax.process_index() == 0:
+        if args.log_comet and comet_exp is not None and jax.process_index() == 0:
             cur_step = epoch * (len(train_dataset) // train_batch_size)
             log_on_comet(comet_exp, train_metrics, eval_metrics, train_time, cur_step)
 
