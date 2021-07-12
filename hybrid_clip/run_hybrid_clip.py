@@ -52,10 +52,10 @@ from torchvision.transforms import (
     RandomHorizontalFlip,
     RandomRotation,
     RandomCrop,
-    RandomAffine, 
-    RandomPerspective, 
-    RandomAutocontrast, 
-    RandomEqualize
+    RandomAffine,
+    RandomPerspective,
+    RandomAutocontrast,
+    RandomEqualize,
 )
 from torchvision.transforms.functional import InterpolationMode
 from tqdm import tqdm
@@ -77,6 +77,7 @@ from transformers import (
     is_tensorboard_available,
     set_seed,
 )
+from numpy.random import default_rng
 
 
 logger = logging.getLogger(__name__)
@@ -243,16 +244,20 @@ class Transform(torch.nn.Module):
                 ColorJitter(),
                 RandomHorizontalFlip(),
                 # RandomRotation(15, interpolation=InterpolationMode.BILINEAR, fill=128),
-                RandomAffine(degrees=15, 
-                             translate=(0.1, 0.1), 
-                             scale=(0.8, 1.2), 
-                             shear=(-15, 15, -15, 15), 
-                             interpolation=InterpolationMode.BILINEAR, 
-                             fill=127),
-                RandomPerspective(distortion_scale=0.3, 
-                                  p=0.3, 
-                                  interpolation=InterpolationMode.BILINEAR, 
-                                  fill=127),
+                RandomAffine(
+                    degrees=15,
+                    translate=(0.1, 0.1),
+                    scale=(0.8, 1.2),
+                    shear=(-15, 15, -15, 15),
+                    interpolation=InterpolationMode.BILINEAR,
+                    fill=127,
+                ),
+                RandomPerspective(
+                    distortion_scale=0.3,
+                    p=0.3,
+                    interpolation=InterpolationMode.BILINEAR,
+                    fill=127,
+                ),
                 RandomAutocontrast(p=0.3),
                 RandomEqualize(p=0.3),
                 ConvertImageDtype(torch.float),
@@ -290,20 +295,29 @@ class ImageTextDataset(VisionDataset):
         self,
         root: str,
         file_path: str,
-        captions_per_image = -1,
+        captions_per_image=-1,
         transform: Optional[Callable] = None,
         target_transform: Optional[Callable] = None,
         transforms: Optional[Callable] = None,
+        seed=42,
     ):
         super().__init__(root, transforms, transform, target_transform)
         with open(file_path, "r") as f:
             examples = [json.loads(line) for line in f.readlines()]
 
+        self.rand_generator = default_rng(seed)
+
         self.captions = []
         self.image_paths = []
-        
+
         for example in examples:
-            self.captions.append(example["captions"][:min(captions_per_image, len(example["captions"]))])
+            if captions_per_image <= -1:
+                self.captions.append(example["captions"])
+            elif captions_per_image > 0:
+                self.captions.append(example["captions"][:captions_per_image])
+            else:
+                raise ValueError("captions per image cannot be zero")
+
             self.image_paths.append(example["image_path"])
 
     def _load_image(self, idx: int):
@@ -312,11 +326,12 @@ class ImageTextDataset(VisionDataset):
         return im
 
     def _load_target(self, idx):
-        if len(self.captions[idx]) > 1:
-            caption_idx = np.random.randint(0, len(self.captions[idx]))
-        else:
-            caption_idx = 0
-        return self.captions[idx][caption_idx]
+        return self.rand_generator.choice(self.captions[idx])
+        # if len(self.captions[idx]) > 1:
+        #     caption_idx = np.random.randint(0, len(self.captions[idx]))
+        # else:
+        #     caption_idx = 0
+        # return self.captions[idx][caption_idx]
 
     def __getitem__(self, index: int):
         image = self._load_image(index)
@@ -392,21 +407,37 @@ def setup_comet():
 
 
 def create_learning_rate_fn(
-    train_ds_size: int, train_batch_size: int, num_train_epochs: int, num_warmup_steps: int, learning_rate: float, linear=False
+    train_ds_size: int,
+    train_batch_size: int,
+    num_train_epochs: int,
+    num_warmup_steps: int,
+    learning_rate: float,
+    linear=False,
 ) -> Callable[[int], jnp.array]:
     """Returns a linear warmup, linear_decay learning rate function."""
     steps_per_epoch = train_ds_size // train_batch_size
     num_train_steps = steps_per_epoch * num_train_epochs
     if linear:
-        warmup_fn = optax.linear_schedule(init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps)
+        warmup_fn = optax.linear_schedule(
+            init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps
+        )
         decay_fn = optax.linear_schedule(
-            init_value=learning_rate, end_value=0, transition_steps=num_train_steps - num_warmup_steps
+            init_value=learning_rate,
+            end_value=0,
+            transition_steps=num_train_steps - num_warmup_steps,
         )
     else:
-        warmup_fn = optax.linear_schedule(init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps)
-        decay_fn = optax.cosine_decay_schedule(init_value=learning_rate, decay_steps=num_train_steps - num_warmup_steps,
-          alpha=0.0)
-    schedule_fn = optax.join_schedules(schedules=[warmup_fn, decay_fn], boundaries=[num_warmup_steps])
+        warmup_fn = optax.linear_schedule(
+            init_value=0.0, end_value=learning_rate, transition_steps=num_warmup_steps
+        )
+        decay_fn = optax.cosine_decay_schedule(
+            init_value=learning_rate,
+            decay_steps=num_train_steps - num_warmup_steps,
+            alpha=0.0,
+        )
+    schedule_fn = optax.join_schedules(
+        schedules=[warmup_fn, decay_fn], boundaries=[num_warmup_steps]
+    )
     return schedule_fn
 
 
@@ -487,7 +518,12 @@ def main():
             config_dict = json.load(fp)
         config_dict["vision_config"]["model_type"] = "clip"
         config = HybridCLIPConfig(**config_dict)
-        model = FlaxHybridCLIP.from_pretrained(args.run_from_checkpoint, seed=training_args.seed, dtype=getattr(jnp, model_args.dtype), config=config)
+        model = FlaxHybridCLIP.from_pretrained(
+            args.run_from_checkpoint,
+            seed=training_args.seed,
+            dtype=getattr(jnp, model_args.dtype),
+            config=config,
+        )
     else:
 
         model = FlaxHybridCLIP.from_text_vision_pretrained(
@@ -515,6 +551,7 @@ def main():
         data_args.train_file,
         captions_per_image=-1,
         transform=train_preprocess,
+        seed=training_args.seed,
     )
 
     eval_dataset = ImageTextDataset(
@@ -522,6 +559,7 @@ def main():
         data_args.validation_file,
         captions_per_image=-1,
         transform=val_preprocess,
+        seed=training_args.seed,
     )
 
     # Store some constant
@@ -594,7 +632,9 @@ def main():
     elif training_args.warmup_ratio:
         warmup_steps = int(training_args.warmup_ratio * total_train_steps)
     else:
-        raise RuntimeError("You have to specify either the warmup_steps or warmup_ratio CLI parameter")
+        raise RuntimeError(
+            "You have to specify either the warmup_steps or warmup_ratio CLI parameter"
+        )
 
     decay_lr_schedule_fn = create_learning_rate_fn(
         len(train_dataset),
@@ -606,24 +646,27 @@ def main():
     )
 
     # create adam optimizer
-#     optimizer = optax.adamw(
-#         learning_rate=decay_lr_schedule_fn,
-#         b1=training_args.adam_beta1,
-#         b2=training_args.adam_beta2,
-#         eps=training_args.adam_epsilon,
-#         weight_decay=training_args.weight_decay,
-#     )
+    #     optimizer = optax.adamw(
+    #         learning_rate=decay_lr_schedule_fn,
+    #         b1=training_args.adam_beta1,
+    #         b2=training_args.adam_beta2,
+    #         eps=training_args.adam_epsilon,
+    #         weight_decay=training_args.weight_decay,
+    #     )
 
     optimizer = optax.chain(
-         optax.adaptive_grad_clip(0.01, eps=0.001),
-         optax.scale_by_belief(),
-         optax.scale_by_schedule(decay_lr_schedule_fn),
-         optax.scale(-1.0),
+        optax.adaptive_grad_clip(0.01, eps=0.001),
+        optax.scale_by_belief(),
+        optax.scale_by_schedule(decay_lr_schedule_fn),
+        optax.scale(-1.0),
     )
 
     # Setup train state
     state = TrainState.create(
-        apply_fn=model.__call__, params=model.params, tx=optimizer, dropout_rng=dropout_rng
+        apply_fn=model.__call__,
+        params=model.params,
+        tx=optimizer,
+        dropout_rng=dropout_rng,
     )
 
     def cross_entropy(logits, axis):
@@ -728,7 +771,7 @@ def main():
 
         # ======================== Evaluating ==============================
 
-        if epoch%eval_when == 0:
+        if epoch % eval_when == 0:
 
             eval_metrics = []
             eval_steps = len(eval_dataset) // eval_batch_size
@@ -750,9 +793,7 @@ def main():
 
             # Print metrics and update progress bar
             eval_step_progress_bar.close()
-            desc = (
-                f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
-            )
+            desc = f"Epoch... ({epoch + 1}/{num_epochs} | Eval Loss: {eval_metrics['loss']})"
             epochs.write(desc)
             epochs.desc = desc
 
