@@ -1,0 +1,1001 @@
+set_id	syn_set	first_syn	query_long	query_short	query_short_translated	query_long_translated	class_id
+n01440764	tench, Tinca tinca	tench	a photo of a tench	a tench	una tinca	una foto di una tinca	1
+n01443537	goldfish, Carassius auratus	goldfish	a photo of a goldfish	a goldfish	un pesce rosso	una foto di un pesce rosso	2
+n01484850	great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias	great white shark	a photo of a great white shark	a great white shark	un grande squalo bianco	una foto di un grande squalo bianco	3
+n01491361	tiger shark, Galeocerdo cuvieri	tiger shark	a photo of a tiger shark	a tiger shark	uno squalo tigre	una foto di uno squalo tigre	4
+n01494475	hammerhead, hammerhead shark	hammerhead	a photo of a hammerhead	a hammerhead	un pesce martello	una foto di un pesce martello	5
+n01496331	electric ray, crampfish, numbfish, torpedo	electric ray	a photo of a electric ray	a electric ray	un raggio elettrico	una foto di un raggio elettrico	6
+n01498041	stingray	stingray	a photo of a stingray	a stingray	una pastinaca	una foto di una pastinaca	7
+n01514668	cock	cock	a photo of a cock	a cock	un gallo	una foto di un gallo	8
+n01514859	hen	hen	a photo of a hen	a hen	una gallina	una foto di una gallina	9
+n01518878	ostrich, Struthio camelus	ostrich	a photo of a ostrich	a ostrich	uno struzzo	una foto di uno struzzo	10
+n01530575	brambling, Fringilla montifringilla	brambling	a photo of a brambling	a brambling	un rovo	una foto di un rovo	11
+n01531178	goldfinch, Carduelis carduelis	goldfinch	a photo of a goldfinch	a goldfinch	un cardellino	una foto di un cardellino	12
+n01532829	house finch, linnet, Carpodacus mexicanus	house finch	a photo of a house finch	a house finch	un fringuello di casa	una foto di un fringuello di casa	13
+n01534433	junco, snowbird	junco	a photo of a junco	a junco	un giunco	una foto di un giunco	14
+n01537544	indigo bunting, indigo finch, indigo bird, Passerina cyanea	indigo bunting	a photo of a indigo bunting	a indigo bunting	uno zigolo indaco	una foto di uno zigolo indaco	15
+n01558993	robin, American robin, Turdus migratorius	robin	a photo of a robin	a robin	un pettirosso	una foto di un pettirosso	16
+n01560419	bulbul	bulbul	a photo of a bulbul	a bulbul	un bulbul	una foto di un bulbul	17
+n01580077	jay	jay	a photo of a jay	a jay	una ghiandaia	una foto di una ghiandaia	18
+n01582220	magpie	magpie	a photo of a magpie	a magpie	una gazza	una foto di una gazza	19
+n01592084	chickadee	chickadee	a photo of a chickadee	a chickadee	una cinciallegra	una foto di una cinciallegra	20
+n01601694	water ouzel, dipper	water ouzel	a photo of a water ouzel	a water ouzel	un'ouzel d'acqua	una foto di un'ouzel d'acqua	21
+n01608432	kite	kite	a photo of a kite	a kite	un aquilone	una foto di un aquilone	22
+n01614925	bald eagle, American eagle, Haliaeetus leucocephalus	bald eagle	a photo of a bald eagle	a bald eagle	un'aquila calva	una foto di un'aquila calva	23
+n01616318	vulture	vulture	a photo of a vulture	a vulture	un avvoltoio	una foto di un avvoltoio	24
+n01622779	great grey owl, great gray owl, Strix nebulosa	great grey owl	a photo of a great grey owl	a great grey owl	un grande gufo grigio	una foto di un grande gufo grigio	25
+n01629819	European fire salamander, Salamandra salamandra	European fire salamander	a photo of a European fire salamander	a European fire salamander	una salamandra da fuoco europea	una foto di una salamandra da fuoco europea	26
+n01630670	common newt, Triturus vulgaris	common newt	a photo of a common newt	a common newt	un tritone comune	una foto di un tritone comune	27
+n01631663	eft	eft	a photo of a eft	a eft	a eft	una foto di a eft	28
+n01632458	spotted salamander, Ambystoma maculatum	spotted salamander	a photo of a spotted salamander	a spotted salamander	una salamandra pezzata	una foto di una salamandra pezzata	29
+n01632777	axolotl, mud puppy, Ambystoma mexicanum	axolotl	a photo of a axolotl	a axolotl	un axolotl	una foto di un axolotl	30
+n01641577	bullfrog, Rana catesbeiana	bullfrog	a photo of a bullfrog	a bullfrog	una rana toro	una foto di una rana toro	31
+n01644373	tree frog, tree-frog	tree frog	a photo of a tree frog	a tree frog	una raganella	una foto di una raganella	32
+n01644900	tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui	tailed frog	a photo of a tailed frog	a tailed frog	una rana con la coda	una foto di una rana con la coda	33
+n01664065	loggerhead, loggerhead turtle, Caretta caretta	loggerhead	a photo of a loggerhead	a loggerhead	una testa di toro	una foto di una testa di toro	34
+n01665541	leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea	leatherback turtle	a photo of a leatherback turtle	a leatherback turtle	una tartaruga di cuoio	una foto di una tartaruga di cuoio	35
+n01667114	mud turtle	mud turtle	a photo of a mud turtle	a mud turtle	una tartaruga di fango	una foto di una tartaruga di fango	36
+n01667778	terrapin	terrapin	a photo of a terrapin	a terrapin	una tartaruga	una foto di una tartaruga	37
+n01669191	box turtle, box tortoise	box turtle	a photo of a box turtle	a box turtle	una tartaruga di scatola	una foto di una tartaruga di scatola	38
+n01675722	banded gecko	banded gecko	a photo of a banded gecko	a banded gecko	un geco a bande	una foto di un geco a bande	39
+n01677366	common iguana, iguana, Iguana iguana	common iguana	a photo of a common iguana	a common iguana	un'iguana comune	una foto di un'iguana comune	40
+n01682714	American chameleon, anole, Anolis carolinensis	American chameleon	a photo of a American chameleon	a American chameleon	un camaleonte americano	una foto di un camaleonte americano	41
+n01685808	whiptail, whiptail lizard	whiptail	a photo of a whiptail	a whiptail	una coda di frusta	una foto di una coda di frusta	42
+n01687978	agama	agama	a photo of a agama	a agama	a agama	una foto di a agama	43
+n01688243	frilled lizard, Chlamydosaurus kingi	frilled lizard	a photo of a frilled lizard	a frilled lizard	una lucertola con le ali	una foto di una lucertola con le ali	44
+n01689811	alligator lizard	alligator lizard	a photo of a alligator lizard	a alligator lizard	una lucertola alligatore	una foto di una lucertola alligatore	45
+n01692333	Gila monster, Heloderma suspectum	Gila monster	a photo of a Gila monster	a Gila monster	un mostro di Gila	una foto di un mostro di Gila	46
+n01693334	green lizard, Lacerta viridis	green lizard	a photo of a green lizard	a green lizard	una lucertola verde	una foto di una lucertola verde	47
+n01694178	African chameleon, Chamaeleo chamaeleon	African chameleon	a photo of a African chameleon	a African chameleon	un camaleonte africano	una foto di un camaleonte africano	48
+n01695060	Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis	Komodo dragon	a photo of a Komodo dragon	a Komodo dragon	un drago di Komodo	una foto di un drago di Komodo	49
+n01697457	African crocodile, Nile crocodile, Crocodylus niloticus	African crocodile	a photo of a African crocodile	a African crocodile	un coccodrillo africano	una foto di un coccodrillo africano	50
+n01698640	American alligator, Alligator mississipiensis	American alligator	a photo of a American alligator	a American alligator	un alligatore americano	una foto di un alligatore americano	51
+n01704323	triceratops	triceratops	a photo of a triceratops	a triceratops	un triceratopo	una foto di un triceratopo	52
+n01728572	thunder snake, worm snake, Carphophis amoenus	thunder snake	a photo of a thunder snake	a thunder snake	un serpente di tuono	una foto di un serpente di tuono	53
+n01728920	ringneck snake, ring-necked snake, ring snake	ringneck snake	a photo of a ringneck snake	a ringneck snake	un serpente ringneck	una foto di un serpente ringneck	54
+n01729322	hognose snake, puff adder, sand viper	hognose snake	a photo of a hognose snake	a hognose snake	un serpente hognose	una foto di un serpente hognose	55
+n01729977	green snake, grass snake	green snake	a photo of a green snake	a green snake	un serpente verde	una foto di un serpente verde	56
+n01734418	king snake, kingsnake	king snake	a photo of a king snake	a king snake	un serpente re	una foto di un serpente re	57
+n01735189	garter snake, grass snake	garter snake	a photo of a garter snake	a garter snake	un serpente giarrettiera	una foto di un serpente giarrettiera	58
+n01737021	water snake	water snake	a photo of a water snake	a water snake	un serpente d'acqua	una foto di un serpente d'acqua	59
+n01739381	vine snake	vine snake	a photo of a vine snake	a vine snake	un serpente a forma di vite	una foto di un serpente a forma di vite	60
+n01740131	night snake, Hypsiglena torquata	night snake	a photo of a night snake	a night snake	un serpente notturno	una foto di un serpente notturno	61
+n01742172	boa constrictor, Constrictor constrictor	boa constrictor	a photo of a boa constrictor	a boa constrictor	un boa constrictor	una foto di un boa constrictor	62
+n01744401	rock python, rock snake, Python sebae	rock python	a photo of a rock python	a rock python	un pitone delle rocce	una foto di un pitone delle rocce	63
+n01748264	Indian cobra, Naja naja	Indian cobra	a photo of a Indian cobra	a Indian cobra	un cobra indiano	una foto di un cobra indiano	64
+n01749939	green mamba	green mamba	a photo of a green mamba	a green mamba	un mamba verde	una foto di un mamba verde	65
+n01751748	sea snake	sea snake	a photo of a sea snake	a sea snake	un serpente di mare	una foto di un serpente di mare	66
+n01753488	horned viper, cerastes, sand viper, horned asp, Cerastes cornutus	horned viper	a photo of a horned viper	a horned viper	una vipera cornuta	una foto di una vipera cornuta	67
+n01755581	diamondback, diamondback rattlesnake, Crotalus adamanteus	diamondback	a photo of a diamondback	a diamondback	un diamondback	una foto di un diamondback	68
+n01756291	sidewinder, horned rattlesnake, Crotalus cerastes	sidewinder	a photo of a sidewinder	a sidewinder	un sidewinder	una foto di un sidewinder	69
+n01768244	trilobite	trilobite	a photo of a trilobite	a trilobite	un trilobite	una foto di un trilobite	70
+n01770081	harvestman, daddy longlegs, Phalangium opilio	harvestman	a photo of a harvestman	a harvestman	un raccoglitore	una foto di un raccoglitore	71
+n01770393	scorpion	scorpion	a photo of a scorpion	a scorpion	uno scorpione	una foto di uno scorpione	72
+n01773157	black and gold garden spider, Argiope aurantia	black and gold garden spider	a photo of a black and gold garden spider	a black and gold garden spider	un ragno da giardino nero e oro	una foto di un ragno da giardino nero e oro	73
+n01773549	barn spider, Araneus cavaticus	barn spider	a photo of a barn spider	a barn spider	un ragno da fienile	una foto di un ragno da fienile	74
+n01773797	garden spider, Aranea diademata	garden spider	a photo of a garden spider	a garden spider	un ragno del giardino	una foto di un ragno del giardino	75
+n01774384	black widow, Latrodectus mactans	black widow	a photo of a black widow	a black widow	una vedova nera	una foto di una vedova nera	76
+n01774750	tarantula	tarantula	a photo of a tarantula	a tarantula	una tarantola	una foto di una tarantola	77
+n01775062	wolf spider, hunting spider	wolf spider	a photo of a wolf spider	a wolf spider	un ragno lupo	una foto di un ragno lupo	78
+n01776313	tick	tick	a photo of a tick	a tick	un segno di spunta	una foto di un segno di spunta	79
+n01784675	centipede	centipede	a photo of a centipede	a centipede	un millepiedi	una foto di un millepiedi	80
+n01795545	black grouse	black grouse	a photo of a black grouse	a black grouse	un fagiano di monte	una foto di un fagiano di monte	81
+n01796340	ptarmigan	ptarmigan	a photo of a ptarmigan	a ptarmigan	pernice bianca	una foto di pernice bianca	82
+n01797886	ruffed grouse, partridge, Bonasa umbellus	ruffed grouse	a photo of a ruffed grouse	a ruffed grouse	un gallo cedrone	una foto di un gallo cedrone	83
+n01798484	prairie chicken, prairie grouse, prairie fowl	prairie chicken	a photo of a prairie chicken	a prairie chicken	un pollo della prateria	una foto di un pollo della prateria	84
+n01806143	peacock	peacock	a photo of a peacock	a peacock	un pavone	una foto di un pavone	85
+n01806567	quail	quail	a photo of a quail	a quail	una quaglia	una foto di una quaglia	86
+n01807496	partridge	partridge	a photo of a partridge	a partridge	una pernice	una foto di una pernice	87
+n01817953	African grey, African gray, Psittacus erithacus	African grey	a photo of a African grey	a African grey	un grigio africano	una foto di un grigio africano	88
+n01818515	macaw	macaw	a photo of a macaw	a macaw	un'ara	una foto di un'ara	89
+n01819313	sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita	sulphur-crested cockatoo	a photo of a sulphur-crested cockatoo	a sulphur-crested cockatoo	un cacatua dalla cresta sulfurea	una foto di un cacatua dalla cresta sulfurea	90
+n01820546	lorikeet	lorikeet	a photo of a lorikeet	a lorikeet	un lorichetto	una foto di un lorichetto	91
+n01824575	coucal	coucal	a photo of a coucal	a coucal	una coucal	una foto di una coucal	92
+n01828970	bee eater	bee eater	a photo of a bee eater	a bee eater	un mangiatore di api	una foto di un mangiatore di api	93
+n01829413	hornbill	hornbill	a photo of a hornbill	a hornbill	un bucerotide	una foto di un bucerotide	94
+n01833805	hummingbird	hummingbird	a photo of a hummingbird	a hummingbird	un colibrì	una foto di un colibrì	95
+n01843065	jacamar	jacamar	a photo of a jacamar	a jacamar	un jacamar	una foto di un jacamar	96
+n01843383	toucan	toucan	a photo of a toucan	a toucan	un tucano	una foto di un tucano	97
+n01847000	drake	drake	a photo of a drake	a drake	un drake	una foto di un drake	98
+n01855032	red-breasted merganser, Mergus serrator	red-breasted merganser	a photo of a red-breasted merganser	a red-breasted merganser	un merganser dal petto rosso	una foto di un merganser dal petto rosso	99
+n01855672	goose	goose	a photo of a goose	a goose	un'oca	una foto di un'oca	100
+n01860187	black swan, Cygnus atratus	black swan	a photo of a black swan	a black swan	un cigno nero	una foto di un cigno nero	101
+n01871265	tusker	tusker	a photo of a tusker	a tusker	un tusker	una foto di un tusker	102
+n01872401	echidna, spiny anteater, anteater	echidna	a photo of a echidna	a echidna	un echidna	una foto di un echidna	103
+n01873310	platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus	platypus	a photo of a platypus	a platypus	un ornitorinco	una foto di un ornitorinco	104
+n01877812	wallaby, brush kangaroo	wallaby	a photo of a wallaby	a wallaby	un wallaby	una foto di un wallaby	105
+n01882714	koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus	koala	a photo of a koala	a koala	un koala	una foto di un koala	106
+n01883070	wombat	wombat	a photo of a wombat	a wombat	un vombato	una foto di un vombato	107
+n01910747	jellyfish	jellyfish	a photo of a jellyfish	a jellyfish	una medusa	una foto di una medusa	108
+n01914609	sea anemone, anemone	sea anemone	a photo of a sea anemone	a sea anemone	un anemone di mare	una foto di un anemone di mare	109
+n01917289	brain coral	brain coral	a photo of a brain coral	a brain coral	un corallo del cervello	una foto di un corallo del cervello	110
+n01924916	flatworm, platyhelminth	flatworm	a photo of a flatworm	a flatworm	un verme piatto	una foto di un verme piatto	111
+n01930112	nematode, nematode worm, roundworm	nematode	a photo of a nematode	a nematode	un nematode	una foto di un nematode	112
+n01943899	conch	conch	a photo of a conch	a conch	uno strombo	una foto di uno strombo	113
+n01944390	snail	snail	a photo of a snail	a snail	una lumaca	una foto di una lumaca	114
+n01945685	slug	slug	a photo of a slug	a slug	una lumaca	una foto di una lumaca	115
+n01950731	sea slug, nudibranch	sea slug	a photo of a sea slug	a sea slug	una lumaca di mare	una foto di una lumaca di mare	116
+n01955084	chiton, coat-of-mail shell, sea cradle, polyplacophore	chiton	a photo of a chiton	a chiton	un chitone	una foto di un chitone	117
+n01968897	chambered nautilus, pearly nautilus, nautilus	chambered nautilus	a photo of a chambered nautilus	a chambered nautilus	un nautilus a camera	una foto di un nautilus a camera	118
+n01978287	Dungeness crab, Cancer magister	Dungeness crab	a photo of a Dungeness crab	a Dungeness crab	un granchio di Dungeness	una foto di un granchio di Dungeness	119
+n01978455	rock crab, Cancer irroratus	rock crab	a photo of a rock crab	a rock crab	un granchio di roccia	una foto di un granchio di roccia	120
+n01980166	fiddler crab	fiddler crab	a photo of a fiddler crab	a fiddler crab	un granchio violinista	una foto di un granchio violinista	121
+n01981276	king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica	king crab	a photo of a king crab	a king crab	un granchio reale	una foto di un granchio reale	122
+n01983481	American lobster, Northern lobster, Maine lobster, Homarus americanus	American lobster	a photo of a American lobster	a American lobster	un'aragosta americana	una foto di un'aragosta americana	123
+n01984695	spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish	spiny lobster	a photo of a spiny lobster	a spiny lobster	un'aragosta spinosa	una foto di un'aragosta spinosa	124
+n01985128	crayfish, crawfish, crawdad, crawdaddy	crayfish	a photo of a crayfish	a crayfish	un gambero di fiume	una foto di un gambero di fiume	125
+n01986214	hermit crab	hermit crab	a photo of a hermit crab	a hermit crab	un paguro	una foto di un paguro	126
+n01990800	isopod	isopod	a photo of a isopod	a isopod	un isopode	una foto di un isopode	127
+n02002556	white stork, Ciconia ciconia	white stork	a photo of a white stork	a white stork	una cicogna bianca	una foto di una cicogna bianca	128
+n02002724	black stork, Ciconia nigra	black stork	a photo of a black stork	a black stork	una cicogna nera	una foto di una cicogna nera	129
+n02006656	spoonbill	spoonbill	a photo of a spoonbill	a spoonbill	una spatola	una foto di una spatola	130
+n02007558	flamingo	flamingo	a photo of a flamingo	a flamingo	un fenicottero	una foto di un fenicottero	131
+n02009229	little blue heron, Egretta caerulea	little blue heron	a photo of a little blue heron	a little blue heron	un piccolo airone blu	una foto di un piccolo airone blu	132
+n02009912	American egret, great white heron, Egretta albus	American egret	a photo of a American egret	a American egret	una garzetta americana	una foto di una garzetta americana	133
+n02011460	bittern	bittern	a photo of a bittern	a bittern	un tarabuso	una foto di un tarabuso	134
+n02012849	crane	crane	a photo of a crane	a crane	una gru	una foto di una gru	135
+n02013706	limpkin, Aramus pictus	limpkin	a photo of a limpkin	a limpkin	un moscerino	una foto di un moscerino	136
+n02017213	European gallinule, Porphyrio porphyrio	European gallinule	a photo of a European gallinule	a European gallinule	un gallinaccio europeo	una foto di un gallinaccio europeo	137
+n02018207	American coot, marsh hen, mud hen, water hen, Fulica americana	American coot	a photo of a American coot	a American coot	una folaga americana	una foto di una folaga americana	138
+n02018795	bustard	bustard	a photo of a bustard	a bustard	un'otarda	una foto di un'otarda	139
+n02025239	ruddy turnstone, Arenaria interpres	ruddy turnstone	a photo of a ruddy turnstone	a ruddy turnstone	una pietra focaia rubiconda	una foto di una pietra focaia rubiconda	140
+n02027492	red-backed sandpiper, dunlin, Erolia alpina	red-backed sandpiper	a photo of a red-backed sandpiper	a red-backed sandpiper	un piovanello dal dorso rosso	una foto di un piovanello dal dorso rosso	141
+n02028035	redshank, Tringa totanus	redshank	a photo of a redshank	a redshank	una pettegola	una foto di una pettegola	142
+n02033041	dowitcher	dowitcher	a photo of a dowitcher	a dowitcher	una dowitcher	una foto di una dowitcher	143
+n02037110	oystercatcher, oyster catcher	oystercatcher	a photo of a oystercatcher	a oystercatcher	una beccaccia di mare	una foto di una beccaccia di mare	144
+n02051845	pelican	pelican	a photo of a pelican	a pelican	un pellicano	una foto di un pellicano	145
+n02056570	king penguin, Aptenodytes patagonica	king penguin	a photo of a king penguin	a king penguin	un pinguino reale	una foto di un pinguino reale	146
+n02058221	albatross, mollymawk	albatross	a photo of a albatross	a albatross	un albatros	una foto di un albatros	147
+n02066245	grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus	grey whale	a photo of a grey whale	a grey whale	una balena grigia	una foto di una balena grigia	148
+n02071294	killer whale, killer, orca, grampus, sea wolf, Orcinus orca	killer whale	a photo of a killer whale	a killer whale	un'orca assassina	una foto di un'orca assassina	149
+n02074367	dugong, Dugong dugon	dugong	a photo of a dugong	a dugong	un dugongo	una foto di un dugongo	150
+n02077923	sea lion	sea lion	a photo of a sea lion	a sea lion	un leone marino	una foto di un leone marino	151
+n02085620	Chihuahua	Chihuahua	a photo of a Chihuahua	a Chihuahua	un chihuahua	una foto di un chihuahua	152
+n02085782	Japanese spaniel	Japanese spaniel	a photo of a Japanese spaniel	a Japanese spaniel	uno spaniel giapponese	una foto di uno spaniel giapponese	153
+n02085936	Maltese dog, Maltese terrier, Maltese	Maltese dog	a photo of a Maltese dog	a Maltese dog	un cane maltese	una foto di un cane maltese	154
+n02086079	Pekinese, Pekingese, Peke	Pekinese	a photo of a Pekinese	a Pekinese	un pechinese	una foto di un pechinese	155
+n02086240	Shih-Tzu	Shih-Tzu	a photo of a Shih-Tzu	a Shih-Tzu	uno Shih-Tzu	una foto di uno Shih-Tzu	156
+n02086646	Blenheim spaniel	Blenheim spaniel	a photo of a Blenheim spaniel	a Blenheim spaniel	uno spaniel Blenheim	una foto di uno spaniel Blenheim	157
+n02086910	papillon	papillon	a photo of a papillon	a papillon	un papillon	una foto di un papillon	158
+n02087046	toy terrier	toy terrier	a photo of a toy terrier	a toy terrier	un terrier giocattolo	una foto di un terrier giocattolo	159
+n02087394	Rhodesian ridgeback	Rhodesian ridgeback	a photo of a Rhodesian ridgeback	a Rhodesian ridgeback	un Rhodesian ridgeback	una foto di un Rhodesian ridgeback	160
+n02088094	Afghan hound, Afghan	Afghan hound	a photo of a Afghan hound	a Afghan hound	un segugio afgano	una foto di un segugio afgano	161
+n02088238	basset, basset hound	basset	a photo of a basset	a basset	un bassotto	una foto di un bassotto	162
+n02088364	beagle	beagle	a photo of a beagle	a beagle	un beagle	una foto di un beagle	163
+n02088466	bloodhound, sleuthhound	bloodhound	a photo of a bloodhound	a bloodhound	un segugio	una foto di un segugio	164
+n02088632	bluetick	bluetick	a photo of a bluetick	a bluetick	un bluetick	una foto di un bluetick	165
+n02089078	black-and-tan coonhound	black-and-tan coonhound	a photo of a black-and-tan coonhound	a black-and-tan coonhound	un coonhound nero e marrone	una foto di un coonhound nero e marrone	166
+n02089867	Walker hound, Walker foxhound	Walker hound	a photo of a Walker hound	a Walker hound	un segugio Walker	una foto di un segugio Walker	167
+n02089973	English foxhound	English foxhound	a photo of a English foxhound	a English foxhound	un foxhound inglese	una foto di un foxhound inglese	168
+n02090379	redbone	redbone	a photo of a redbone	a redbone	un osso rosso	una foto di un osso rosso	169
+n02090622	borzoi, Russian wolfhound	borzoi	a photo of a borzoi	a borzoi	un borzoi	una foto di un borzoi	170
+n02090721	Irish wolfhound	Irish wolfhound	a photo of a Irish wolfhound	a Irish wolfhound	un cane lupo irlandese	una foto di un cane lupo irlandese	171
+n02091032	Italian greyhound	Italian greyhound	a photo of a Italian greyhound	a Italian greyhound	un levriero italiano	una foto di un levriero italiano	172
+n02091134	whippet	whippet	a photo of a whippet	a whippet	un whippet	una foto di un whippet	173
+n02091244	Ibizan hound, Ibizan Podenco	Ibizan hound	a photo of a Ibizan hound	a Ibizan hound	un segugio ibizenco	una foto di un segugio ibizenco	174
+n02091467	Norwegian elkhound, elkhound	Norwegian elkhound	a photo of a Norwegian elkhound	a Norwegian elkhound	un elkhound norvegese	una foto di un elkhound norvegese	175
+n02091635	otterhound, otter hound	otterhound	a photo of a otterhound	a otterhound	una lontra	una foto di una lontra	176
+n02091831	Saluki, gazelle hound	Saluki	a photo of a Saluki	a Saluki	un Saluki	una foto di un Saluki	177
+n02092002	Scottish deerhound, deerhound	Scottish deerhound	a photo of a Scottish deerhound	a Scottish deerhound	un deerhound scozzese	una foto di un deerhound scozzese	178
+n02092339	Weimaraner	Weimaraner	a photo of a Weimaraner	a Weimaraner	un Weimaraner	una foto di un Weimaraner	179
+n02093256	Staffordshire bullterrier, Staffordshire bull terrier	Staffordshire bullterrier	a photo of a Staffordshire bullterrier	a Staffordshire bullterrier	uno Staffordshire bullterrier	una foto di uno Staffordshire bullterrier	180
+n02093428	American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier	American Staffordshire terrier	a photo of a American Staffordshire terrier	a American Staffordshire terrier	un American Staffordshire terrier	una foto di un American Staffordshire terrier	181
+n02093647	Bedlington terrier	Bedlington terrier	a photo of a Bedlington terrier	a Bedlington terrier	un Bedlington terrier	una foto di un Bedlington terrier	182
+n02093754	Border terrier	Border terrier	a photo of a Border terrier	a Border terrier	un Border terrier	una foto di un Border terrier	183
+n02093859	Kerry blue terrier	Kerry blue terrier	a photo of a Kerry blue terrier	a Kerry blue terrier	un Kerry blue terrier	una foto di un Kerry blue terrier	184
+n02093991	Irish terrier	Irish terrier	a photo of a Irish terrier	a Irish terrier	un terrier irlandese	una foto di un terrier irlandese	185
+n02094114	Norfolk terrier	Norfolk terrier	a photo of a Norfolk terrier	a Norfolk terrier	un Norfolk terrier	una foto di un Norfolk terrier	186
+n02094258	Norwich terrier	Norwich terrier	a photo of a Norwich terrier	a Norwich terrier	un Norwich terrier	una foto di un Norwich terrier	187
+n02094433	Yorkshire terrier	Yorkshire terrier	a photo of a Yorkshire terrier	a Yorkshire terrier	uno Yorkshire terrier	una foto di uno Yorkshire terrier	188
+n02095314	wire-haired fox terrier	wire-haired fox terrier	a photo of a wire-haired fox terrier	a wire-haired fox terrier	un fox terrier a pelo corto	una foto di un fox terrier a pelo corto	189
+n02095570	Lakeland terrier	Lakeland terrier	a photo of a Lakeland terrier	a Lakeland terrier	un Lakeland terrier	una foto di un Lakeland terrier	190
+n02095889	Sealyham terrier, Sealyham	Sealyham terrier	a photo of a Sealyham terrier	a Sealyham terrier	un Sealyham terrier	una foto di un Sealyham terrier	191
+n02096051	Airedale, Airedale terrier	Airedale	a photo of a Airedale	a Airedale	un Airedale	una foto di un Airedale	192
+n02096177	cairn, cairn terrier	cairn	a photo of a cairn	a cairn	un tumulo	una foto di un tumulo	193
+n02096294	Australian terrier	Australian terrier	a photo of a Australian terrier	a Australian terrier	un terrier australiano	una foto di un terrier australiano	194
+n02096437	Dandie Dinmont, Dandie Dinmont terrier	Dandie Dinmont	a photo of a Dandie Dinmont	a Dandie Dinmont	un Dandie Dinmont	una foto di un Dandie Dinmont	195
+n02096585	Boston bull, Boston terrier	Boston bull	a photo of a Boston bull	a Boston bull	un toro di Boston	una foto di un toro di Boston	196
+n02097047	miniature schnauzer	miniature schnauzer	a photo of a miniature schnauzer	a miniature schnauzer	uno schnauzer in miniatura	una foto di uno schnauzer in miniatura	197
+n02097130	giant schnauzer	giant schnauzer	a photo of a giant schnauzer	a giant schnauzer	uno schnauzer gigante	una foto di uno schnauzer gigante	198
+n02097209	standard schnauzer	standard schnauzer	a photo of a standard schnauzer	a standard schnauzer	uno schnauzer standard	una foto di uno schnauzer standard	199
+n02097298	Scotch terrier, Scottish terrier, Scottie	Scotch terrier	a photo of a Scotch terrier	a Scotch terrier	un terrier scozzese	una foto di un terrier scozzese	200
+n02097474	Tibetan terrier, chrysanthemum dog	Tibetan terrier	a photo of a Tibetan terrier	a Tibetan terrier	un terrier tibetano	una foto di un terrier tibetano	201
+n02097658	silky terrier, Sydney silky	silky terrier	a photo of a silky terrier	a silky terrier	un terrier di seta	una foto di un terrier di seta	202
+n02098105	soft-coated wheaten terrier	soft-coated wheaten terrier	a photo of a soft-coated wheaten terrier	a soft-coated wheaten terrier	un wheaten terrier a pelo morbido	una foto di un wheaten terrier a pelo morbido	203
+n02098286	West Highland white terrier	West Highland white terrier	a photo of a West Highland white terrier	a West Highland white terrier	un West Highland white terrier	una foto di un West Highland white terrier	204
+n02098413	Lhasa, Lhasa apso	Lhasa	a photo of a Lhasa	a Lhasa	a Lhasa	una foto di a Lhasa	205
+n02099267	flat-coated retriever	flat-coated retriever	a photo of a flat-coated retriever	a flat-coated retriever	un flat-coated retriever	una foto di un flat-coated retriever	206
+n02099429	curly-coated retriever	curly-coated retriever	a photo of a curly-coated retriever	a curly-coated retriever	un retriever a pelo riccio	una foto di un retriever a pelo riccio	207
+n02099601	golden retriever	golden retriever	a photo of a golden retriever	a golden retriever	un golden retriever	una foto di un golden retriever	208
+n02099712	Labrador retriever	Labrador retriever	a photo of a Labrador retriever	a Labrador retriever	un Labrador retriever	una foto di un Labrador retriever	209
+n02099849	Chesapeake Bay retriever	Chesapeake Bay retriever	a photo of a Chesapeake Bay retriever	a Chesapeake Bay retriever	un Chesapeake Bay retriever	una foto di un Chesapeake Bay retriever	210
+n02100236	German short-haired pointer	German short-haired pointer	a photo of a German short-haired pointer	a German short-haired pointer	un pointer tedesco a pelo corto	una foto di un pointer tedesco a pelo corto	211
+n02100583	vizsla, Hungarian pointer	vizsla	a photo of a vizsla	a vizsla	un vizsla	una foto di un vizsla	212
+n02100735	English setter	English setter	a photo of a English setter	a English setter	un setter inglese	una foto di un setter inglese	213
+n02100877	Irish setter, red setter	Irish setter	a photo of a Irish setter	a Irish setter	un setter irlandese	una foto di un setter irlandese	214
+n02101006	Gordon setter	Gordon setter	a photo of a Gordon setter	a Gordon setter	un setter Gordon	una foto di un setter Gordon	215
+n02101388	Brittany spaniel	Brittany spaniel	a photo of a Brittany spaniel	a Brittany spaniel	un Brittany spaniel	una foto di un Brittany spaniel	216
+n02101556	clumber, clumber spaniel	clumber	a photo of a clumber	a clumber	un idraulico	una foto di un idraulico	217
+n02102040	English springer, English springer spaniel	English springer	a photo of a English springer	a English springer	uno springer inglese	una foto di uno springer inglese	218
+n02102177	Welsh springer spaniel	Welsh springer spaniel	a photo of a Welsh springer spaniel	a Welsh springer spaniel	uno springer spaniel gallese	una foto di uno springer spaniel gallese	219
+n02102318	cocker spaniel, English cocker spaniel, cocker	cocker spaniel	a photo of a cocker spaniel	a cocker spaniel	un cocker spaniel	una foto di un cocker spaniel	220
+n02102480	Sussex spaniel	Sussex spaniel	a photo of a Sussex spaniel	a Sussex spaniel	uno spaniel del Sussex	una foto di uno spaniel del Sussex	221
+n02102973	Irish water spaniel	Irish water spaniel	a photo of a Irish water spaniel	a Irish water spaniel	uno spaniel d'acqua irlandese	una foto di uno spaniel d'acqua irlandese	222
+n02104029	kuvasz	kuvasz	a photo of a kuvasz	a kuvasz	un kuvasz	una foto di un kuvasz	223
+n02104365	schipperke	schipperke	a photo of a schipperke	a schipperke	uno schipperke	una foto di uno schipperke	224
+n02105056	groenendael	groenendael	a photo of a groenendael	a groenendael	una groenendael	una foto di una groenendael	225
+n02105162	malinois	malinois	a photo of a malinois	a malinois	un malinois	una foto di un malinois	226
+n02105251	briard	briard	a photo of a briard	a briard	una briarda	una foto di una briarda	227
+n02105412	kelpie	kelpie	a photo of a kelpie	a kelpie	un kelpie	una foto di un kelpie	228
+n02105505	komondor	komondor	a photo of a komondor	a komondor	un komondor	una foto di un komondor	229
+n02105641	Old English sheepdog, bobtail	Old English sheepdog	a photo of a Old English sheepdog	a Old English sheepdog	un vecchio cane da pastore inglese	una foto di un vecchio cane da pastore inglese	230
+n02105855	Shetland sheepdog, Shetland sheep dog, Shetland	Shetland sheepdog	a photo of a Shetland sheepdog	a Shetland sheepdog	un cane da pastore Shetland	una foto di un cane da pastore Shetland	231
+n02106030	collie	collie	a photo of a collie	a collie	un collie	una foto di un collie	232
+n02106166	Border collie	Border collie	a photo of a Border collie	a Border collie	un Border collie	una foto di un Border collie	233
+n02106382	Bouvier des Flandres, Bouviers des Flandres	Bouvier des Flandres	a photo of a Bouvier des Flandres	a Bouvier des Flandres	un Bouvier des Flandres	una foto di un Bouvier des Flandres	234
+n02106550	Rottweiler	Rottweiler	a photo of a Rottweiler	a Rottweiler	un Rottweiler	una foto di un Rottweiler	235
+n02106662	German shepherd, German shepherd dog, German police dog, alsatian	German shepherd	a photo of a German shepherd	a German shepherd	un pastore tedesco	una foto di un pastore tedesco	236
+n02107142	Doberman, Doberman pinscher	Doberman	a photo of a Doberman	a Doberman	un dobermann	una foto di un dobermann	237
+n02107312	miniature pinscher	miniature pinscher	a photo of a miniature pinscher	a miniature pinscher	un pinscher in miniatura	una foto di un pinscher in miniatura	238
+n02107574	Greater Swiss Mountain dog	Greater Swiss Mountain dog	a photo of a Greater Swiss Mountain dog	a Greater Swiss Mountain dog	un cane da montagna svizzero maggiore	una foto di un cane da montagna svizzero maggiore	239
+n02107683	Bernese mountain dog	Bernese mountain dog	a photo of a Bernese mountain dog	a Bernese mountain dog	un cane di montagna bernese	una foto di un cane di montagna bernese	240
+n02107908	Appenzeller	Appenzeller	a photo of a Appenzeller	a Appenzeller	un Appenzeller	una foto di un Appenzeller	241
+n02108000	EntleBucher	EntleBucher	a photo of a EntleBucher	a EntleBucher	a EntleBucher	una foto di a EntleBucher	242
+n02108089	boxer	boxer	a photo of a boxer	a boxer	un pugile	una foto di un pugile	243
+n02108422	bull mastiff	bull mastiff	a photo of a bull mastiff	a bull mastiff	un mastino toro	una foto di un mastino toro	244
+n02108551	Tibetan mastiff	Tibetan mastiff	a photo of a Tibetan mastiff	a Tibetan mastiff	un mastino tibetano	una foto di un mastino tibetano	245
+n02108915	French bulldog	French bulldog	a photo of a French bulldog	a French bulldog	un bulldog francese	una foto di un bulldog francese	246
+n02109047	Great Dane	Great Dane	a photo of a Great Dane	a Great Dane	un alano	una foto di un alano	247
+n02109525	Saint Bernard, St Bernard	Saint Bernard	a photo of a Saint Bernard	a Saint Bernard	un San Bernardo	una foto di un San Bernardo	248
+n02109961	Eskimo dog, husky	Eskimo dog	a photo of a Eskimo dog	a Eskimo dog	un cane eschimese	una foto di un cane eschimese	249
+n02110063	malamute, malemute, Alaskan malamute	malamute	a photo of a malamute	a malamute	un malamute	una foto di un malamute	250
+n02110185	Siberian husky	Siberian husky	a photo of a Siberian husky	a Siberian husky	un Siberian husky	una foto di un Siberian husky	251
+n02110341	dalmatian, coach dog, carriage dog	dalmatian	a photo of a dalmatian	a dalmatian	un dalmata	una foto di un dalmata	252
+n02110627	affenpinscher, monkey pinscher, monkey dog	affenpinscher	a photo of a affenpinscher	a affenpinscher	un affenpinscher	una foto di un affenpinscher	253
+n02110806	basenji	basenji	a photo of a basenji	a basenji	un basenji	una foto di un basenji	254
+n02110958	pug, pug-dog	pug	a photo of a pug	a pug	un carlino	una foto di un carlino	255
+n02111129	Leonberg	Leonberg	a photo of a Leonberg	a Leonberg	a Leonberg	una foto di a Leonberg	256
+n02111277	Newfoundland, Newfoundland dog	Newfoundland	a photo of a Newfoundland	a Newfoundland	un Terranova	una foto di un Terranova	257
+n02111500	Great Pyrenees	Great Pyrenees	a photo of a Great Pyrenees	a Great Pyrenees	un Grande Pireneo	una foto di un Grande Pireneo	258
+n02111889	Samoyed, Samoyede	Samoyed	a photo of a Samoyed	a Samoyed	un samoiedo	una foto di un samoiedo	259
+n02112018	Pomeranian	Pomeranian	a photo of a Pomeranian	a Pomeranian	un Pomerania	una foto di un Pomerania	260
+n02112137	chow, chow chow	chow	a photo of a chow	a chow	un chow	una foto di un chow	261
+n02112350	keeshond	keeshond	a photo of a keeshond	a keeshond	un keeshond	una foto di un keeshond	262
+n02112706	Brabancon griffon	Brabancon griffon	a photo of a Brabancon griffon	a Brabancon griffon	un grifone di Brabancon	una foto di un grifone di Brabancon	263
+n02113023	Pembroke, Pembroke Welsh corgi	Pembroke	a photo of a Pembroke	a Pembroke	un Pembroke	una foto di un Pembroke	264
+n02113186	Cardigan, Cardigan Welsh corgi	Cardigan	a photo of a Cardigan	a Cardigan	un cardigan	una foto di un cardigan	265
+n02113624	toy poodle	toy poodle	a photo of a toy poodle	a toy poodle	un barboncino giocattolo	una foto di un barboncino giocattolo	266
+n02113712	miniature poodle	miniature poodle	a photo of a miniature poodle	a miniature poodle	un barboncino in miniatura	una foto di un barboncino in miniatura	267
+n02113799	standard poodle	standard poodle	a photo of a standard poodle	a standard poodle	un barboncino standard	una foto di un barboncino standard	268
+n02113978	Mexican hairless	Mexican hairless	a photo of a Mexican hairless	a Mexican hairless	un messicano senza capelli	una foto di un messicano senza capelli	269
+n02114367	timber wolf, grey wolf, gray wolf, Canis lupus	timber wolf	a photo of a timber wolf	a timber wolf	un lupo di legno	una foto di un lupo di legno	270
+n02114548	white wolf, Arctic wolf, Canis lupus tundrarum	white wolf	a photo of a white wolf	a white wolf	un lupo bianco	una foto di un lupo bianco	271
+n02114712	red wolf, maned wolf, Canis rufus, Canis niger	red wolf	a photo of a red wolf	a red wolf	un lupo rosso	una foto di un lupo rosso	272
+n02114855	coyote, prairie wolf, brush wolf, Canis latrans	coyote	a photo of a coyote	a coyote	un coyote	una foto di un coyote	273
+n02115641	dingo, warrigal, warragal, Canis dingo	dingo	a photo of a dingo	a dingo	un dingo	una foto di un dingo	274
+n02115913	dhole, Cuon alpinus	dhole	a photo of a dhole	a dhole	un dhole	una foto di un dhole	275
+n02116738	African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus	African hunting dog	a photo of a African hunting dog	a African hunting dog	un cane da caccia africano	una foto di un cane da caccia africano	276
+n02117135	hyena, hyaena	hyena	a photo of a hyena	a hyena	una iena	una foto di una iena	277
+n02119022	red fox, Vulpes vulpes	red fox	a photo of a red fox	a red fox	una volpe rossa	una foto di una volpe rossa	278
+n02119789	kit fox, Vulpes macrotis	kit fox	a photo of a kit fox	a kit fox	una volpe di kit	una foto di una volpe di kit	279
+n02120079	Arctic fox, white fox, Alopex lagopus	Arctic fox	a photo of a Arctic fox	a Arctic fox	una volpe artica	una foto di una volpe artica	280
+n02120505	grey fox, gray fox, Urocyon cinereoargenteus	grey fox	a photo of a grey fox	a grey fox	una volpe grigia	una foto di una volpe grigia	281
+n02123045	tabby, tabby cat	tabby	a photo of a tabby	a tabby	un soriano	una foto di un soriano	282
+n02123159	tiger cat	tiger cat	a photo of a tiger cat	a tiger cat	un gatto tigrato	una foto di un gatto tigrato	283
+n02123394	Persian cat	Persian cat	a photo of a Persian cat	a Persian cat	un gatto persiano	una foto di un gatto persiano	284
+n02123597	Siamese cat, Siamese	Siamese cat	a photo of a Siamese cat	a Siamese cat	un gatto siamese	una foto di un gatto siamese	285
+n02124075	Egyptian cat	Egyptian cat	a photo of a Egyptian cat	a Egyptian cat	un gatto egiziano	una foto di un gatto egiziano	286
+n02125311	cougar, puma, catamount, mountain lion, painter, panther, Felis concolor	cougar	a photo of a cougar	a cougar	un puma	una foto di un puma	287
+n02127052	lynx, catamount	lynx	a photo of a lynx	a lynx	una lince	una foto di una lince	288
+n02128385	leopard, Panthera pardus	leopard	a photo of a leopard	a leopard	un leopardo	una foto di un leopardo	289
+n02128757	snow leopard, ounce, Panthera uncia	snow leopard	a photo of a snow leopard	a snow leopard	un leopardo delle nevi	una foto di un leopardo delle nevi	290
+n02128925	jaguar, panther, Panthera onca, Felis onca	jaguar	a photo of a jaguar	a jaguar	un giaguaro	una foto di un giaguaro	291
+n02129165	lion, king of beasts, Panthera leo	lion	a photo of a lion	a lion	un leone	una foto di un leone	292
+n02129604	tiger, Panthera tigris	tiger	a photo of a tiger	a tiger	una tigre	una foto di una tigre	293
+n02130308	cheetah, chetah, Acinonyx jubatus	cheetah	a photo of a cheetah	a cheetah	un ghepardo	una foto di un ghepardo	294
+n02132136	brown bear, bruin, Ursus arctos	brown bear	a photo of a brown bear	a brown bear	un orso bruno	una foto di un orso bruno	295
+n02133161	American black bear, black bear, Ursus americanus, Euarctos americanus	American black bear	a photo of a American black bear	a American black bear	un orso nero americano	una foto di un orso nero americano	296
+n02134084	ice bear, polar bear, Ursus Maritimus, Thalarctos maritimus	ice bear	a photo of a ice bear	a ice bear	un orso di ghiaccio	una foto di un orso di ghiaccio	297
+n02134418	sloth bear, Melursus ursinus, Ursus ursinus	sloth bear	a photo of a sloth bear	a sloth bear	un orso bradipo	una foto di un orso bradipo	298
+n02137549	mongoose	mongoose	a photo of a mongoose	a mongoose	una mangusta	una foto di una mangusta	299
+n02138441	meerkat, mierkat	meerkat	a photo of a meerkat	a meerkat	un suricato	una foto di un suricato	300
+n02165105	tiger beetle	tiger beetle	a photo of a tiger beetle	a tiger beetle	uno scarabeo tigre	una foto di uno scarabeo tigre	301
+n02165456	ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle	ladybug	a photo of a ladybug	a ladybug	una coccinella	una foto di una coccinella	302
+n02167151	ground beetle, carabid beetle	ground beetle	a photo of a ground beetle	a ground beetle	uno scarabeo di terra	una foto di uno scarabeo di terra	303
+n02168699	long-horned beetle, longicorn, longicorn beetle	long-horned beetle	a photo of a long-horned beetle	a long-horned beetle	uno scarabeo dalle lunghe corna	una foto di uno scarabeo dalle lunghe corna	304
+n02169497	leaf beetle, chrysomelid	leaf beetle	a photo of a leaf beetle	a leaf beetle	uno scarabeo delle foglie	una foto di uno scarabeo delle foglie	305
+n02172182	dung beetle	dung beetle	a photo of a dung beetle	a dung beetle	uno scarabeo stercorario	una foto di uno scarabeo stercorario	306
+n02174001	rhinoceros beetle	rhinoceros beetle	a photo of a rhinoceros beetle	a rhinoceros beetle	uno scarabeo rinoceronte	una foto di uno scarabeo rinoceronte	307
+n02177972	weevil	weevil	a photo of a weevil	a weevil	un tonchio	una foto di un tonchio	308
+n02190166	fly	fly	a photo of a fly	a fly	una mosca	una foto di una mosca	309
+n02206856	bee	bee	a photo of a bee	a bee	un'ape	una foto di un'ape	310
+n02219486	ant, emmet, pismire	ant	a photo of a ant	a ant	una formica	una foto di una formica	311
+n02226429	grasshopper, hopper	grasshopper	a photo of a grasshopper	a grasshopper	una cavalletta	una foto di una cavalletta	312
+n02229544	cricket	cricket	a photo of a cricket	a cricket	un grillo	una foto di un grillo	313
+n02231487	walking stick, walkingstick, stick insect	walking stick	a photo of a walking stick	a walking stick	un bastone da passeggio	una foto di un bastone da passeggio	314
+n02233338	cockroach, roach	cockroach	a photo of a cockroach	a cockroach	uno scarafaggio	una foto di uno scarafaggio	315
+n02236044	mantis, mantid	mantis	a photo of a mantis	a mantis	una mantide	una foto di una mantide	316
+n02256656	cicada, cicala	cicada	a photo of a cicada	a cicada	una cicala	una foto di una cicala	317
+n02259212	leafhopper	leafhopper	a photo of a leafhopper	a leafhopper	una cavalletta	una foto di una cavalletta	318
+n02264363	lacewing, lacewing fly	lacewing	a photo of a lacewing	a lacewing	un pizzo	una foto di un pizzo	319
+n02268443	dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk	dragonfly	a photo of a dragonfly	a dragonfly	una libellula	una foto di una libellula	320
+n02268853	damselfly	damselfly	a photo of a damselfly	a damselfly	una damigella	una foto di una damigella	321
+n02276258	admiral	admiral	a photo of a admiral	a admiral	un ammiraglio	una foto di un ammiraglio	322
+n02277742	ringlet, ringlet butterfly	ringlet	a photo of a ringlet	a ringlet	un ricciolo	una foto di un ricciolo	323
+n02279972	monarch, monarch butterfly, milkweed butterfly, Danaus plexippus	monarch	a photo of a monarch	a monarch	un monarca	una foto di un monarca	324
+n02280649	cabbage butterfly	cabbage butterfly	a photo of a cabbage butterfly	a cabbage butterfly	una farfalla cavolo	una foto di una farfalla cavolo	325
+n02281406	sulphur butterfly, sulfur butterfly	sulphur butterfly	a photo of a sulphur butterfly	a sulphur butterfly	una farfalla sulfurea	una foto di una farfalla sulfurea	326
+n02281787	lycaenid, lycaenid butterfly	lycaenid	a photo of a lycaenid	a lycaenid	un licaenide	una foto di un licaenide	327
+n02317335	starfish, sea star	starfish	a photo of a starfish	a starfish	una stella marina	una foto di una stella marina	328
+n02319095	sea urchin	sea urchin	a photo of a sea urchin	a sea urchin	un riccio di mare	una foto di un riccio di mare	329
+n02321529	sea cucumber, holothurian	sea cucumber	a photo of a sea cucumber	a sea cucumber	un cetriolo di mare	una foto di un cetriolo di mare	330
+n02325366	wood rabbit, cottontail, cottontail rabbit	wood rabbit	a photo of a wood rabbit	a wood rabbit	un coniglio di legno	una foto di un coniglio di legno	331
+n02326432	hare	hare	a photo of a hare	a hare	una lepre	una foto di una lepre	332
+n02328150	Angora, Angora rabbit	Angora	a photo of a Angora	a Angora	un angora	una foto di un angora	333
+n02342885	hamster	hamster	a photo of a hamster	a hamster	un criceto	una foto di un criceto	334
+n02346627	porcupine, hedgehog	porcupine	a photo of a porcupine	a porcupine	un porcospino	una foto di un porcospino	335
+n02356798	fox squirrel, eastern fox squirrel, Sciurus niger	fox squirrel	a photo of a fox squirrel	a fox squirrel	uno scoiattolo volpe	una foto di uno scoiattolo volpe	336
+n02361337	marmot	marmot	a photo of a marmot	a marmot	una marmotta	una foto di una marmotta	337
+n02363005	beaver	beaver	a photo of a beaver	a beaver	un castoro	una foto di un castoro	338
+n02364673	guinea pig, Cavia cobaya	guinea pig	a photo of a guinea pig	a guinea pig	un porcellino d'India	una foto di un porcellino d'India	339
+n02389026	sorrel	sorrel	a photo of a sorrel	a sorrel	un'acetosa	una foto di un'acetosa	340
+n02391049	zebra	zebra	a photo of a zebra	a zebra	una zebra	una foto di una zebra	341
+n02395406	hog, pig, grunter, squealer, Sus scrofa	hog	a photo of a hog	a hog	un maiale	una foto di un maiale	342
+n02396427	wild boar, boar, Sus scrofa	wild boar	a photo of a wild boar	a wild boar	un cinghiale	una foto di un cinghiale	343
+n02397096	warthog	warthog	a photo of a warthog	a warthog	un facocero	una foto di un facocero	344
+n02398521	hippopotamus, hippo, river horse, Hippopotamus amphibius	hippopotamus	a photo of a hippopotamus	a hippopotamus	un ippopotamo	una foto di un ippopotamo	345
+n02403003	ox	ox	a photo of a ox	a ox	un bue	una foto di un bue	346
+n02408429	water buffalo, water ox, Asiatic buffalo, Bubalus bubalis	water buffalo	a photo of a water buffalo	a water buffalo	un bufalo d'acqua	una foto di un bufalo d'acqua	347
+n02410509	bison	bison	a photo of a bison	a bison	un bisonte	una foto di un bisonte	348
+n02412080	ram, tup	ram	a photo of a ram	a ram	ariete	una foto di ariete	349
+n02415577	bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis	bighorn	a photo of a bighorn	a bighorn	un bighorn	una foto di un bighorn	350
+n02417914	ibex, Capra ibex	ibex	a photo of a ibex	a ibex	uno stambecco	una foto di uno stambecco	351
+n02422106	hartebeest	hartebeest	a photo of a hartebeest	a hartebeest	un alcefalo	una foto di un alcefalo	352
+n02422699	impala, Aepyceros melampus	impala	a photo of a impala	a impala	un impala	una foto di un impala	353
+n02423022	gazelle	gazelle	a photo of a gazelle	a gazelle	una gazzella	una foto di una gazzella	354
+n02437312	Arabian camel, dromedary, Camelus dromedarius	Arabian camel	a photo of a Arabian camel	a Arabian camel	un cammello arabo	una foto di un cammello arabo	355
+n02437616	llama	llama	a photo of a llama	a llama	un lama	una foto di un lama	356
+n02441942	weasel	weasel	a photo of a weasel	a weasel	una donnola	una foto di una donnola	357
+n02442845	mink	mink	a photo of a mink	a mink	un visone	una foto di un visone	358
+n02443114	polecat, fitch, foulmart, foumart, Mustela putorius	polecat	a photo of a polecat	a polecat	una puzzola	una foto di una puzzola	359
+n02443484	black-footed ferret, ferret, Mustela nigripes	black-footed ferret	a photo of a black-footed ferret	a black-footed ferret	un furetto dai piedi neri	una foto di un furetto dai piedi neri	360
+n02444819	otter	otter	a photo of a otter	a otter	una lontra	una foto di una lontra	361
+n02445715	skunk, polecat, wood pussy	skunk	a photo of a skunk	a skunk	una puzzola	una foto di una puzzola	362
+n02447366	badger	badger	a photo of a badger	a badger	un tasso	una foto di un tasso	363
+n02454379	armadillo	armadillo	a photo of a armadillo	a armadillo	un armadillo	una foto di un armadillo	364
+n02457408	three-toed sloth, ai, Bradypus tridactylus	three-toed sloth	a photo of a three-toed sloth	a three-toed sloth	un bradipo a tre dita	una foto di un bradipo a tre dita	365
+n02480495	orangutan, orang, orangutang, Pongo pygmaeus	orangutan	a photo of a orangutan	a orangutan	un orango	una foto di un orango	366
+n02480855	gorilla, Gorilla gorilla	gorilla	a photo of a gorilla	a gorilla	un gorilla	una foto di un gorilla	367
+n02481823	chimpanzee, chimp, Pan troglodytes	chimpanzee	a photo of a chimpanzee	a chimpanzee	uno scimpanzé	una foto di uno scimpanzé	368
+n02483362	gibbon, Hylobates lar	gibbon	a photo of a gibbon	a gibbon	un gibbone	una foto di un gibbone	369
+n02483708	siamang, Hylobates syndactylus, Symphalangus syndactylus	siamang	a photo of a siamang	a siamang	un siamang	una foto di un siamang	370
+n02484975	guenon, guenon monkey	guenon	a photo of a guenon	a guenon	un cercopiteco	una foto di un cercopiteco	371
+n02486261	patas, hussar monkey, Erythrocebus patas	patas	a photo of a patas	a patas	un patas	una foto di un patas	372
+n02486410	baboon	baboon	a photo of a baboon	a baboon	un babbuino	una foto di un babbuino	373
+n02487347	macaque	macaque	a photo of a macaque	a macaque	un macaco	una foto di un macaco	374
+n02488291	langur	langur	a photo of a langur	a langur	un langur	una foto di un langur	375
+n02488702	colobus, colobus monkey	colobus	a photo of a colobus	a colobus	un colobo	una foto di un colobo	376
+n02489166	proboscis monkey, Nasalis larvatus	proboscis monkey	a photo of a proboscis monkey	a proboscis monkey	una scimmia proboscide	una foto di una scimmia proboscide	377
+n02490219	marmoset	marmoset	a photo of a marmoset	a marmoset	uno uistitì	una foto di uno uistitì	378
+n02492035	capuchin, ringtail, Cebus capucinus	capuchin	a photo of a capuchin	a capuchin	un cappuccino	una foto di un cappuccino	379
+n02492660	howler monkey, howler	howler monkey	a photo of a howler monkey	a howler monkey	una scimmia urlatrice	una foto di una scimmia urlatrice	380
+n02493509	titi, titi monkey	titi	a photo of a titi	a titi	un titi	una foto di un titi	381
+n02493793	spider monkey, Ateles geoffroyi	spider monkey	a photo of a spider monkey	a spider monkey	una scimmia ragno	una foto di una scimmia ragno	382
+n02494079	squirrel monkey, Saimiri sciureus	squirrel monkey	a photo of a squirrel monkey	a squirrel monkey	una scimmia scoiattolo	una foto di una scimmia scoiattolo	383
+n02497673	Madagascar cat, ring-tailed lemur, Lemur catta	Madagascar cat	a photo of a Madagascar cat	a Madagascar cat	un gatto del Madagascar	una foto di un gatto del Madagascar	384
+n02500267	indri, indris, Indri indri, Indri brevicaudatus	indri	a photo of a indri	a indri	un indri	una foto di un indri	385
+n02504013	Indian elephant, Elephas maximus	Indian elephant	a photo of a Indian elephant	a Indian elephant	un elefante indiano	una foto di un elefante indiano	386
+n02504458	African elephant, Loxodonta africana	African elephant	a photo of a African elephant	a African elephant	un elefante africano	una foto di un elefante africano	387
+n02509815	lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens	lesser panda	a photo of a lesser panda	a lesser panda	un panda minore	una foto di un panda minore	388
+n02510455	giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca	giant panda	a photo of a giant panda	a giant panda	un panda gigante	una foto di un panda gigante	389
+n02514041	barracouta, snoek	barracouta	a photo of a barracouta	a barracouta	un barracuda	una foto di un barracuda	390
+n02526121	eel	eel	a photo of a eel	a eel	un'anguilla	una foto di un'anguilla	391
+n02536864	coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch	coho	a photo of a coho	a coho	un coho	una foto di un coho	392
+n02606052	rock beauty, Holocanthus tricolor	rock beauty	a photo of a rock beauty	a rock beauty	una bellezza di roccia	una foto di una bellezza di roccia	393
+n02607072	anemone fish	anemone fish	a photo of a anemone fish	a anemone fish	un pesce anemone	una foto di un pesce anemone	394
+n02640242	sturgeon	sturgeon	a photo of a sturgeon	a sturgeon	uno storione	una foto di uno storione	395
+n02641379	gar, garfish, garpike, billfish, Lepisosteus osseus	gar	a photo of a gar	a gar	un capo d'abbigliamento	una foto di un capo d'abbigliamento	396
+n02643566	lionfish	lionfish	a photo of a lionfish	a lionfish	un pesce leone	una foto di un pesce leone	397
+n02655020	puffer, pufferfish, blowfish, globefish	puffer	a photo of a puffer	a puffer	un puffer	una foto di un puffer	398
+n02666196	abacus	abacus	a photo of a abacus	a abacus	un abaco	una foto di un abaco	399
+n02667093	abaya	abaya	a photo of a abaya	a abaya	un abaya	una foto di un abaya	400
+n02669723	academic gown, academic robe, judge's robe	academic gown	a photo of a academic gown	a academic gown	un abito accademico	una foto di un abito accademico	401
+n02672831	accordion, piano accordion, squeeze box	accordion	a photo of a accordion	a accordion	una fisarmonica	una foto di una fisarmonica	402
+n02676566	acoustic guitar	acoustic guitar	a photo of a acoustic guitar	a acoustic guitar	una chitarra acustica	una foto di una chitarra acustica	403
+n02687172	aircraft carrier, carrier, flattop, attack aircraft carrier	aircraft carrier	a photo of a aircraft carrier	a aircraft carrier	una portaerei	una foto di una portaerei	404
+n02690373	airliner	airliner	a photo of a airliner	a airliner	un aereo di linea	una foto di un aereo di linea	405
+n02692877	airship, dirigible	airship	a photo of a airship	a airship	un dirigibile	una foto di un dirigibile	406
+n02699494	altar	altar	a photo of a altar	a altar	un altare	una foto di un altare	407
+n02701002	ambulance	ambulance	a photo of a ambulance	a ambulance	un'ambulanza	una foto di un'ambulanza	408
+n02704792	amphibian, amphibious vehicle	amphibian	a photo of a amphibian	a amphibian	un anfibio	una foto di un anfibio	409
+n02708093	analog clock	analog clock	a photo of a analog clock	a analog clock	un orologio analogico	una foto di un orologio analogico	410
+n02727426	apiary, bee house	apiary	a photo of a apiary	a apiary	un apiario	una foto di un apiario	411
+n02730930	apron	apron	a photo of a apron	a apron	un grembiule	una foto di un grembiule	412
+n02747177	ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin	ashcan	a photo of a ashcan	a ashcan	un frassino	una foto di un frassino	413
+n02749479	assault rifle, assault gun	assault rifle	a photo of a assault rifle	a assault rifle	un fucile d'assalto	una foto di un fucile d'assalto	414
+n02769748	backpack, back pack, knapsack, packsack, rucksack, haversack	backpack	a photo of a backpack	a backpack	uno zaino	una foto di uno zaino	415
+n02776631	bakery, bakeshop, bakehouse	bakery	a photo of a bakery	a bakery	un panificio	una foto di un panificio	416
+n02777292	balance beam, beam	balance beam	a photo of a balance beam	a balance beam	una trave di equilibrio	una foto di una trave di equilibrio	417
+n02782093	balloon	balloon	a photo of a balloon	a balloon	un pallone	una foto di un pallone	418
+n02783161	ballpoint, ballpoint pen, ballpen, Biro	ballpoint	a photo of a ballpoint	a ballpoint	una penna a sfera	una foto di una penna a sfera	419
+n02786058	Band Aid	Band Aid	a photo of a Band Aid	a Band Aid	un cerotto	una foto di un cerotto	420
+n02787622	banjo	banjo	a photo of a banjo	a banjo	un banjo	una foto di un banjo	421
+n02788148	bannister, banister, balustrade, balusters, handrail	bannister	a photo of a bannister	a bannister	una balaustra	una foto di una balaustra	422
+n02790996	barbell	barbell	a photo of a barbell	a barbell	un bilanciere	una foto di un bilanciere	423
+n02791124	barber chair	barber chair	a photo of a barber chair	a barber chair	una sedia da barbiere	una foto di una sedia da barbiere	424
+n02791270	barbershop	barbershop	a photo of a barbershop	a barbershop	un barbiere	una foto di un barbiere	425
+n02793495	barn	barn	a photo of a barn	a barn	un fienile	una foto di un fienile	426
+n02794156	barometer	barometer	a photo of a barometer	a barometer	un barometro	una foto di un barometro	427
+n02795169	barrel, cask	barrel	a photo of a barrel	a barrel	un barile	una foto di un barile	428
+n02797295	barrow, garden cart, lawn cart, wheelbarrow	barrow	a photo of a barrow	a barrow	un carretto	una foto di un carretto	429
+n02799071	baseball	baseball	a photo of a baseball	a baseball	una palla da baseball	una foto di una palla da baseball	430
+n02802426	basketball	basketball	a photo of a basketball	a basketball	una pallacanestro	una foto di una pallacanestro	431
+n02804414	bassinet	bassinet	a photo of a bassinet	a bassinet	una culla	una foto di una culla	432
+n02804610	bassoon	bassoon	a photo of a bassoon	a bassoon	un fagotto	una foto di un fagotto	433
+n02807133	bathing cap, swimming cap	bathing cap	a photo of a bathing cap	a bathing cap	un berretto da bagno	una foto di un berretto da bagno	434
+n02808304	bath towel	bath towel	a photo of a bath towel	a bath towel	un asciugamano da bagno	una foto di un asciugamano da bagno	435
+n02808440	bathtub, bathing tub, bath, tub	bathtub	a photo of a bathtub	a bathtub	una vasca da bagno	una foto di una vasca da bagno	436
+n02814533	beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon	beach wagon	a photo of a beach wagon	a beach wagon	un carro da spiaggia	una foto di un carro da spiaggia	437
+n02814860	beacon, lighthouse, beacon light, pharos	beacon	a photo of a beacon	a beacon	un faro	una foto di un faro	438
+n02815834	beaker	beaker	a photo of a beaker	a beaker	un bicchiere	una foto di un bicchiere	439
+n02817516	bearskin, busby, shako	bearskin	a photo of a bearskin	a bearskin	una pelle d'orso	una foto di una pelle d'orso	440
+n02823428	beer bottle	beer bottle	a photo of a beer bottle	a beer bottle	una bottiglia di birra	una foto di una bottiglia di birra	441
+n02823750	beer glass	beer glass	a photo of a beer glass	a beer glass	un bicchiere di birra	una foto di un bicchiere di birra	442
+n02825657	bell cote, bell cot	bell cote	a photo of a bell cote	a bell cote	un campanile	una foto di un campanile	443
+n02834397	bib	bib	a photo of a bib	a bib	un bavaglino	una foto di un bavaglino	444
+n02835271	bicycle-built-for-two, tandem bicycle, tandem	bicycle-built-for-two	a photo of a bicycle-built-for-two	a bicycle-built-for-two	una bicicletta costruita per due	una foto di una bicicletta costruita per due	445
+n02837789	bikini, two-piece	bikini	a photo of a bikini	a bikini	un bikini	una foto di un bikini	446
+n02840245	binder, ring-binder	binder	a photo of a binder	a binder	un raccoglitore	una foto di un raccoglitore	447
+n02841315	binoculars, field glasses, opera glasses	binoculars	a photo of a binoculars	a binoculars	un binocolo	una foto di un binocolo	448
+n02843684	birdhouse	birdhouse	a photo of a birdhouse	a birdhouse	una casetta per uccelli	una foto di una casetta per uccelli	449
+n02859443	boathouse	boathouse	a photo of a boathouse	a boathouse	una rimessa per barche	una foto di una rimessa per barche	450
+n02860847	bobsled, bobsleigh, bob	bobsled	a photo of a bobsled	a bobsled	un bob	una foto di un bob	451
+n02865351	bolo tie, bolo, bola tie, bola	bolo tie	a photo of a bolo tie	a bolo tie	una cravatta bolo	una foto di una cravatta bolo	452
+n02869837	bonnet, poke bonnet	bonnet	a photo of a bonnet	a bonnet	un cofano	una foto di un cofano	453
+n02870880	bookcase	bookcase	a photo of a bookcase	a bookcase	una libreria	una foto di una libreria	454
+n02871525	bookshop, bookstore, bookstall	bookshop	a photo of a bookshop	a bookshop	una libreria	una foto di una libreria	455
+n02877765	bottlecap	bottlecap	a photo of a bottlecap	a bottlecap	un tappo di bottiglia	una foto di un tappo di bottiglia	456
+n02879718	bow	bow	a photo of a bow	a bow	un arco	una foto di un arco	457
+n02883205	bow tie, bow-tie, bowtie	bow tie	a photo of a bow tie	a bow tie	un papillon	una foto di un papillon	458
+n02892201	brass, memorial tablet, plaque	brass	a photo of a brass	a brass	un ottone	una foto di un ottone	459
+n02892767	brassiere, bra, bandeau	brassiere	a photo of a brassiere	a brassiere	un reggiseno	una foto di un reggiseno	460
+n02894605	breakwater, groin, groyne, mole, bulwark, seawall, jetty	breakwater	a photo of a breakwater	a breakwater	un frangiflutti	una foto di un frangiflutti	461
+n02895154	breastplate, aegis, egis	breastplate	a photo of a breastplate	a breastplate	una corazza	una foto di una corazza	462
+n02906734	broom	broom	a photo of a broom	a broom	una scopa	una foto di una scopa	463
+n02909870	bucket, pail	bucket	a photo of a bucket	a bucket	un secchio	una foto di un secchio	464
+n02910353	buckle	buckle	a photo of a buckle	a buckle	una fibbia	una foto di una fibbia	465
+n02916936	bulletproof vest	bulletproof vest	a photo of a bulletproof vest	a bulletproof vest	un giubbotto antiproiettile	una foto di un giubbotto antiproiettile	466
+n02917067	bullet train, bullet	bullet train	a photo of a bullet train	a bullet train	un treno proiettile	una foto di un treno proiettile	467
+n02927161	butcher shop, meat market	butcher shop	a photo of a butcher shop	a butcher shop	una macelleria	una foto di una macelleria	468
+n02930766	cab, hack, taxi, taxicab	cab	a photo of a cab	a cab	un taxi	una foto di un taxi	469
+n02939185	caldron, cauldron	caldron	a photo of a caldron	a caldron	un calderone	una foto di un calderone	470
+n02948072	candle, taper, wax light	candle	a photo of a candle	a candle	una candela	una foto di una candela	471
+n02950826	cannon	cannon	a photo of a cannon	a cannon	un cannone	una foto di un cannone	472
+n02951358	canoe	canoe	a photo of a canoe	a canoe	una canoa	una foto di una canoa	473
+n02951585	can opener, tin opener	can opener	a photo of a can opener	a can opener	un apriscatole	una foto di un apriscatole	474
+n02963159	cardigan	cardigan	a photo of a cardigan	a cardigan	un cardigan	una foto di un cardigan	475
+n02965783	car mirror	car mirror	a photo of a car mirror	a car mirror	uno specchio per auto	una foto di uno specchio per auto	476
+n02966193	carousel, carrousel, merry-go-round, roundabout, whirligig	carousel	a photo of a carousel	a carousel	una giostra	una foto di una giostra	477
+n02966687	carpenter's kit, tool kit	carpenter's kit	a photo of a carpenter's kit	a carpenter's kit	un kit da falegname	una foto di un kit da falegname	478
+n02971356	carton	carton	a photo of a carton	a carton	un cartone	una foto di un cartone	479
+n02974003	car wheel	car wheel	a photo of a car wheel	a car wheel	una ruota di automobile	una foto di una ruota di automobile	480
+n02977058	cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM	cash machine	a photo of a cash machine	a cash machine	un bancomat	una foto di un bancomat	481
+n02978881	cassette	cassette	a photo of a cassette	a cassette	una cassetta	una foto di una cassetta	482
+n02979186	cassette player	cassette player	a photo of a cassette player	a cassette player	un lettore di cassette	una foto di un lettore di cassette	483
+n02980441	castle	castle	a photo of a castle	a castle	un castello	una foto di un castello	484
+n02981792	catamaran	catamaran	a photo of a catamaran	a catamaran	un catamarano	una foto di un catamarano	485
+n02988304	CD player	CD player	a photo of a CD player	a CD player	un lettore CD	una foto di un lettore CD	486
+n02992211	cello, violoncello	cello	a photo of a cello	a cello	un violoncello	una foto di un violoncello	487
+n02992529	cellular telephone, cellular phone, cellphone, cell, mobile phone	cellular telephone	a photo of a cellular telephone	a cellular telephone	un telefono cellulare	una foto di un telefono cellulare	488
+n02999410	chain	chain	a photo of a chain	a chain	una catena	una foto di una catena	489
+n03000134	chainlink fence	chainlink fence	a photo of a chainlink fence	a chainlink fence	una recinzione di rete metallica	una foto di una recinzione di rete metallica	490
+n03000247	chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour	chain mail	a photo of a chain mail	a chain mail	una cotta di maglia	una foto di una cotta di maglia	491
+n03000684	chain saw, chainsaw	chain saw	a photo of a chain saw	a chain saw	una motosega	una foto di una motosega	492
+n03014705	chest	chest	a photo of a chest	a chest	un petto	una foto di un petto	493
+n03016953	chiffonier, commode	chiffonier	a photo of a chiffonier	a chiffonier	una chiffoniera	una foto di una chiffoniera	494
+n03017168	chime, bell, gong	chime	a photo of a chime	a chime	una suoneria	una foto di una suoneria	495
+n03018349	china cabinet, china closet	china cabinet	a photo of a china cabinet	a china cabinet	una vetrina per porcellane	una foto di una vetrina per porcellane	496
+n03026506	Christmas stocking	Christmas stocking	a photo of a Christmas stocking	a Christmas stocking	una calza di Natale	una foto di una calza di Natale	497
+n03028079	church, church building	church	a photo of a church	a church	una chiesa	una foto di una chiesa	498
+n03032252	cinema, movie theater, movie theatre, movie house, picture palace	cinema	a photo of a cinema	a cinema	un cinema	una foto di un cinema	499
+n03041632	cleaver, meat cleaver, chopper	cleaver	a photo of a cleaver	a cleaver	una mannaia	una foto di una mannaia	500
+n03042490	cliff dwelling	cliff dwelling	a photo of a cliff dwelling	a cliff dwelling	una dimora sulla scogliera	una foto di una dimora sulla scogliera	501
+n03045698	cloak	cloak	a photo of a cloak	a cloak	un mantello	una foto di un mantello	502
+n03047690	clog, geta, patten, sabot	clog	a photo of a clog	a clog	un intasamento	una foto di un intasamento	503
+n03062245	cocktail shaker	cocktail shaker	a photo of a cocktail shaker	a cocktail shaker	uno shaker da cocktail	una foto di uno shaker da cocktail	504
+n03063599	coffee mug	coffee mug	a photo of a coffee mug	a coffee mug	una tazza da caffè	una foto di una tazza da caffè	505
+n03063689	coffeepot	coffeepot	a photo of a coffeepot	a coffeepot	una caffettiera	una foto di una caffettiera	506
+n03065424	coil, spiral, volute, whorl, helix	coil	a photo of a coil	a coil	una bobina	una foto di una bobina	507
+n03075370	combination lock	combination lock	a photo of a combination lock	a combination lock	una serratura a combinazione	una foto di una serratura a combinazione	508
+n03085013	computer keyboard, keypad	computer keyboard	a photo of a computer keyboard	a computer keyboard	una tastiera di computer	una foto di una tastiera di computer	509
+n03089624	confectionery, confectionary, candy store	confectionery	a photo of a confectionery	a confectionery	una pasticceria	una foto di una pasticceria	510
+n03095699	container ship, containership, container vessel	container ship	a photo of a container ship	a container ship	una nave container	una foto di una nave container	511
+n03100240	convertible	convertible	a photo of a convertible	a convertible	una convertibile	una foto di una convertibile	512
+n03109150	corkscrew, bottle screw	corkscrew	a photo of a corkscrew	a corkscrew	un cavatappi	una foto di un cavatappi	513
+n03110669	cornet, horn, trumpet, trump	cornet	a photo of a cornet	a cornet	una cornetta	una foto di una cornetta	514
+n03124043	cowboy boot	cowboy boot	a photo of a cowboy boot	a cowboy boot	uno stivale da cowboy	una foto di uno stivale da cowboy	515
+n03124170	cowboy hat, ten-gallon hat	cowboy hat	a photo of a cowboy hat	a cowboy hat	un cappello da cowboy	una foto di un cappello da cowboy	516
+n03125729	cradle	cradle	a photo of a cradle	a cradle	una culla	una foto di una culla	517
+n03126707	crane	crane	a photo of a crane	a crane	una gru	una foto di una gru	518
+n03127747	crash helmet	crash helmet	a photo of a crash helmet	a crash helmet	un casco di protezione	una foto di un casco di protezione	519
+n03127925	crate	crate	a photo of a crate	a crate	una cassa	una foto di una cassa	520
+n03131574	crib, cot	crib	a photo of a crib	a crib	una culla	una foto di una culla	521
+n03133878	Crock Pot	Crock Pot	a photo of a Crock Pot	a Crock Pot	una pentola di coccio	una foto di una pentola di coccio	522
+n03134739	croquet ball	croquet ball	a photo of a croquet ball	a croquet ball	una palla da croquet	una foto di una palla da croquet	523
+n03141823	crutch	crutch	a photo of a crutch	a crutch	una stampella	una foto di una stampella	524
+n03146219	cuirass	cuirass	a photo of a cuirass	a cuirass	una corazza	una foto di una corazza	525
+n03160309	dam, dike, dyke	dam	a photo of a dam	a dam	una diga	una foto di una diga	526
+n03179701	desk	desk	a photo of a desk	a desk	una scrivania	una foto di una scrivania	527
+n03180011	desktop computer	desktop computer	a photo of a desktop computer	a desktop computer	un computer da tavolo	una foto di un computer da tavolo	528
+n03187595	dial telephone, dial phone	dial telephone	a photo of a dial telephone	a dial telephone	un telefono a selezione	una foto di un telefono a selezione	529
+n03188531	diaper, nappy, napkin	diaper	a photo of a diaper	a diaper	un pannolino	una foto di un pannolino	530
+n03196217	digital clock	digital clock	a photo of a digital clock	a digital clock	un orologio digitale	una foto di un orologio digitale	531
+n03197337	digital watch	digital watch	a photo of a digital watch	a digital watch	un orologio digitale	una foto di un orologio digitale	532
+n03201208	dining table, board	dining table	a photo of a dining table	a dining table	un tavolo da pranzo	una foto di un tavolo da pranzo	533
+n03207743	dishrag, dishcloth	dishrag	a photo of a dishrag	a dishrag	uno strofinaccio	una foto di uno strofinaccio	534
+n03207941	dishwasher, dish washer, dishwashing machine	dishwasher	a photo of a dishwasher	a dishwasher	una lavastoviglie	una foto di una lavastoviglie	535
+n03208938	disk brake, disc brake	disk brake	a photo of a disk brake	a disk brake	un freno a disco	una foto di un freno a disco	536
+n03216828	dock, dockage, docking facility	dock	a photo of a dock	a dock	un molo	una foto di un molo	537
+n03218198	dogsled, dog sled, dog sleigh	dogsled	a photo of a dogsled	a dogsled	una slitta trainata da cani	una foto di una slitta trainata da cani	538
+n03220513	dome	dome	a photo of a dome	a dome	una cupola	una foto di una cupola	539
+n03223299	doormat, welcome mat	doormat	a photo of a doormat	a doormat	uno zerbino	una foto di uno zerbino	540
+n03240683	drilling platform, offshore rig	drilling platform	a photo of a drilling platform	a drilling platform	una piattaforma di perforazione	una foto di una piattaforma di perforazione	541
+n03249569	drum, membranophone, tympan	drum	a photo of a drum	a drum	un tamburo	una foto di un tamburo	542
+n03250847	drumstick	drumstick	a photo of a drumstick	a drumstick	una bacchetta	una foto di una bacchetta	543
+n03255030	dumbbell	dumbbell	a photo of a dumbbell	a dumbbell	un manubrio	una foto di un manubrio	544
+n03259280	Dutch oven	Dutch oven	a photo of a Dutch oven	a Dutch oven	un forno olandese	una foto di un forno olandese	545
+n03271574	electric fan, blower	electric fan	a photo of a electric fan	a electric fan	un ventilatore elettrico	una foto di un ventilatore elettrico	546
+n03272010	electric guitar	electric guitar	a photo of a electric guitar	a electric guitar	una chitarra elettrica	una foto di una chitarra elettrica	547
+n03272562	electric locomotive	electric locomotive	a photo of a electric locomotive	a electric locomotive	una locomotiva elettrica	una foto di una locomotiva elettrica	548
+n03290653	entertainment center	entertainment center	a photo of a entertainment center	a entertainment center	un centro di intrattenimento	una foto di un centro di intrattenimento	549
+n03291819	envelope	envelope	a photo of a envelope	a envelope	una busta	una foto di una busta	550
+n03297495	espresso maker	espresso maker	a photo of a espresso maker	a espresso maker	una macchina per il caffè espresso	una foto di una macchina per il caffè espresso	551
+n03314780	face powder	face powder	a photo of a face powder	a face powder	una polvere per il viso	una foto di una polvere per il viso	552
+n03325584	feather boa, boa	feather boa	a photo of a feather boa	a feather boa	un boa di piume	una foto di un boa di piume	553
+n03337140	file, file cabinet, filing cabinet	file	a photo of a file	a file	un file	una foto di un file	554
+n03344393	fireboat	fireboat	a photo of a fireboat	a fireboat	una barca antincendio	una foto di una barca antincendio	555
+n03345487	fire engine, fire truck	fire engine	a photo of a fire engine	a fire engine	un'autopompa	una foto di un'autopompa	556
+n03347037	fire screen, fireguard	fire screen	a photo of a fire screen	a fire screen	uno schermo per il fuoco	una foto di uno schermo per il fuoco	557
+n03355925	flagpole, flagstaff	flagpole	a photo of a flagpole	a flagpole	un pennone	una foto di un pennone	558
+n03372029	flute, transverse flute	flute	a photo of a flute	a flute	un flauto	una foto di un flauto	559
+n03376595	folding chair	folding chair	a photo of a folding chair	a folding chair	una sedia pieghevole	una foto di una sedia pieghevole	560
+n03379051	football helmet	football helmet	a photo of a football helmet	a football helmet	un casco da calcio	una foto di un casco da calcio	561
+n03384352	forklift	forklift	a photo of a forklift	a forklift	un carrello elevatore	una foto di un carrello elevatore	562
+n03388043	fountain	fountain	a photo of a fountain	a fountain	una fontana	una foto di una fontana	563
+n03388183	fountain pen	fountain pen	a photo of a fountain pen	a fountain pen	una penna stilografica	una foto di una penna stilografica	564
+n03388549	four-poster	four-poster	a photo of a four-poster	a four-poster	un baldacchino	una foto di un baldacchino	565
+n03393912	freight car	freight car	a photo of a freight car	a freight car	un vagone merci	una foto di un vagone merci	566
+n03394916	French horn, horn	French horn	a photo of a French horn	a French horn	un corno francese	una foto di un corno francese	567
+n03400231	frying pan, frypan, skillet	frying pan	a photo of a frying pan	a frying pan	una padella	una foto di una padella	568
+n03404251	fur coat	fur coat	a photo of a fur coat	a fur coat	una pelliccia	una foto di una pelliccia	569
+n03417042	garbage truck, dustcart	garbage truck	a photo of a garbage truck	a garbage truck	un camion della spazzatura	una foto di un camion della spazzatura	570
+n03424325	gasmask, respirator, gas helmet	gasmask	a photo of a gasmask	a gasmask	una maschera antigas	una foto di una maschera antigas	571
+n03425413	gas pump, gasoline pump, petrol pump, island dispenser	gas pump	a photo of a gas pump	a gas pump	una pompa di benzina	una foto di una pompa di benzina	572
+n03443371	goblet	goblet	a photo of a goblet	a goblet	un calice	una foto di un calice	573
+n03444034	go-kart	go-kart	a photo of a go-kart	a go-kart	un go-kart	una foto di un go-kart	574
+n03445777	golf ball	golf ball	a photo of a golf ball	a golf ball	una pallina da golf	una foto di una pallina da golf	575
+n03445924	golfcart, golf cart	golfcart	a photo of a golfcart	a golfcart	un golfcart	una foto di un golfcart	576
+n03447447	gondola	gondola	a photo of a gondola	a gondola	una gondola	una foto di una gondola	577
+n03447721	gong, tam-tam	gong	a photo of a gong	a gong	un gong	una foto di un gong	578
+n03450230	gown	gown	a photo of a gown	a gown	un abito	una foto di un abito	579
+n03452741	grand piano, grand	grand piano	a photo of a grand piano	a grand piano	un pianoforte a coda	una foto di un pianoforte a coda	580
+n03457902	greenhouse, nursery, glasshouse	greenhouse	a photo of a greenhouse	a greenhouse	una serra	una foto di una serra	581
+n03459775	grille, radiator grille	grille	a photo of a grille	a grille	una griglia	una foto di una griglia	582
+n03461385	grocery store, grocery, food market, market	grocery store	a photo of a grocery store	a grocery store	un negozio di alimentari	una foto di un negozio di alimentari	583
+n03467068	guillotine	guillotine	a photo of a guillotine	a guillotine	una ghigliottina	una foto di una ghigliottina	584
+n03476684	hair slide	hair slide	a photo of a hair slide	a hair slide	uno scivolo per capelli	una foto di uno scivolo per capelli	585
+n03476991	hair spray	hair spray	a photo of a hair spray	a hair spray	una lacca per capelli	una foto di una lacca per capelli	586
+n03478589	half track	half track	a photo of a half track	a half track	una mezza traccia	una foto di una mezza traccia	587
+n03481172	hammer	hammer	a photo of a hammer	a hammer	un martello	una foto di un martello	588
+n03482405	hamper	hamper	a photo of a hamper	a hamper	un cesto regalo	una foto di un cesto regalo	589
+n03483316	hand blower, blow dryer, blow drier, hair dryer, hair drier	hand blower	a photo of a hand blower	a hand blower	un soffiatore a mano	una foto di un soffiatore a mano	590
+n03485407	hand-held computer, hand-held microcomputer	hand-held computer	a photo of a hand-held computer	a hand-held computer	un computer portatile	una foto di un computer portatile	591
+n03485794	handkerchief, hankie, hanky, hankey	handkerchief	a photo of a handkerchief	a handkerchief	un fazzoletto	una foto di un fazzoletto	592
+n03492542	hard disc, hard disk, fixed disk	hard disc	a photo of a hard disc	a hard disc	un disco rigido	una foto di un disco rigido	593
+n03494278	harmonica, mouth organ, harp, mouth harp	harmonica	a photo of a harmonica	a harmonica	un'armonica	una foto di un'armonica	594
+n03495258	harp	harp	a photo of a harp	a harp	un'arpa	una foto di un'arpa	595
+n03496892	harvester, reaper	harvester	a photo of a harvester	a harvester	una mietitrice	una foto di una mietitrice	596
+n03498962	hatchet	hatchet	a photo of a hatchet	a hatchet	un'accetta	una foto di un'accetta	597
+n03527444	holster	holster	a photo of a holster	a holster	una fondina	una foto di una fondina	598
+n03529860	home theater, home theatre	home theater	a photo of a home theater	a home theater	un home theater	una foto di un home theater	599
+n03530642	honeycomb	honeycomb	a photo of a honeycomb	a honeycomb	un nido d'ape	una foto di un nido d'ape	600
+n03532672	hook, claw	hook	a photo of a hook	a hook	un gancio	una foto di un gancio	601
+n03534580	hoopskirt, crinoline	hoopskirt	a photo of a hoopskirt	a hoopskirt	una gonna a cerchio	una foto di una gonna a cerchio	602
+n03535780	horizontal bar, high bar	horizontal bar	a photo of a horizontal bar	a horizontal bar	una barra orizzontale	una foto di una barra orizzontale	603
+n03538406	horse cart, horse-cart	horse cart	a photo of a horse cart	a horse cart	un carro di cavalli	una foto di un carro di cavalli	604
+n03544143	hourglass	hourglass	a photo of a hourglass	a hourglass	una clessidra	una foto di una clessidra	605
+n03584254	iPod	iPod	a photo of a iPod	a iPod	un iPod	una foto di un iPod	606
+n03584829	iron, smoothing iron	iron	a photo of a iron	a iron	un ferro da stiro	una foto di un ferro da stiro	607
+n03590841	jack-o'-lantern	jack-o'-lantern	a photo of a jack-o'-lantern	a jack-o'-lantern	una zucca	una foto di una zucca	608
+n03594734	jean, blue jean, denim	jean	a photo of a jean	a jean	un jeans	una foto di un jeans	609
+n03594945	jeep, landrover	jeep	a photo of a jeep	a jeep	una jeep	una foto di una jeep	610
+n03595614	jersey, T-shirt, tee shirt	jersey	a photo of a jersey	a jersey	una maglia	una foto di una maglia	611
+n03598930	jigsaw puzzle	jigsaw puzzle	a photo of a jigsaw puzzle	a jigsaw puzzle	un puzzle	una foto di un puzzle	612
+n03599486	jinrikisha, ricksha, rickshaw	jinrikisha	a photo of a jinrikisha	a jinrikisha	a jinrikisha	una foto di a jinrikisha	613
+n03602883	joystick	joystick	a photo of a joystick	a joystick	un joystick	una foto di un joystick	614
+n03617480	kimono	kimono	a photo of a kimono	a kimono	un kimono	una foto di un kimono	615
+n03623198	knee pad	knee pad	a photo of a knee pad	a knee pad	una ginocchiera	una foto di una ginocchiera	616
+n03627232	knot	knot	a photo of a knot	a knot	un nodo	una foto di un nodo	617
+n03630383	lab coat, laboratory coat	lab coat	a photo of a lab coat	a lab coat	un camice da laboratorio	una foto di un camice da laboratorio	618
+n03633091	ladle	ladle	a photo of a ladle	a ladle	un mestolo	una foto di un mestolo	619
+n03637318	lampshade, lamp shade	lampshade	a photo of a lampshade	a lampshade	un paralume	una foto di un paralume	620
+n03642806	laptop, laptop computer	laptop	a photo of a laptop	a laptop	un computer portatile	una foto di un computer portatile	621
+n03649909	lawn mower, mower	lawn mower	a photo of a lawn mower	a lawn mower	un tosaerba	una foto di un tosaerba	622
+n03657121	lens cap, lens cover	lens cap	a photo of a lens cap	a lens cap	un copriobiettivo	una foto di un copriobiettivo	623
+n03658185	letter opener, paper knife, paperknife	letter opener	a photo of a letter opener	a letter opener	un tagliacarte	una foto di un tagliacarte	624
+n03661043	library	library	a photo of a library	a library	una biblioteca	una foto di una biblioteca	625
+n03662601	lifeboat	lifeboat	a photo of a lifeboat	a lifeboat	una scialuppa di salvataggio	una foto di una scialuppa di salvataggio	626
+n03666591	lighter, light, igniter, ignitor	lighter	a photo of a lighter	a lighter	un accendino	una foto di un accendino	627
+n03670208	limousine, limo	limousine	a photo of a limousine	a limousine	una limousine	una foto di una limousine	628
+n03673027	liner, ocean liner	liner	a photo of a liner	a liner	una fodera	una foto di una fodera	629
+n03676483	lipstick, lip rouge	lipstick	a photo of a lipstick	a lipstick	un rossetto	una foto di un rossetto	630
+n03680355	Loafer	Loafer	a photo of a Loafer	a Loafer	un mocassino	una foto di un mocassino	631
+n03690938	lotion	lotion	a photo of a lotion	a lotion	una lozione	una foto di una lozione	632
+n03691459	loudspeaker, speaker, speaker unit, loudspeaker system, speaker system	loudspeaker	a photo of a loudspeaker	a loudspeaker	un altoparlante	una foto di un altoparlante	633
+n03692522	loupe, jeweler's loupe	loupe	a photo of a loupe	a loupe	una lente d'ingrandimento	una foto di una lente d'ingrandimento	634
+n03697007	lumbermill, sawmill	lumbermill	a photo of a lumbermill	a lumbermill	una segheria	una foto di una segheria	635
+n03706229	magnetic compass	magnetic compass	a photo of a magnetic compass	a magnetic compass	una bussola magnetica	una foto di una bussola magnetica	636
+n03709823	mailbag, postbag	mailbag	a photo of a mailbag	a mailbag	una borsa della posta	una foto di una borsa della posta	637
+n03710193	mailbox, letter box	mailbox	a photo of a mailbox	a mailbox	una cassetta postale	una foto di una cassetta postale	638
+n03710637	maillot	maillot	a photo of a maillot	a maillot	un maillot	una foto di un maillot	639
+n03710721	maillot, tank suit	maillot	a photo of a maillot	a maillot	un maillot	una foto di un maillot	640
+n03717622	manhole cover	manhole cover	a photo of a manhole cover	a manhole cover	un tombino	una foto di un tombino	641
+n03720891	maraca	maraca	a photo of a maraca	a maraca	una maraca	una foto di una maraca	642
+n03721384	marimba, xylophone	marimba	a photo of a marimba	a marimba	una marimba	una foto di una marimba	643
+n03724870	mask	mask	a photo of a mask	a mask	una maschera	una foto di una maschera	644
+n03729826	matchstick	matchstick	a photo of a matchstick	a matchstick	un fiammifero	una foto di un fiammifero	645
+n03733131	maypole	maypole	a photo of a maypole	a maypole	un palo di maggio	una foto di un palo di maggio	646
+n03733281	maze, labyrinth	maze	a photo of a maze	a maze	un labirinto	una foto di un labirinto	647
+n03733805	measuring cup	measuring cup	a photo of a measuring cup	a measuring cup	un misurino	una foto di un misurino	648
+n03742115	medicine chest, medicine cabinet	medicine chest	a photo of a medicine chest	a medicine chest	una cassetta dei medicinali	una foto di una cassetta dei medicinali	649
+n03743016	megalith, megalithic structure	megalith	a photo of a megalith	a megalith	un megalite	una foto di un megalite	650
+n03759954	microphone, mike	microphone	a photo of a microphone	a microphone	un microfono	una foto di un microfono	651
+n03761084	microwave, microwave oven	microwave	a photo of a microwave	a microwave	un microonde	una foto di un microonde	652
+n03763968	military uniform	military uniform	a photo of a military uniform	a military uniform	un'uniforme militare	una foto di un'uniforme militare	653
+n03764736	milk can	milk can	a photo of a milk can	a milk can	una lattina di latte	una foto di una lattina di latte	654
+n03769881	minibus	minibus	a photo of a minibus	a minibus	un minibus	una foto di un minibus	655
+n03770439	miniskirt, mini	miniskirt	a photo of a miniskirt	a miniskirt	una minigonna	una foto di una minigonna	656
+n03770679	minivan	minivan	a photo of a minivan	a minivan	un minivan	una foto di un minivan	657
+n03773504	missile	missile	a photo of a missile	a missile	un missile	una foto di un missile	658
+n03775071	mitten	mitten	a photo of a mitten	a mitten	un guanto	una foto di un guanto	659
+n03775546	mixing bowl	mixing bowl	a photo of a mixing bowl	a mixing bowl	una ciotola di miscelazione	una foto di una ciotola di miscelazione	660
+n03776460	mobile home, manufactured home	mobile home	a photo of a mobile home	a mobile home	una casa mobile	una foto di una casa mobile	661
+n03777568	Model T	Model T	a photo of a Model T	a Model T	un Modello T	una foto di un Modello T	662
+n03777754	modem	modem	a photo of a modem	a modem	un modem	una foto di un modem	663
+n03781244	monastery	monastery	a photo of a monastery	a monastery	un monastero	una foto di un monastero	664
+n03782006	monitor	monitor	a photo of a monitor	a monitor	un monitor	una foto di un monitor	665
+n03785016	moped	moped	a photo of a moped	a moped	un ciclomotore	una foto di un ciclomotore	666
+n03786901	mortar	mortar	a photo of a mortar	a mortar	un mortaio	una foto di un mortaio	667
+n03787032	mortarboard	mortarboard	a photo of a mortarboard	a mortarboard	una mortarboard	una foto di una mortarboard	668
+n03788195	mosque	mosque	a photo of a mosque	a mosque	una moschea	una foto di una moschea	669
+n03788365	mosquito net	mosquito net	a photo of a mosquito net	a mosquito net	una zanzariera	una foto di una zanzariera	670
+n03791053	motor scooter, scooter	motor scooter	a photo of a motor scooter	a motor scooter	uno scooter	una foto di uno scooter	671
+n03792782	mountain bike, all-terrain bike, off-roader	mountain bike	a photo of a mountain bike	a mountain bike	una bicicletta di montagna	una foto di una bicicletta di montagna	672
+n03792972	mountain tent	mountain tent	a photo of a mountain tent	a mountain tent	una tenda di montagna	una foto di una tenda di montagna	673
+n03793489	mouse, computer mouse	mouse	a photo of a mouse	a mouse	un topo	una foto di un topo	674
+n03794056	mousetrap	mousetrap	a photo of a mousetrap	a mousetrap	una trappola per topi	una foto di una trappola per topi	675
+n03796401	moving van	moving van	a photo of a moving van	a moving van	un furgone per traslochi	una foto di un furgone per traslochi	676
+n03803284	muzzle	muzzle	a photo of a muzzle	a muzzle	una museruola	una foto di una museruola	677
+n03804744	nail	nail	a photo of a nail	a nail	un chiodo	una foto di un chiodo	678
+n03814639	neck brace	neck brace	a photo of a neck brace	a neck brace	un tutore per il collo	una foto di un tutore per il collo	679
+n03814906	necklace	necklace	a photo of a necklace	a necklace	una collana	una foto di una collana	680
+n03825788	nipple	nipple	a photo of a nipple	a nipple	un capezzolo	una foto di un capezzolo	681
+n03832673	notebook, notebook computer	notebook	a photo of a notebook	a notebook	un quaderno	una foto di un quaderno	682
+n03837869	obelisk	obelisk	a photo of a obelisk	a obelisk	un obelisco	una foto di un obelisco	683
+n03838899	oboe, hautboy, hautbois	oboe	a photo of a oboe	a oboe	un oboe	una foto di un oboe	684
+n03840681	ocarina, sweet potato	ocarina	a photo of a ocarina	a ocarina	un'ocarina	una foto di un'ocarina	685
+n03841143	odometer, hodometer, mileometer, milometer	odometer	a photo of a odometer	a odometer	un contachilometri	una foto di un contachilometri	686
+n03843555	oil filter	oil filter	a photo of a oil filter	a oil filter	un filtro dell'olio	una foto di un filtro dell'olio	687
+n03854065	organ, pipe organ	organ	a photo of a organ	a organ	un organo	una foto di un organo	688
+n03857828	oscilloscope, scope, cathode-ray oscilloscope, CRO	oscilloscope	a photo of a oscilloscope	a oscilloscope	un oscilloscopio	una foto di un oscilloscopio	689
+n03866082	overskirt	overskirt	a photo of a overskirt	a overskirt	una sopragonna	una foto di una sopragonna	690
+n03868242	oxcart	oxcart	a photo of a oxcart	a oxcart	un carro da buoi	una foto di un carro da buoi	691
+n03868863	oxygen mask	oxygen mask	a photo of a oxygen mask	a oxygen mask	una maschera di ossigeno	una foto di una maschera di ossigeno	692
+n03871628	packet	packet	a photo of a packet	a packet	un pacchetto	una foto di un pacchetto	693
+n03873416	paddle, boat paddle	paddle	a photo of a paddle	a paddle	una pagaia	una foto di una pagaia	694
+n03874293	paddlewheel, paddle wheel	paddlewheel	a photo of a paddlewheel	a paddlewheel	una ruota a pale	una foto di una ruota a pale	695
+n03874599	padlock	padlock	a photo of a padlock	a padlock	un lucchetto	una foto di un lucchetto	696
+n03876231	paintbrush	paintbrush	a photo of a paintbrush	a paintbrush	un pennello	una foto di un pennello	697
+n03877472	pajama, pyjama, pj's, jammies	pajama	a photo of a pajama	a pajama	un pigiama	una foto di un pigiama	698
+n03877845	palace	palace	a photo of a palace	a palace	un palazzo	una foto di un palazzo	699
+n03884397	panpipe, pandean pipe, syrinx	panpipe	a photo of a panpipe	a panpipe	una panpipe	una foto di una panpipe	700
+n03887697	paper towel	paper towel	a photo of a paper towel	a paper towel	un tovagliolo di carta	una foto di un tovagliolo di carta	701
+n03888257	parachute, chute	parachute	a photo of a parachute	a parachute	un paracadute	una foto di un paracadute	702
+n03888605	parallel bars, bars	parallel bars	a photo of a parallel bars	a parallel bars	una barra parallela	una foto di una barra parallela	703
+n03891251	park bench	park bench	a photo of a park bench	a park bench	una panchina del parco	una foto di una panchina del parco	704
+n03891332	parking meter	parking meter	a photo of a parking meter	a parking meter	un parchimetro	una foto di un parchimetro	705
+n03895866	passenger car, coach, carriage	passenger car	a photo of a passenger car	a passenger car	un'autovettura	una foto di un'autovettura	706
+n03899768	patio, terrace	patio	a photo of a patio	a patio	un patio	una foto di un patio	707
+n03902125	pay-phone, pay-station	pay-phone	a photo of a pay-phone	a pay-phone	un telefono a pagamento	una foto di un telefono a pagamento	708
+n03903868	pedestal, plinth, footstall	pedestal	a photo of a pedestal	a pedestal	un piedistallo	una foto di un piedistallo	709
+n03908618	pencil box, pencil case	pencil box	a photo of a pencil box	a pencil box	una scatola di matite	una foto di una scatola di matite	710
+n03908714	pencil sharpener	pencil sharpener	a photo of a pencil sharpener	a pencil sharpener	un temperamatite	una foto di un temperamatite	711
+n03916031	perfume, essence	perfume	a photo of a perfume	a perfume	un profumo	una foto di un profumo	712
+n03920288	Petri dish	Petri dish	a photo of a Petri dish	a Petri dish	una capsula di Petri	una foto di una capsula di Petri	713
+n03924679	photocopier	photocopier	a photo of a photocopier	a photocopier	una fotocopiatrice	una foto di una fotocopiatrice	714
+n03929660	pick, plectrum, plectron	pick	a photo of a pick	a pick	un grimaldello	una foto di un grimaldello	715
+n03929855	pickelhaube	pickelhaube	a photo of a pickelhaube	a pickelhaube	un picconatore	una foto di un picconatore	716
+n03930313	picket fence, paling	picket fence	a photo of a picket fence	a picket fence	una staccionata	una foto di una staccionata	717
+n03930630	pickup, pickup truck	pickup	a photo of a pickup	a pickup	un prelievo	una foto di un prelievo	718
+n03933933	pier	pier	a photo of a pier	a pier	un molo	una foto di un molo	719
+n03935335	piggy bank, penny bank	piggy bank	a photo of a piggy bank	a piggy bank	un salvadanaio	una foto di un salvadanaio	720
+n03937543	pill bottle	pill bottle	a photo of a pill bottle	a pill bottle	una bottiglia di pillole	una foto di una bottiglia di pillole	721
+n03938244	pillow	pillow	a photo of a pillow	a pillow	un cuscino	una foto di un cuscino	722
+n03942813	ping-pong ball	ping-pong ball	a photo of a ping-pong ball	a ping-pong ball	una pallina da ping-pong	una foto di una pallina da ping-pong	723
+n03944341	pinwheel	pinwheel	a photo of a pinwheel	a pinwheel	una girandola	una foto di una girandola	724
+n03947888	pirate, pirate ship	pirate	a photo of a pirate	a pirate	un pirata	una foto di un pirata	725
+n03950228	pitcher, ewer	pitcher	a photo of a pitcher	a pitcher	un lanciatore	una foto di un lanciatore	726
+n03954731	plane, carpenter's plane, woodworking plane	plane	a photo of a plane	a plane	un aereo	una foto di un aereo	727
+n03956157	planetarium	planetarium	a photo of a planetarium	a planetarium	un planetario	una foto di un planetario	728
+n03958227	plastic bag	plastic bag	a photo of a plastic bag	a plastic bag	un sacchetto di plastica	una foto di un sacchetto di plastica	729
+n03961711	plate rack	plate rack	a photo of a plate rack	a plate rack	un portapiatti	una foto di un portapiatti	730
+n03967562	plow, plough	plow	a photo of a plow	a plow	un aratro	una foto di un aratro	731
+n03970156	plunger, plumber's helper	plunger	a photo of a plunger	a plunger	uno stantuffo	una foto di uno stantuffo	732
+n03976467	Polaroid camera, Polaroid Land camera	Polaroid camera	a photo of a Polaroid camera	a Polaroid camera	una macchina fotografica Polaroid	una foto di una macchina fotografica Polaroid	733
+n03976657	pole	pole	a photo of a pole	a pole	un palo	una foto di un palo	734
+n03977966	police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria	police van	a photo of a police van	a police van	un furgone della polizia	una foto di un furgone della polizia	735
+n03980874	poncho	poncho	a photo of a poncho	a poncho	un poncho	una foto di un poncho	736
+n03982430	pool table, billiard table, snooker table	pool table	a photo of a pool table	a pool table	un tavolo da biliardo	una foto di un tavolo da biliardo	737
+n03983396	pop bottle, soda bottle	pop bottle	a photo of a pop bottle	a pop bottle	una bottiglia pop	una foto di una bottiglia pop	738
+n03991062	pot, flowerpot	pot	a photo of a pot	a pot	una pentola	una foto di una pentola	739
+n03992509	potter's wheel	potter's wheel	a photo of a potter's wheel	a potter's wheel	un tornio da vasaio	una foto di un tornio da vasaio	740
+n03995372	power drill	power drill	a photo of a power drill	a power drill	un trapano elettrico	una foto di un trapano elettrico	741
+n03998194	prayer rug, prayer mat	prayer rug	a photo of a prayer rug	a prayer rug	un tappeto di preghiera	una foto di un tappeto di preghiera	742
+n04004767	printer	printer	a photo of a printer	a printer	una stampante	una foto di una stampante	743
+n04005630	prison, prison house	prison	a photo of a prison	a prison	una prigione	una foto di una prigione	744
+n04008634	projectile, missile	projectile	a photo of a projectile	a projectile	un proiettile	una foto di un proiettile	745
+n04009552	projector	projector	a photo of a projector	a projector	un proiettore	una foto di un proiettore	746
+n04019541	puck, hockey puck	puck	a photo of a puck	a puck	un disco	una foto di un disco	747
+n04023962	punching bag, punch bag, punching ball, punchball	punching bag	a photo of a punching bag	a punching bag	un sacco da boxe	una foto di un sacco da boxe	748
+n04026417	purse	purse	a photo of a purse	a purse	una borsa	una foto di una borsa	749
+n04033901	quill, quill pen	quill	a photo of a quill	a quill	una penna d'oca	una foto di una penna d'oca	750
+n04033995	quilt, comforter, comfort, puff	quilt	a photo of a quilt	a quilt	una trapunta	una foto di una trapunta	751
+n04037443	racer, race car, racing car	racer	a photo of a racer	a racer	un corridore	una foto di un corridore	752
+n04039381	racket, racquet	racket	a photo of a racket	a racket	una racchetta	una foto di una racchetta	753
+n04040759	radiator	radiator	a photo of a radiator	a radiator	un radiatore	una foto di un radiatore	754
+n04041544	radio, wireless	radio	a photo of a radio	a radio	una radio	una foto di una radio	755
+n04044716	radio telescope, radio reflector	radio telescope	a photo of a radio telescope	a radio telescope	un radiotelescopio	una foto di un radiotelescopio	756
+n04049303	rain barrel	rain barrel	a photo of a rain barrel	a rain barrel	un barile per la pioggia	una foto di un barile per la pioggia	757
+n04065272	recreational vehicle, RV, R.V.	recreational vehicle	a photo of a recreational vehicle	a recreational vehicle	un veicolo ricreativo	una foto di un veicolo ricreativo	758
+n04067472	reel	reel	a photo of a reel	a reel	una bobina	una foto di una bobina	759
+n04069434	reflex camera	reflex camera	a photo of a reflex camera	a reflex camera	una macchina fotografica reflex	una foto di una macchina fotografica reflex	760
+n04070727	refrigerator, icebox	refrigerator	a photo of a refrigerator	a refrigerator	un frigorifero	una foto di un frigorifero	761
+n04074963	remote control, remote	remote control	a photo of a remote control	a remote control	un telecomando	una foto di un telecomando	762
+n04081281	restaurant, eating house, eating place, eatery	restaurant	a photo of a restaurant	a restaurant	un ristorante	una foto di un ristorante	763
+n04086273	revolver, six-gun, six-shooter	revolver	a photo of a revolver	a revolver	un revolver	una foto di un revolver	764
+n04090263	rifle	rifle	a photo of a rifle	a rifle	un fucile	una foto di un fucile	765
+n04099969	rocking chair, rocker	rocking chair	a photo of a rocking chair	a rocking chair	una sedia a dondolo	una foto di una sedia a dondolo	766
+n04111531	rotisserie	rotisserie	a photo of a rotisserie	a rotisserie	un girarrosto	una foto di un girarrosto	767
+n04116512	rubber eraser, rubber, pencil eraser	rubber eraser	a photo of a rubber eraser	a rubber eraser	una gomma da cancellare	una foto di una gomma da cancellare	768
+n04118538	rugby ball	rugby ball	a photo of a rugby ball	a rugby ball	un pallone da rugby	una foto di un pallone da rugby	769
+n04118776	rule, ruler	rule	a photo of a rule	a rule	una regola	una foto di una regola	770
+n04120489	running shoe	running shoe	a photo of a running shoe	a running shoe	una scarpa da corsa	una foto di una scarpa da corsa	771
+n04125021	safe	safe	a photo of a safe	a safe	una cassaforte	una foto di una cassaforte	772
+n04127249	safety pin	safety pin	a photo of a safety pin	a safety pin	una spilla da balia	una foto di una spilla da balia	773
+n04131690	saltshaker, salt shaker	saltshaker	a photo of a saltshaker	a saltshaker	una saliera	una foto di una saliera	774
+n04133789	sandal	sandal	a photo of a sandal	a sandal	un sandalo	una foto di un sandalo	775
+n04136333	sarong	sarong	a photo of a sarong	a sarong	un sarong	una foto di un sarong	776
+n04141076	sax, saxophone	sax	a photo of a sax	a sax	un sassofono	una foto di un sassofono	777
+n04141327	scabbard	scabbard	a photo of a scabbard	a scabbard	un fodero	una foto di un fodero	778
+n04141975	scale, weighing machine	scale	a photo of a scale	a scale	una scala	una foto di una scala	779
+n04146614	school bus	school bus	a photo of a school bus	a school bus	uno scuolabus	una foto di uno scuolabus	780
+n04147183	schooner	schooner	a photo of a schooner	a schooner	una goletta	una foto di una goletta	781
+n04149813	scoreboard	scoreboard	a photo of a scoreboard	a scoreboard	un tabellone segnapunti	una foto di un tabellone segnapunti	782
+n04152593	screen, CRT screen	screen	a photo of a screen	a screen	uno schermo	una foto di uno schermo	783
+n04153751	screw	screw	a photo of a screw	a screw	una vite	una foto di una vite	784
+n04154565	screwdriver	screwdriver	a photo of a screwdriver	a screwdriver	un cacciavite	una foto di un cacciavite	785
+n04162706	seat belt, seatbelt	seat belt	a photo of a seat belt	a seat belt	una cintura di sicurezza	una foto di una cintura di sicurezza	786
+n04179913	sewing machine	sewing machine	a photo of a sewing machine	a sewing machine	una macchina da cucire	una foto di una macchina da cucire	787
+n04192698	shield, buckler	shield	a photo of a shield	a shield	uno scudo	una foto di uno scudo	788
+n04200800	shoe shop, shoe-shop, shoe store	shoe shop	a photo of a shoe shop	a shoe shop	un negozio di scarpe	una foto di un negozio di scarpe	789
+n04201297	shoji	shoji	a photo of a shoji	a shoji	uno shoji	una foto di uno shoji	790
+n04204238	shopping basket	shopping basket	a photo of a shopping basket	a shopping basket	un cestino della spesa	una foto di un cestino della spesa	791
+n04204347	shopping cart	shopping cart	a photo of a shopping cart	a shopping cart	un carrello della spesa	una foto di un carrello della spesa	792
+n04208210	shovel	shovel	a photo of a shovel	a shovel	una pala	una foto di una pala	793
+n04209133	shower cap	shower cap	a photo of a shower cap	a shower cap	una cuffia da doccia	una foto di una cuffia da doccia	794
+n04209239	shower curtain	shower curtain	a photo of a shower curtain	a shower curtain	una tenda da doccia	una foto di una tenda da doccia	795
+n04228054	ski	ski	a photo of a ski	a ski	uno sci	una foto di uno sci	796
+n04229816	ski mask	ski mask	a photo of a ski mask	a ski mask	un passamontagna	una foto di un passamontagna	797
+n04235860	sleeping bag	sleeping bag	a photo of a sleeping bag	a sleeping bag	un sacco a pelo	una foto di un sacco a pelo	798
+n04238763	slide rule, slipstick	slide rule	a photo of a slide rule	a slide rule	un regolo calcolatore	una foto di un regolo calcolatore	799
+n04239074	sliding door	sliding door	a photo of a sliding door	a sliding door	una porta scorrevole	una foto di una porta scorrevole	800
+n04243546	slot, one-armed bandit	slot	a photo of a slot	a slot	una fessura	una foto di una fessura	801
+n04251144	snorkel	snorkel	a photo of a snorkel	a snorkel	un boccaglio	una foto di un boccaglio	802
+n04252077	snowmobile	snowmobile	a photo of a snowmobile	a snowmobile	una motoslitta	una foto di una motoslitta	803
+n04252225	snowplow, snowplough	snowplow	a photo of a snowplow	a snowplow	uno spazzaneve	una foto di uno spazzaneve	804
+n04254120	soap dispenser	soap dispenser	a photo of a soap dispenser	a soap dispenser	un distributore di sapone	una foto di un distributore di sapone	805
+n04254680	soccer ball	soccer ball	a photo of a soccer ball	a soccer ball	un pallone da calcio	una foto di un pallone da calcio	806
+n04254777	sock	sock	a photo of a sock	a sock	un calzino	una foto di un calzino	807
+n04258138	solar dish, solar collector, solar furnace	solar dish	a photo of a solar dish	a solar dish	un piatto solare	una foto di un piatto solare	808
+n04259630	sombrero	sombrero	a photo of a sombrero	a sombrero	un sombrero	una foto di un sombrero	809
+n04263257	soup bowl	soup bowl	a photo of a soup bowl	a soup bowl	una ciotola per la zuppa	una foto di una ciotola per la zuppa	810
+n04264628	space bar	space bar	a photo of a space bar	a space bar	una barra spaziatrice	una foto di una barra spaziatrice	811
+n04265275	space heater	space heater	a photo of a space heater	a space heater	una stufa per ambienti	una foto di una stufa per ambienti	812
+n04266014	space shuttle	space shuttle	a photo of a space shuttle	a space shuttle	una navetta spaziale	una foto di una navetta spaziale	813
+n04270147	spatula	spatula	a photo of a spatula	a spatula	una spatola	una foto di una spatola	814
+n04273569	speedboat	speedboat	a photo of a speedboat	a speedboat	un motoscafo	una foto di un motoscafo	815
+n04275548	spider web, spider's web	spider web	a photo of a spider web	a spider web	una ragnatela	una foto di una ragnatela	816
+n04277352	spindle	spindle	a photo of a spindle	a spindle	un mandrino	una foto di un mandrino	817
+n04285008	sports car, sport car	sports car	a photo of a sports car	a sports car	un'auto sportiva	una foto di un'auto sportiva	818
+n04286575	spotlight, spot	spotlight	a photo of a spotlight	a spotlight	un riflettore	una foto di un riflettore	819
+n04296562	stage	stage	a photo of a stage	a stage	una fase	una foto di una fase	820
+n04310018	steam locomotive	steam locomotive	a photo of a steam locomotive	a steam locomotive	una locomotiva a vapore	una foto di una locomotiva a vapore	821
+n04311004	steel arch bridge	steel arch bridge	a photo of a steel arch bridge	a steel arch bridge	un ponte ad arco in acciaio	una foto di un ponte ad arco in acciaio	822
+n04311174	steel drum	steel drum	a photo of a steel drum	a steel drum	un tamburo d'acciaio	una foto di un tamburo d'acciaio	823
+n04317175	stethoscope	stethoscope	a photo of a stethoscope	a stethoscope	uno stetoscopio	una foto di uno stetoscopio	824
+n04325704	stole	stole	a photo of a stole	a stole	una stola	una foto di una stola	825
+n04326547	stone wall	stone wall	a photo of a stone wall	a stone wall	un muro di pietra	una foto di un muro di pietra	826
+n04328186	stopwatch, stop watch	stopwatch	a photo of a stopwatch	a stopwatch	un cronometro	una foto di un cronometro	827
+n04330267	stove	stove	a photo of a stove	a stove	una stufa	una foto di una stufa	828
+n04332243	strainer	strainer	a photo of a strainer	a strainer	un colino	una foto di un colino	829
+n04335435	streetcar, tram, tramcar, trolley, trolley car	streetcar	a photo of a streetcar	a streetcar	un tram	una foto di un tram	830
+n04336792	stretcher	stretcher	a photo of a stretcher	a stretcher	una barella	una foto di una barella	831
+n04344873	studio couch, day bed	studio couch	a photo of a studio couch	a studio couch	un divano da studio	una foto di un divano da studio	832
+n04346328	stupa, tope	stupa	a photo of a stupa	a stupa	uno stupa	una foto di uno stupa	833
+n04347754	submarine, pigboat, sub, U-boat	submarine	a photo of a submarine	a submarine	un sottomarino	una foto di un sottomarino	834
+n04350905	suit, suit of clothes	suit	a photo of a suit	a suit	un vestito	una foto di un vestito	835
+n04355338	sundial	sundial	a photo of a sundial	a sundial	una meridiana	una foto di una meridiana	836
+n04355933	sunglass	sunglass	a photo of a sunglass	a sunglass	un occhiale da sole	una foto di un occhiale da sole	837
+n04356056	sunglasses, dark glasses, shades	sunglasses	a photo of a sunglasses	a sunglasses	occhiali da sole	una foto di occhiali da sole	838
+n04357314	sunscreen, sunblock, sun blocker	sunscreen	a photo of a sunscreen	a sunscreen	una protezione solare	una foto di una protezione solare	839
+n04366367	suspension bridge	suspension bridge	a photo of a suspension bridge	a suspension bridge	un ponte sospeso	una foto di un ponte sospeso	840
+n04367480	swab, swob, mop	swab	a photo of a swab	a swab	un tampone	una foto di un tampone	841
+n04370456	sweatshirt	sweatshirt	a photo of a sweatshirt	a sweatshirt	una felpa	una foto di una felpa	842
+n04371430	swimming trunks, bathing trunks	swimming trunks	a photo of a swimming trunks	a swimming trunks	un costume da bagno	una foto di un costume da bagno	843
+n04371774	swing	swing	a photo of a swing	a swing	un'altalena	una foto di un'altalena	844
+n04372370	switch, electric switch, electrical switch	switch	a photo of a switch	a switch	un interruttore	una foto di un interruttore	845
+n04376876	syringe	syringe	a photo of a syringe	a syringe	una siringa	una foto di una siringa	846
+n04380533	table lamp	table lamp	a photo of a table lamp	a table lamp	una lampada da tavolo	una foto di una lampada da tavolo	847
+n04389033	tank, army tank, armored combat vehicle, armoured combat vehicle	tank	a photo of a tank	a tank	un carro armato	una foto di un carro armato	848
+n04392985	tape player	tape player	a photo of a tape player	a tape player	un lettore di nastri	una foto di un lettore di nastri	849
+n04398044	teapot	teapot	a photo of a teapot	a teapot	una teiera	una foto di una teiera	850
+n04399382	teddy, teddy bear	teddy	a photo of a teddy	a teddy	un orsacchiotto	una foto di un orsacchiotto	851
+n04404412	television, television system	television	a photo of a television	a television	una televisione	una foto di una televisione	852
+n04409515	tennis ball	tennis ball	a photo of a tennis ball	a tennis ball	una palla da tennis	una foto di una palla da tennis	853
+n04417672	thatch, thatched roof	thatch	a photo of a thatch	a thatch	una paglia	una foto di una paglia	854
+n04418357	theater curtain, theatre curtain	theater curtain	a photo of a theater curtain	a theater curtain	un sipario teatrale	una foto di un sipario teatrale	855
+n04423845	thimble	thimble	a photo of a thimble	a thimble	un ditale	una foto di un ditale	856
+n04428191	thresher, thrasher, threshing machine	thresher	a photo of a thresher	a thresher	una trebbiatrice	una foto di una trebbiatrice	857
+n04429376	throne	throne	a photo of a throne	a throne	un trono	una foto di un trono	858
+n04435653	tile roof	tile roof	a photo of a tile roof	a tile roof	un tetto di tegole	una foto di un tetto di tegole	859
+n04442312	toaster	toaster	a photo of a toaster	a toaster	un tostapane	una foto di un tostapane	860
+n04443257	tobacco shop, tobacconist shop, tobacconist	tobacco shop	a photo of a tobacco shop	a tobacco shop	un negozio di tabacco	una foto di un negozio di tabacco	861
+n04447861	toilet seat	toilet seat	a photo of a toilet seat	a toilet seat	un sedile del water	una foto di un sedile del water	862
+n04456115	torch	torch	a photo of a torch	a torch	una torcia	una foto di una torcia	863
+n04458633	totem pole	totem pole	a photo of a totem pole	a totem pole	un totem	una foto di un totem	864
+n04461696	tow truck, tow car, wrecker	tow truck	a photo of a tow truck	a tow truck	un carro attrezzi	una foto di un carro attrezzi	865
+n04462240	toyshop	toyshop	a photo of a toyshop	a toyshop	un negozio di giocattoli	una foto di un negozio di giocattoli	866
+n04465501	tractor	tractor	a photo of a tractor	a tractor	un trattore	una foto di un trattore	867
+n04467665	trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi	trailer truck	a photo of a trailer truck	a trailer truck	un camion con rimorchio	una foto di un camion con rimorchio	868
+n04476259	tray	tray	a photo of a tray	a tray	un vassoio	una foto di un vassoio	869
+n04479046	trench coat	trench coat	a photo of a trench coat	a trench coat	un trench	una foto di un trench	870
+n04482393	tricycle, trike, velocipede	tricycle	a photo of a tricycle	a tricycle	un triciclo	una foto di un triciclo	871
+n04483307	trimaran	trimaran	a photo of a trimaran	a trimaran	un trimarano	una foto di un trimarano	872
+n04485082	tripod	tripod	a photo of a tripod	a tripod	un treppiede	una foto di un treppiede	873
+n04486054	triumphal arch	triumphal arch	a photo of a triumphal arch	a triumphal arch	un arco di trionfo	una foto di un arco di trionfo	874
+n04487081	trolleybus, trolley coach, trackless trolley	trolleybus	a photo of a trolleybus	a trolleybus	un filobus	una foto di un filobus	875
+n04487394	trombone	trombone	a photo of a trombone	a trombone	un trombone	una foto di un trombone	876
+n04493381	tub, vat	tub	a photo of a tub	a tub	una vasca da bagno	una foto di una vasca da bagno	877
+n04501370	turnstile	turnstile	a photo of a turnstile	a turnstile	un tornello	una foto di un tornello	878
+n04505470	typewriter keyboard	typewriter keyboard	a photo of a typewriter keyboard	a typewriter keyboard	una tastiera per macchina da scrivere	una foto di una tastiera per macchina da scrivere	879
+n04507155	umbrella	umbrella	a photo of a umbrella	a umbrella	un ombrello	una foto di un ombrello	880
+n04509417	unicycle, monocycle	unicycle	a photo of a unicycle	a unicycle	un monociclo	una foto di un monociclo	881
+n04515003	upright, upright piano	upright	a photo of a upright	a upright	un montante	una foto di un montante	882
+n04517823	vacuum, vacuum cleaner	vacuum	a photo of a vacuum	a vacuum	un vuoto	una foto di un vuoto	883
+n04522168	vase	vase	a photo of a vase	a vase	un vaso	una foto di un vaso	884
+n04523525	vault	vault	a photo of a vault	a vault	una volta	una foto di una volta	885
+n04525038	velvet	velvet	a photo of a velvet	a velvet	un velluto	una foto di un velluto	886
+n04525305	vending machine	vending machine	a photo of a vending machine	a vending machine	un distributore automatico	una foto di un distributore automatico	887
+n04532106	vestment	vestment	a photo of a vestment	a vestment	un paramento	una foto di un paramento	888
+n04532670	viaduct	viaduct	a photo of a viaduct	a viaduct	un viadotto	una foto di un viadotto	889
+n04536866	violin, fiddle	violin	a photo of a violin	a violin	un violino	una foto di un violino	890
+n04540053	volleyball	volleyball	a photo of a volleyball	a volleyball	una pallavolo	una foto di una pallavolo	891
+n04542943	waffle iron	waffle iron	a photo of a waffle iron	a waffle iron	una piastra per cialde	una foto di una piastra per cialde	892
+n04548280	wall clock	wall clock	a photo of a wall clock	a wall clock	un orologio da parete	una foto di un orologio da parete	893
+n04548362	wallet, billfold, notecase, pocketbook	wallet	a photo of a wallet	a wallet	un portafoglio	una foto di un portafoglio	894
+n04550184	wardrobe, closet, press	wardrobe	a photo of a wardrobe	a wardrobe	un armadio	una foto di un armadio	895
+n04552348	warplane, military plane	warplane	a photo of a warplane	a warplane	un aereo da guerra	una foto di un aereo da guerra	896
+n04553703	washbasin, handbasin, washbowl, lavabo, wash-hand basin	washbasin	a photo of a washbasin	a washbasin	un lavandino	una foto di un lavandino	897
+n04554684	washer, automatic washer, washing machine	washer	a photo of a washer	a washer	una rondella	una foto di una rondella	898
+n04557648	water bottle	water bottle	a photo of a water bottle	a water bottle	una bottiglia d'acqua	una foto di una bottiglia d'acqua	899
+n04560804	water jug	water jug	a photo of a water jug	a water jug	una brocca d'acqua	una foto di una brocca d'acqua	900
+n04562935	water tower	water tower	a photo of a water tower	a water tower	una torre d'acqua	una foto di una torre d'acqua	901
+n04579145	whiskey jug	whiskey jug	a photo of a whiskey jug	a whiskey jug	una brocca di whisky	una foto di una brocca di whisky	902
+n04579432	whistle	whistle	a photo of a whistle	a whistle	un fischio	una foto di un fischio	903
+n04584207	wig	wig	a photo of a wig	a wig	una parrucca	una foto di una parrucca	904
+n04589890	window screen	window screen	a photo of a window screen	a window screen	uno schermo per finestre	una foto di uno schermo per finestre	905
+n04590129	window shade	window shade	a photo of a window shade	a window shade	una tenda per finestre	una foto di una tenda per finestre	906
+n04591157	Windsor tie	Windsor tie	a photo of a Windsor tie	a Windsor tie	una cravatta Windsor	una foto di una cravatta Windsor	907
+n04591713	wine bottle	wine bottle	a photo of a wine bottle	a wine bottle	una bottiglia di vino	una foto di una bottiglia di vino	908
+n04592741	wing	wing	a photo of a wing	a wing	un'ala	una foto di un'ala	909
+n04596742	wok	wok	a photo of a wok	a wok	un wok	una foto di un wok	910
+n04597913	wooden spoon	wooden spoon	a photo of a wooden spoon	a wooden spoon	un cucchiaio di legno	una foto di un cucchiaio di legno	911
+n04599235	wool, woolen, woollen	wool	a photo of a wool	a wool	una lana	una foto di una lana	912
+n04604644	worm fence, snake fence, snake-rail fence, Virginia fence	worm fence	a photo of a worm fence	a worm fence	un recinto di vermi	una foto di un recinto di vermi	913
+n04606251	wreck	wreck	a photo of a wreck	a wreck	un relitto	una foto di un relitto	914
+n04612504	yawl	yawl	a photo of a yawl	a yawl	uno yawl	una foto di uno yawl	915
+n04613696	yurt	yurt	a photo of a yurt	a yurt	una yurta	una foto di una yurta	916
+n06359193	web site, website, internet site, site	web site	a photo of a web site	a web site	un sito web	una foto di un sito web	917
+n06596364	comic book	comic book	a photo of a comic book	a comic book	un fumetto	una foto di un fumetto	918
+n06785654	crossword puzzle, crossword	crossword puzzle	a photo of a crossword puzzle	a crossword puzzle	un cruciverba	una foto di un cruciverba	919
+n06794110	street sign	street sign	a photo of a street sign	a street sign	un cartello stradale	una foto di un cartello stradale	920
+n06874185	traffic light, traffic signal, stoplight	traffic light	a photo of a traffic light	a traffic light	un semaforo	una foto di un semaforo	921
+n07248320	book jacket, dust cover, dust jacket, dust wrapper	book jacket	a photo of a book jacket	a book jacket	una giacca del libro	una foto di una giacca del libro	922
+n07565083	menu	menu	a photo of a menu	a menu	un menu	una foto di un menu	923
+n07579787	plate	plate	a photo of a plate	a plate	un piatto	una foto di un piatto	924
+n07583066	guacamole	guacamole	a photo of a guacamole	a guacamole	un guacamole	una foto di un guacamole	925
+n07584110	consomme	consomme	a photo of a consomme	a consomme	un consomme	una foto di un consomme	926
+n07590611	hot pot, hotpot	hot pot	a photo of a hot pot	a hot pot	una pentola calda	una foto di una pentola calda	927
+n07613480	trifle	trifle	a photo of a trifle	a trifle	un'inezia	una foto di un'inezia	928
+n07614500	ice cream, icecream	ice cream	a photo of a ice cream	a ice cream	un gelato	una foto di un gelato	929
+n07615774	ice lolly, lolly, lollipop, popsicle	ice lolly	a photo of a ice lolly	a ice lolly	un ghiacciolo	una foto di un ghiacciolo	930
+n07684084	French loaf	French loaf	a photo of a French loaf	a French loaf	una pagnotta francese	una foto di una pagnotta francese	931
+n07693725	bagel, beigel	bagel	a photo of a bagel	a bagel	un bagel	una foto di un bagel	932
+n07695742	pretzel	pretzel	a photo of a pretzel	a pretzel	un pretzel	una foto di un pretzel	933
+n07697313	cheeseburger	cheeseburger	a photo of a cheeseburger	a cheeseburger	un cheeseburger	una foto di un cheeseburger	934
+n07697537	hotdog, hot dog, red hot	hotdog	a photo of a hotdog	a hotdog	un hotdog	una foto di un hotdog	935
+n07711569	mashed potato	mashed potato	a photo of a mashed potato	a mashed potato	un purè di patate	una foto di un purè di patate	936
+n07714571	head cabbage	head cabbage	a photo of a head cabbage	a head cabbage	una testa di cavolo	una foto di una testa di cavolo	937
+n07714990	broccoli	broccoli	a photo of a broccoli	a broccoli	un broccolo	una foto di un broccolo	938
+n07715103	cauliflower	cauliflower	a photo of a cauliflower	a cauliflower	un cavolfiore	una foto di un cavolfiore	939
+n07716358	zucchini, courgette	zucchini	a photo of a zucchini	a zucchini	una zucchina	una foto di una zucchina	940
+n07716906	spaghetti squash	spaghetti squash	a photo of a spaghetti squash	a spaghetti squash	una zucca per spaghetti	una foto di una zucca per spaghetti	941
+n07717410	acorn squash	acorn squash	a photo of a acorn squash	a acorn squash	una zucca	una foto di una zucca	942
+n07717556	butternut squash	butternut squash	a photo of a butternut squash	a butternut squash	una zucca butternut	una foto di una zucca butternut	943
+n07718472	cucumber, cuke	cucumber	a photo of a cucumber	a cucumber	un cetriolo	una foto di un cetriolo	944
+n07718747	artichoke, globe artichoke	artichoke	a photo of a artichoke	a artichoke	un carciofo	una foto di un carciofo	945
+n07720875	bell pepper	bell pepper	a photo of a bell pepper	a bell pepper	un peperone	una foto di un peperone	946
+n07730033	cardoon	cardoon	a photo of a cardoon	a cardoon	un cardo	una foto di un cardo	947
+n07734744	mushroom	mushroom	a photo of a mushroom	a mushroom	un fungo	una foto di un fungo	948
+n07742313	Granny Smith	Granny Smith	a photo of a Granny Smith	a Granny Smith	una Granny Smith	una foto di una Granny Smith	949
+n07745940	strawberry	strawberry	a photo of a strawberry	a strawberry	una fragola	una foto di una fragola	950
+n07747607	orange	orange	a photo of a orange	a orange	un'arancia	una foto di un'arancia	951
+n07749582	lemon	lemon	a photo of a lemon	a lemon	un limone	una foto di un limone	952
+n07753113	fig	fig	a photo of a fig	a fig	un fico	una foto di un fico	953
+n07753275	pineapple, ananas	pineapple	a photo of a pineapple	a pineapple	un ananas	una foto di un ananas	954
+n07753592	banana	banana	a photo of a banana	a banana	una banana	una foto di una banana	955
+n07754684	jackfruit, jak, jack	jackfruit	a photo of a jackfruit	a jackfruit	un jackfruit	una foto di un jackfruit	956
+n07760859	custard apple	custard apple	a photo of a custard apple	a custard apple	una mela custard	una foto di una mela custard	957
+n07768694	pomegranate	pomegranate	a photo of a pomegranate	a pomegranate	un melograno	una foto di un melograno	958
+n07802026	hay	hay	a photo of a hay	a hay	un fieno	una foto di un fieno	959
+n07831146	carbonara	carbonara	a photo of a carbonara	a carbonara	una carbonara	una foto di una carbonara	960
+n07836838	chocolate sauce, chocolate syrup	chocolate sauce	a photo of a chocolate sauce	a chocolate sauce	una salsa al cioccolato	una foto di una salsa al cioccolato	961
+n07860988	dough	dough	a photo of a dough	a dough	un impasto	una foto di un impasto	962
+n07871810	meat loaf, meatloaf	meat loaf	a photo of a meat loaf	a meat loaf	un polpettone	una foto di un polpettone	963
+n07873807	pizza, pizza pie	pizza	a photo of a pizza	a pizza	una pizza	una foto di una pizza	964
+n07875152	potpie	potpie	a photo of a potpie	a potpie	una torta salata	una foto di una torta salata	965
+n07880968	burrito	burrito	a photo of a burrito	a burrito	un burrito	una foto di un burrito	966
+n07892512	red wine	red wine	a photo of a red wine	a red wine	un vino rosso	una foto di un vino rosso	967
+n07920052	espresso	espresso	a photo of a espresso	a espresso	un espresso	una foto di un espresso	968
+n07930864	cup	cup	a photo of a cup	a cup	una tazza	una foto di una tazza	969
+n07932039	eggnog	eggnog	a photo of a eggnog	a eggnog	uno zabaione	una foto di uno zabaione	970
+n09193705	alp	alp	a photo of a alp	a alp	a alpe	una foto di a alpe	971
+n09229709	bubble	bubble	a photo of a bubble	a bubble	una bolla	una foto di una bolla	972
+n09246464	cliff, drop, drop-off	cliff	a photo of a cliff	a cliff	una scogliera	una foto di una scogliera	973
+n09256479	coral reef	coral reef	a photo of a coral reef	a coral reef	una barriera corallina	una foto di una barriera corallina	974
+n09288635	geyser	geyser	a photo of a geyser	a geyser	un geyser	una foto di un geyser	975
+n09332890	lakeside, lakeshore	lakeside	a photo of a lakeside	a lakeside	un lago	una foto di un lago	976
+n09399592	promontory, headland, head, foreland	promontory	a photo of a promontory	a promontory	un promontorio	una foto di un promontorio	977
+n09421951	sandbar, sand bar	sandbar	a photo of a sandbar	a sandbar	un banco di sabbia	una foto di un banco di sabbia	978
+n09428293	seashore, coast, seacoast, sea-coast	seashore	a photo of a seashore	a seashore	una riva del mare	una foto di una riva del mare	979
+n09468604	valley, vale	valley	a photo of a valley	a valley	una valle	una foto di una valle	980
+n09472597	volcano	volcano	a photo of a volcano	a volcano	un vulcano	una foto di un vulcano	981
+n09835506	ballplayer, baseball player	ballplayer	a photo of a ballplayer	a ballplayer	un giocatore di pallone	una foto di un giocatore di pallone	982
+n10148035	groom, bridegroom	groom	a photo of a groom	a groom	uno sposo	una foto di uno sposo	983
+n10565667	scuba diver	scuba diver	a photo of a scuba diver	a scuba diver	un subacqueo	una foto di un subacqueo	984
+n11879895	rapeseed	rapeseed	a photo of a rapeseed	a rapeseed	un seme di colza	una foto di un seme di colza	985
+n11939491	daisy	daisy	a photo of a daisy	a daisy	una margherita	una foto di una margherita	986
+n12057211	yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum	yellow lady's slipper	a photo of a yellow lady's slipper	a yellow lady's slipper	una pantofola gialla da donna	una foto di una pantofola gialla da donna	987
+n12144580	corn	corn	a photo of a corn	a corn	un mais	una foto di un mais	988
+n12267677	acorn	acorn	a photo of a acorn	a acorn	una ghianda	una foto di una ghianda	989
+n12620546	hip, rose hip, rosehip	hip	a photo of a hip	a hip	un'anca	una foto di un'anca	990
+n12768682	buckeye, horse chestnut, conker	buckeye	a photo of a buckeye	a buckeye	un buckeye	una foto di un buckeye	991
+n12985857	coral fungus	coral fungus	a photo of a coral fungus	a coral fungus	un fungo corallino	una foto di un fungo corallino	992
+n12998815	agaric	agaric	a photo of a agaric	a agaric	un agarico	una foto di un agarico	993
+n13037406	gyromitra	gyromitra	a photo of a gyromitra	a gyromitra	un gyromitra	una foto di un gyromitra	994
+n13040303	stinkhorn, carrion fungus	stinkhorn	a photo of a stinkhorn	a stinkhorn	una spina dorsale	una foto di una spina dorsale	995
+n13044778	earthstar	earthstar	a photo of a earthstar	a earthstar	una stella di terra	una foto di una stella di terra	996
+n13052670	hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa	hen-of-the-woods	a photo of a hen-of-the-woods	a hen-of-the-woods	una gallina dei boschi	una foto di una gallina dei boschi	997
+n13054560	bolete	bolete	a photo of a bolete	a bolete	un boleto	una foto di un boleto	998
+n13133613	ear, spike, capitulum	ear	a photo of a ear	a ear	un orecchio	una foto di un orecchio	999
+n15075141	toilet tissue, toilet paper, bathroom tissue	toilet tissue	a photo of a toilet tissue	a toilet tissue	una carta igienica	una foto di una carta igienica	1000
