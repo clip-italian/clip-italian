@@ -448,6 +448,7 @@ def main():
     parser.add_argument("--log_comet", action="store_true")
     parser.add_argument("--eval_when", type=int, default=1)
     parser.add_argument("--run_from_checkpoint", type=str, default=None)
+    parser.add_argument("--margin", type=int, default=None)
 
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
@@ -676,9 +677,18 @@ def main():
         return ce
 
     def clip_loss(similarity):
+
+        jax_array = jax.numpy.full(similarity.shape, 0.2)
+
+        diag_elements = jnp.diag_indices_from(jax_array)
+        margin_matrix = jax_array.at[diag_elements].set(0)
+
+        new_similarity = similarity + margin_matrix
+
         loss = (
-            cross_entropy(similarity, axis=0) + cross_entropy(similarity, axis=1)
+            cross_entropy(new_similarity, axis=0) + cross_entropy(new_similarity, axis=1)
         ) / 2
+
         return loss
 
     # Define gradient update step fn
