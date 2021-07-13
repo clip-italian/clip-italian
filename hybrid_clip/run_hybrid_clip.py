@@ -33,9 +33,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable, Optional
 
-from dotenv import load_dotenv
 
-load_dotenv("../.env")
+# from dotenv import load_dotenv
+
+# load_dotenv("../.env")
 
 from comet_ml import Experiment
 
@@ -382,7 +383,7 @@ def log_on_comet(experiment, train_metrics, eval_metrics, train_time, step):
         experiment.log_metric(f"eval_{metric_name}", value, step)
 
 
-def setup_comet():
+def setup_comet(exp_name):
     logger.info("Comet ML logging requested")
     try:
 
@@ -396,6 +397,9 @@ def setup_comet():
                 log_graph=False,
             )
             experiment.add_tag("training")
+
+            if exp_name is not None:
+                experiment.set_name(exp_name)
             return experiment
         else:
             logger.info("Can't find COMET_API_KEY env variable, disabling Comet")
@@ -446,6 +450,7 @@ def main():
         (ModelArguments, DataTrainingArguments, TrainingArguments)
     )
     parser.add_argument("--log_comet", action="store_true")
+    parser.add_argument("--exp_name", type=str, default=None)
     parser.add_argument("--eval_when", type=int, default=1)
     parser.add_argument("--run_from_checkpoint", type=str, default=None)
 
@@ -509,7 +514,7 @@ def main():
         )
 
     if args.log_comet:
-        comet_exp = setup_comet()
+        comet_exp = setup_comet(args.exp_name)
 
     eval_when = args.eval_when
 

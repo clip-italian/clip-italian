@@ -6,3 +6,6 @@ optax>=0.0.8
 torch==1.9.0+cpu 
 -f https://download.pytorch.org/whl/torch_stable.html
 torchvision==0.10.0+cpu
+comet_ml==3.12.2
+python-dotenv==0.18.0
+tqdm
