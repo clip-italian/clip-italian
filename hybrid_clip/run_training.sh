@@ -25,6 +25,8 @@ python ${SCRIPT_DIR}/run_hybrid_clip.py \
     --text_model_name_or_path=${TEXT_ENCODER} \
     --vision_model_name_or_path=${IMAGE_ENCODER} # should be ignored
     
+    
+#    --freeze_backbones    # freezes both models except from the reprojections layers
 #    --run_from_checkpoint /home/giuseppe/models/cc_wit_coco_v2_2_resumed/20 \
 #    --push_to_hub
 

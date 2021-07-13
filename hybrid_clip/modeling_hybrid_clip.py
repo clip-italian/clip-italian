@@ -32,6 +32,8 @@ logger = logging.get_logger(__name__)
 class FlaxHybridCLIPModule(nn.Module):
     config: HybridCLIPConfig
     dtype: jnp.dtype = jnp.float32
+    freeze_backbones: bool = False
+    
 
     def setup(self):
         text_config = self.config.text_config
@@ -60,6 +62,7 @@ class FlaxHybridCLIPModule(nn.Module):
             use_bias=False,
         )
         # self.logit_scale = self.param("logit_scale", jax.nn.initializers.ones, [])
+        # print(str(self.freeze_backbones) + "\n\n\n\n\n\n")
 
     def __call__(
         self,
@@ -95,9 +98,13 @@ class FlaxHybridCLIPModule(nn.Module):
         )
 
         image_embeds = vision_outputs[1]
+        if self.freeze_backbones:
+            image_embeds = jax.lax.stop_gradient(image_embeds)
         image_embeds = self.visual_projection(image_embeds)
 
         text_embeds = text_outputs[1]
+        if self.freeze_backbones:
+            text_embeds = jax.lax.stop_gradient(text_embeds)
         text_embeds = self.text_projection(text_embeds)
 
         # normalized features

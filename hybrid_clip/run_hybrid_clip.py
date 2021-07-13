@@ -244,7 +244,7 @@ class Transform(torch.nn.Module):
                 Resize([image_size], interpolation=InterpolationMode.BICUBIC),
                 # CenterCrop(image_size),
                 RandomCrop([image_size], pad_if_needed=True, padding_mode="edge"),
-                ColorJitter(),
+                ColorJitter(hue=0.1),
                 RandomHorizontalFlip(),
                 # RandomRotation(15, interpolation=InterpolationMode.BILINEAR, fill=128),
                 RandomAffine(
@@ -452,6 +452,7 @@ def main():
         (ModelArguments, DataTrainingArguments, TrainingArguments)
     )
     parser.add_argument("--log_comet", action="store_true")
+    parser.add_argument("--freeze_backbones", action="store_true")
     parser.add_argument("--exp_name", type=str, default=None)
     parser.add_argument("--eval_when", type=int, default=1)
     parser.add_argument("--run_from_checkpoint", type=str, default=None)
@@ -523,6 +524,7 @@ def main():
     if args.run_from_checkpoint is not None:
         with open(f"{args.run_from_checkpoint}/config.json", "r") as fp:
             config_dict = json.load(fp)
+            config_dict['model_config']['freeze_backbones'] = args.freeze_backbones
         config_dict["vision_config"]["model_type"] = "clip"
         config = HybridCLIPConfig(**config_dict)
         model = FlaxHybridCLIP.from_pretrained(
@@ -530,6 +532,7 @@ def main():
             seed=training_args.seed,
             dtype=getattr(jnp, model_args.dtype),
             config=config,
+            freeze_backbones=args.freeze_backbones
         )
     else:
 
@@ -540,6 +543,7 @@ def main():
             dtype=getattr(jnp, model_args.dtype),
             text_from_pt=model_args.from_pt,
             vision_from_pt=model_args.from_pt,
+            freeze_backbones=args.freeze_backbones
         )
     config = model.config
     # set seed for torch dataloaders
