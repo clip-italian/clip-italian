@@ -34,9 +34,11 @@ from pathlib import Path
 from typing import Callable, Optional
 
 
-# from dotenv import load_dotenv
-
-# load_dotenv("../.env")
+try:
+    from dotenv import load_dotenv
+    load_dotenv("../.env")
+except:
+    print("Couldn find ../.env file")
 
 from comet_ml import Experiment
 
