@@ -62,7 +62,7 @@ class FlaxHybridCLIPModule(nn.Module):
             use_bias=False,
         )
         # self.logit_scale = self.param("logit_scale", jax.nn.initializers.ones, [])
-        self.logit_scale = self.param("logit_scale", jnp.array([20.]), [], mutable=False)
+        self.logit_scale = self.param("logit_scale", jnp.array([20.]), [])
 
     def __call__(
         self,
