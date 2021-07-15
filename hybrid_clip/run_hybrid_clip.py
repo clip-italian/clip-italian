@@ -524,7 +524,6 @@ def main():
     if args.run_from_checkpoint is not None:
         with open(f"{args.run_from_checkpoint}/config.json", "r") as fp:
             config_dict = json.load(fp)
-            config_dict['model_config']['freeze_backbones'] = args.freeze_backbones
         config_dict["vision_config"]["model_type"] = "clip"
         config = HybridCLIPConfig(**config_dict)
         model = FlaxHybridCLIP.from_pretrained(
