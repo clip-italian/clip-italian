@@ -32,6 +32,8 @@ logger = logging.get_logger(__name__)
 class FlaxHybridCLIPModule(nn.Module):
     config: HybridCLIPConfig
     dtype: jnp.dtype = jnp.float32
+    freeze_backbones: bool = False
+    
 
     def setup(self):
         text_config = self.config.text_config
@@ -60,6 +62,7 @@ class FlaxHybridCLIPModule(nn.Module):
             use_bias=False,
         )
         # self.logit_scale = self.param("logit_scale", jax.nn.initializers.ones, [])
+        self.logit_scale = self.param("logit_scale", jnp.array([20.]), [], mutable=False)
 
     def __call__(
         self,
@@ -95,9 +98,13 @@ class FlaxHybridCLIPModule(nn.Module):
         )
 
         image_embeds = vision_outputs[1]
+        if self.freeze_backbones:
+            image_embeds = jax.lax.stop_gradient(image_embeds)
         image_embeds = self.visual_projection(image_embeds)
 
         text_embeds = text_outputs[1]
+        if self.freeze_backbones:
+            text_embeds = jax.lax.stop_gradient(text_embeds)
         text_embeds = self.text_projection(text_embeds)
 
         # normalized features
@@ -105,8 +112,7 @@ class FlaxHybridCLIPModule(nn.Module):
         text_embeds = text_embeds / jnp.linalg.norm(text_embeds, axis=-1, keepdims=True)
 
         # cosine similarity as logits
-        # logit_scale = jnp.exp(self.logit_scale)
-        logit_scale = 20
+        logit_scale = jnp.exp(jax.lax.stop_gradient(self.logit_scale))
         logits_per_text = jnp.matmul(text_embeds, image_embeds.T) * logit_scale
         logits_per_image = logits_per_text.T
 
