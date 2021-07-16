@@ -502,7 +502,7 @@ def main():
         tokenizer = AutoTokenizer.from_pretrained(
             model_args.tokenizer_name,
             cache_dir=model_args.cache_dir,
-            use_fast=model_args.use_fast_tokenizer,
+            use_fast=model_args.use_fast_tokenizer
         )
     elif model_args.text_model_name_or_path:
         tokenizer = AutoTokenizer.from_pretrained(
@@ -540,7 +540,7 @@ def main():
             model_args.vision_model_name_or_path,
             seed=training_args.seed,
             dtype=getattr(jnp, model_args.dtype),
-            text_from_pt=model_args.from_pt,
+            text_from_pt=False,
             vision_from_pt=model_args.from_pt,
             freeze_backbones=args.freeze_backbones
         )

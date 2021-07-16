@@ -61,8 +61,8 @@ class FlaxHybridCLIPModule(nn.Module):
             kernel_init=jax.nn.initializers.normal(0.02, dtype=self.dtype),
             use_bias=False,
         )
-        # self.logit_scale = self.param("logit_scale", jax.nn.initializers.ones, [])
-        self.logit_scale = self.param("logit_scale", jnp.array([20.]), [], mutable=False)
+        self.logit_scale = self.param("logit_scale", jax.nn.initializers.ones, []) * 20
+        # self.logit_scale = self.param("logit_scale", jnp.array([20.]), [], mutable=False)
 
     def __call__(
         self,
@@ -112,7 +112,8 @@ class FlaxHybridCLIPModule(nn.Module):
         text_embeds = text_embeds / jnp.linalg.norm(text_embeds, axis=-1, keepdims=True)
 
         # cosine similarity as logits
-        logit_scale = jnp.exp(jax.lax.stop_gradient(self.logit_scale))
+        # logit_scale = jnp.exp(self.logit_scale)
+        logit_scale = jax.lax.stop_gradient(self.logit_scale)
         logits_per_text = jnp.matmul(text_embeds, image_embeds.T) * logit_scale
         logits_per_image = logits_per_text.T
 
