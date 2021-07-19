@@ -1,9 +1,14 @@
 # Italian CLIP
+
+
 We have been able to fine-tune a competitive Italian CLIP model with **only 1.4 million** training samples. Our Italian CLIP model
 is built upon the [Italian BERT](https://huggingface.co/dbmdz/bert-base-italian-xxl-cased) model provided by [dbmdz](https://huggingface.co/dbmdz) and the OpenAI
 [vision transformer](https://huggingface.co/openai/clip-vit-base-patch32). 
 
-See the model in [HF hub](https://huggingface.co/clip-italian/clip-italian-final) and also a [demo](https://huggingface.co/spaces/clip-italian/clip-italian-demo) is available.   
+See the model in [HF hub](https://huggingface.co/clip-italian/clip-italian-final) and also a [demo](https://huggingface.co/spaces/clip-italian/clip-italian-demo) is available. 
+
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/clip_italian_logo.png" alt="drawing" width="20%"/>
+  
 
 In building this project we kept in mind the following principles:
 + **Novel Contributions**: We created a dataset of ~1.4 million Italian image-text pairs and, to the best of our knowledge, we trained the best Italian CLIP model currently in existence;
@@ -62,7 +67,7 @@ Our implementation is available online [here](https://github.com/clip-italian/cl
 ### Backbone Freezing
 The ViT used by OpenAI was already trained on 400 million images and it is the element in our architecture that probably required less training.
 The same is true for the BERT model we use. To allow the randomly initialized Re-projection Layers to warm up without messing with the tuned weights of the backbones we decided to do a first training with the backbones of our architecture completely frozen. Only after these layers converged we unfreezed the rest of the model to fine-tune all the components. This technique allowed us to reach a much better validation loss.
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/clip-italian.png" alt="drawing" width="90%"/>
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/clip-italian.png" alt="drawing" width="90%"/>
 ### Logit Scale
 We tried to improve the loss function in different ways: for example, we tried something similar to a margin based loss but that experiments
 didn't go well. Eventually, the thing that worked out the best was fixing the logit_scale value to 20. This value
@@ -72,12 +77,15 @@ We got this idea from Nils' [video](https://youtu.be/RHXZKUr8qOY) on sentence em
 ## Quantitative Evaluation
 Those images are definitely cool and interesting, but a model is nothing without validation.
 To better understand how well our clip-italian model works we run an experimental evaluation. Since this is the first clip-based model in Italian, we used the multilingual CLIP model as a comparison baseline. 
+
 ### mCLIP
 The multilingual CLIP (henceforth, mCLIP), is a model introduced by [Nils Reimers](https://www.sbert.net/docs/pretrained_models.html) in his
 [sentence-transformer](https://www.sbert.net/index.html) library. mCLIP is based on a multilingual encoder
 that was created through multilingual knowledge distillation (see [Reimers et al., 2020](https://aclanthology.org/2020.emnlp-main.365/)).
+
 ### Experiments Replication
 We provide two colab notebooks to replicate both experiments.
+
 ### Tasks
 We selected two different tasks: 
 + image-retrieval 
@@ -114,21 +122,37 @@ the translated image labels might have had an impact on the final scores.
 We hereby show some very interesting properties of the model. One is its ability to detect colors, 
 then there is its (partial) counting ability and finally the ability of understanding more complex quries. To our own surprise, many of the answers the model gives make a lot of sense! 
 Look at the following - slightly cherry picked (but not even that much) - examples:
+
 ### Colors
+
 Here's a yellow flower
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/fiore_giallo.png" alt="drawing" width="600"/>
-And here's a blu flower
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/fiore_blu.png" alt="drawing" width="600"/>
+
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/fiore_giallo.png" alt="drawing" width="600"/>
+
+And here's a blue flower
+
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/fiore_blu.png" alt="drawing" width="600"/>
+
 ### Counting
+
 What about "one cat"?
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/gatto.png" alt="drawing" width="600"/>
+
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/gatto.png" alt="drawing" width="600"/>
+
 And what about "two cats"?
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/due_gatti.png" alt="drawing" width="600"/>
+
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/due_gatti.png" alt="drawing" width="600"/>
+
 ### Complex Queries
+
 Have you ever seen "two brown horses"?
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/due_cavalli_marroni.png" alt="drawing" width="600"/>
+
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/due_cavalli_marroni.png" alt="drawing" width="600"/>
+
 And finally, here's a very nice "cat on a chair"
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/gatto_su_sedia.png" alt="drawing" width="600"/>
+
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/gatto_su_sedia.png" alt="drawing" width="600"/>
+
 # Broader Outlook
 We believe that this model can be useful for many different applications. From image classification 
 to clustering, a model like CLIP Italian can be used to support researchers and practitioners in many different tasks.
@@ -137,6 +161,7 @@ these website often deal with a main source of text that is the query engine and
 can be a killer app in this context, providing a way to search for images and text. Nonetheless, Italy has many different collections
 of photos in digital format. For example, the [Istituto Luce Cinecittà](https://it.wikipedia.org/wiki/Istituto_Luce_Cinecitt%C3%A0) is an Italian governative entity that collects photos of Italy since the
 early 1900 and it is part of the largest movie studios in Europe (Cinecittà). 
+
 # References
 - Scaiella, A., Croce, D., & Basili, R. (2019). [Large scale datasets for Image and Video Captioning in Italian.](http://www.ai-lc.it/IJCoL/v5n2/IJCOL_5_2_3___scaiella_et_al.pdf) IJCoL. Italian Journal of Computational Linguistics, 5(5-2), 49-60.
 - Sharma, P., Ding, N., Goodman, S., & Soricut, R. (2018, July). [Conceptual captions: A cleaned, hypernymed, image alt-text dataset for automatic image captioning.](https://aclanthology.org/P18-1238.pdf) In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (pp. 2556-2565).
