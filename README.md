@@ -179,5 +179,14 @@ early 1900 and it is part of the largest movie studios in Europe (Cinecittà).
 - Gabriele Sarti ([gsarti](https://huggingface.co/gsarti))
 - Sri Lakshmi ([srisweet](https://huggingface.co/srisweet))
 
+# Useful Links
+
+[CLIP Blog post](https://openai.com/blog/clip/)
+[CLIP paper](https://arxiv.org/abs/2103.00020)
+[Community Week README](https://github.com/huggingface/transformers/blob/master/examples/research_projects/jax-projects/README.md)
+[Community Week channel](https://discord.com/channels/858019234139602994/859711887520038933)
+[Hybrid CLIP example scripts](https://github.com/huggingface/transformers/tree/master/examples/research_projects/jax-projects/hybrid_clip)
+[Model Repository](https://huggingface.co/clip-italian/clip-italian-final/)
+
 # Other Notes
 This readme has been designed using resources from Flaticon.com
