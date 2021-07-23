@@ -1,55 +1,41 @@
 # Italian CLIP
 
 CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is an amazing model that can learn to represent images and text jointly in the same space.
-
 In this project, we aim to propose the first CLIP model trained on Italian data, that in this context can be considered a
-
 low resource language. Using a few techniques, we have been able to fine-tune a SOTA Italian CLIP model with **only 1.4 million** training samples. Our Italian CLIP model
-
 is built upon the pre-trained [Italian BERT](https://huggingface.co/dbmdz/bert-base-italian-xxl-cased) model provided by [dbmdz](https://huggingface.co/dbmdz) and the OpenAI
-
 [vision transformer](https://huggingface.co/openai/clip-vit-base-patch32).
+
+Here's the picture of the original CLIP model extracted from OpenAI's blog post.
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/overview-a.svg" alt="drawing" width="600"/>
+
 
 In building this project we kept in mind the following principles:
 
-+ **Novel Contributions**: We created a dataset of ~1.4 million Italian image-text pairs (**that we will share with the community**) and, to the best of our knowledge, we trained the best Italian CLIP model currently in existence;
++ **Novel Contributions**: We created a dataset of **~1.4 million** Italian image-text pairs (**that we will share with the community**) and, to the best of our knowledge, we trained the best Italian CLIP model currently in existence;
 
 + **Scientific Validity**: Claim are easy, facts are hard. That's why validation is important to assess the real impact of a model. We thoroughly evaluated our models on two tasks and made the validation reproducible for everybody.
 
 + **Broader Outlook**: We always kept in mind which are the possible usages and limitations of this model.
 
 We put our **hearts** and **souls** into the project during this week! Not only did we work on a cool project, but we were
-
 able to make new friends and learn a lot from each other to work towards a common goal! 
-
 Thank you for this amazing opportunity, we hope you will like the results! :heart:
 
 # Novel Contributions
 
 The original CLIP model was trained on 400 million image-text pairs; this amount of data is currently not available for Italian. 
-
 We indeed worked in a **low-resource setting**. The only datasets for Italian captioning in the literature are MSCOCO-IT (a translated version of MSCOCO) and WIT. 
-
-To get competitive results, we followed three strategies:
-
-  1. more and better data;
-
-  2. better augmentations;
-
-  3. better training strategies.
+To get competitive results, we followed three strategies: 1. more and better data; 2. better augmentations; 3. better training strategies.
 
 For those interested, we have a :comet: [Comet](https://www.comet.ml/g8a9/clip-italian/reports/clip-italian-training-metrics) report 
-
 that shows a **subset** of the experiments we ran. Different hyper-parameters played a role in reducing the validation 
-
 loss. The optimizer we used gave us great performance and fast convergence, more data and augmentations helped a lot in generalizing,
-
 working on the training and on the loss gave us the final increase that you can see in the results.
 
 ## More and Better Data
 
 We eventually had to deal with the fact that we do not have the same data that OpenAI had during the training of CLIP.
-
 Thus, we tried to add as much data as possible while keeping the data-quality as high as possible.
 
 We considered four main sources of data:
