@@ -48,7 +48,6 @@ On the other hand, this text is written in Italian and it is of good quality. We
 are still good (e.g., "running dog"). Thus, to prevent polluting the data with captions that are not meaningful, we used *POS tagging* 
 on the text and removed all the captions that were composed for the 80% or more by PROPN (around ~10% of the data). This is a simple solution that allowed us to retain much
 of the dataset, without introducing noise. 
-
 Captions like: *'Dora Riparia', 'Anna Maria Mozzoni', 'Joey Ramone Place', 'Kim Rhodes', 'Ralph George Hawtrey' * have been removed.
 
 + [MSCOCO-IT](https://github.com/crux82/mscoco-it). This image-caption dataset comes from the work by [Scaiella et al., 2019](http://www.ai-lc.it/IJCoL/v5n2/IJCOL_5_2_3___scaiella_et_al.pdf). The captions come from the original 
@@ -63,7 +62,6 @@ a dataset with 700K translated captions.
 
 + [La Foto del Giorno](https://www.ilpost.it/foto-del-giorno/). This image-caption dataset is collected from [Il Post](https://www.ilpost.it/), a prominent Italian online newspaper. 
 The collection contains almost 30K pairs: starting from early 2011, for each day, editors at Il Post pick several images picturing the most salient events in the world. 
-
 Each photo comes along with an Italian caption.
 
 ### A Note on Translations
@@ -74,7 +72,7 @@ but the captions have to be handled accordingly. We translated 700K captions and
 Three of us looked at a sample of 100 of the translations and rated them with scores from 1 to 4. 
 
 The meaning of the value is as follows: 1, the sentence has lost is meaning or it's not possible to understand it; 2, it is possible to get the idea
-but there something wrong; 3, good, however a native speaker might complain about some translations; 4, good translation.
+but there something wrong; 3, good, however a native speaker might complain about some translations; 4, very good translation.
 The average score was of 3.78 and the three annotators had an inter-rater agreement - computed with [Gwet's AC1](https://bpspsychub.onlinelibrary.wiley.com/doi/full/10.1348/000711006X126600) using ordinal 
 weighting - of 0.858 (great agreement!). 
 
@@ -95,9 +93,8 @@ While we would have liked to have augmentations for the captions as well, after 
 
 ## Better Training
 
-After different trials, we realized that the usual way of training this model was
-not good enough to get good results. We thus modified three different parts of the
-training pipeline: the optimizer, the training with frozen components and the logit_scale parameter.
+After different trials, we realized that the usual way of training this model was not good enough to get good results. We thus modified three different parts of the
+training pipeline: the _optimizer_, the _training with frozen components_ and the _logit_scale_ parameter.
 
 ### Optimizer
 
@@ -180,7 +177,7 @@ described by the original caption. As evaluation metrics we use the MRR@K.
 | MRR@5           | **0.5039**   | 0.3957|
 | MRR@10          | **0.5204**   | 0.4129|
 
-_If the table above doesn not show, you can have a look at it [here](https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/table_imagenet.png)._
+_If the table above does not show, you can have a look at it [here](https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/table_imagenet.png)._
 
 It is true that we used the training set of MSCOCO-IT in training, and this might give us an advantage. However, the original CLIP model was trained
 on 400million images (and some of them might have been from MSCOCO).
@@ -222,31 +219,31 @@ Look at the following - slightly cherry picked - examples:
 
 Here's "a yellow flower"
 
-<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/fiore_giallo.png" alt="drawing" width="600"/>
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/fiore_giallo.png" alt="drawing" width="500"/>
 
 And here's "a blu flower"
 
-<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/fiore_blu.png" alt="drawing" width="600"/>
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/fiore_blu.png" alt="drawing" width="500"/>
 
 ### Counting
 
 What about "one cat"?
 
-<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/gatto.png" alt="drawing" width="600"/>
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/gatto.png" alt="drawing" width="500"/>
 
 And what about "two cats"?
 
-<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/due_gatti.png" alt="drawing" width="600"/>
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/due_gatti.png" alt="drawing" width="500"/>
 
 ### Complex Queries
 
 Have you ever seen "two brown horses"?
 
-<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/due_cavalli_marroni.png" alt="drawing" width="600"/>
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/due_cavalli_marroni.png" alt="drawing" width="500"/>
 
 And finally, here's a very nice "cat on a chair"
 
-<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/gatto_su_sedia.png" alt="drawing" width="600"/>
+<img src="https://raw.githubusercontent.com/clip-italian/clip-italian/master/images/gatto_su_sedia.png" alt="drawing" width="500"/>
 
 # Broader Outlook
 
