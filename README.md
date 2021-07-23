@@ -1,6 +1,8 @@
 # CLIP-Italian
 
-CLIP-Italian is a multimodal model trained on ~1.4 million Italian text-image pairs using Italian Bert model as text encoder and Vision Transformer(ViT) as image encoder.Clip-Italian (Contrastive Language-Image Pre-training in Italian language) is based on OpenAI’s 
+CLIP-Italian is a multimodal model trained on ~1.4 million Italian text-image pairs using Italian Bert model as text encoder and Vision Transformer(ViT) as image encoder.
+
+Clip-Italian (Contrastive Language-Image Pre-training in Italian language) is based on OpenAI’s 
 CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) which is an amazing model that can learn to represent images and text jointly in the same space.
 
 In this project, we aim to propose the first CLIP model trained on Italian data, that in this context can be considered a
