@@ -117,7 +117,7 @@ The ViT used by OpenAI was already trained on 400 million images, and it is the 
 The same is true for the BERT model we use. To allow the randomly initialized re-projection layers to warm up without messing with the tuned weights of the backbones, we decided to do a first training with the backbones of our architecture completely frozen. 
 Only after these layers converged we unfroze the rest of the model to fine-tune all the components. This technique allowed us to reach a much better validation loss.
 
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/clip-italian.png" alt="drawing" width="95%"/>
+![backbone_freezing](./images/clip-italian.png)
 
 ### Logit Scale
 
@@ -130,7 +130,7 @@ We got this idea from Nils' [video](https://youtu.be/RHXZKUr8qOY) on sentence em
 
 The following picture showcases the effect that these edits have had on our evaluation loss:
 
-<img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/improvements.png" alt="drawing" width="95%"/>
+![effects_edits](./images/improvements.png)
 
 The purple line is the original training without any of our improvements: you can see that we needed a lot of training steps to get the loss down. 
 Yellow line is the loss with the new optimizer, it is **striking** to see the time we save from this addition! Not only the loss improves, it 
