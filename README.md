@@ -241,6 +241,39 @@ more examples in the "*Gallery*" section of the demo.
 To our own surprise, many of the answers the model gives make a lot of sense! Note that the model, in this case,
 is searching the right image from a set of 25K images from an Unsplash dataset.
 
+Look at the following - slightly cherry picked - examples:
+
+### Colors
+Here's "a yellow flower"
+
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/fiore_giallo.png" alt="drawing" width="500"/> -->
+![yellow flower](./images/fiore_giallo.png)
+
+And here's "a blue flower"
+
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/fiore_blu.png" alt="drawing" width="500"/> -->
+![blue flower](./images/fiore_blu.png)
+
+### Counting
+What about "one cat"?
+
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/gatto.png" alt="drawing" width="500"/> -->
+![one cat](./images/gatto.png)
+
+And what about "two cats"?
+
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/due_gatti.png" alt="drawing" width="500"/> -->
+![two cats](./images/due_gatti.png)
+
+### Complex Queries
+Have you ever seen "two brown horses"?
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/due_cavalli_marroni.png" alt="drawing" width="500"/> -->
+![two brown horses](./images/due_cavalli_marroni.png)
+
+And finally, here's a very nice "cat on a chair"
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/gatto_su_sedia.png" alt="drawing" width="500"/> -->
+![cat on a chair](./images/gatto_su_sedia.png)
+
 
 # Broader Outlook
 
