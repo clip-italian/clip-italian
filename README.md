@@ -21,6 +21,28 @@ Thank you for this amazing opportunity, we hope you will like the results! :hear
 
 The link to the demo will be out soon!
 
+Meanwhile, we anticipate what our model can do: 
+
++ **Text to Image**: This task is essentially an image retrieval task. The user is asked to input a string of text and CLIP is going to
+compute the similarity between this string of text with respect to a set of images. The webapp is going to display the images that
+have the highest similarity with the text query.
+
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/text_to_image.png" alt="drawing" width="95%"/> -->
+![text2image](./images/text_to_image.png)
+
++ **Image to Text**: This task is essentially a zero-shot image classification task. The user is asked for an image and for a set of captions/labels and CLIP
+is going to compute the similarity between the image and each label. The webapp is going to display a probability distribution over the captions.
+
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/image_to_text.png" alt="drawing" width="95%"/> -->
+![image2text](./images/image_to_text.png)
+
++ **Localization**: This is a **very cool** feature :sunglasses: and at the best of our knowledge, it is a novel contribution. We can use CLIP
+to find where "something" (like a "cat") is an image. The location of the object is computed by masking different areas of the image and looking at how the similarity to the image description changes.
+
+<!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/gatto_cane.png" alt="drawing" width="95%"/> -->
+![localization](./images/gatto_cane.png)
+![localization2](./images/cavallo_squalo.png)
+
 # Novel Contributions
 
 The original CLIP model was trained on 400 million image-text pairs; this amount of data is currently not available for Italian. 
