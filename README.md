@@ -1,6 +1,6 @@
 # Italian CLIP
 
-CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is an multimodel model that can learn to represent images and text jointly in the same space.
+CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is a multimodel model that can learn to represent images and text jointly in the same space.
 
 In this project, we aim to propose the first CLIP model trained on Italian data, that in this context can be considered a
 low resource language. Using a few techniques, we have been able to fine-tune a SOTA Italian CLIP model with **only 1.4 million** training samples. Our Italian CLIP model
@@ -37,7 +37,7 @@ is going to compute the similarity between the image and each label. The webapp 
 ![image2text](./images/image_to_text.png)
 
 + **Localization**: This is a **very cool** feature :sunglasses: and at the best of our knowledge, it is a novel contribution. We can use CLIP
-to find where "something" (like a "cat") is an image. The location of the object is computed by masking different areas of the image and looking at how the similarity to the image description changes.
+to find where "something" (like a "cat") is in an image. The location of the object is computed by masking different areas of the image and looking at how the similarity to the image description changes.
 
 <!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/gatto_cane.png" alt="drawing" width="95%"/> -->
 ![localization](./images/gatto_cane.png)
