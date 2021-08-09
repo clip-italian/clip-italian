@@ -1,6 +1,6 @@
 # Italian CLIP
 
-CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is a multimodel model that can learn to represent images and text jointly in the same space.
+CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is a multimodal model that can learn to represent images and text jointly in the same space.
 
 In this project, we aim to propose the first CLIP model trained on Italian data, that in this context can be considered a
 low resource language. Using a few techniques, we have been able to fine-tune a SOTA Italian CLIP model with **only 1.4 million** training samples. Our Italian CLIP model
