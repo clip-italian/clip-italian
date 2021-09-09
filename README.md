@@ -17,6 +17,15 @@ We put our **hearts** and **souls** into the project during this week! Not only 
 able to make new friends and learn a lot from each other to work towards a common goal! 
 Thank you for this amazing opportunity, we hope you will like the results! :heart:
 
+Pre-print available [here](https://arxiv.org/abs/2108.08688)
+
+    @article{bianchi2021contrastive,
+      title={Contrastive Language-Image Pre-training for the Italian Language},
+      author={Bianchi, Federico and Attanasio, Giuseppe and Pisoni, Raphael and Terragni, Silvia and Sarti, Gabriele and Lakshmi, Sri},
+      journal={arXiv preprint arXiv:2108.08688},
+      year={2021}
+    }
+
 # Demo
 
 The link to the demo will be out soon!
