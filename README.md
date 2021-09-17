@@ -1,5 +1,7 @@
 # Italian CLIP
 
+[![Youtube Video](https://img.shields.io/badge/youtube-video-red)](https://www.youtube.com/watch?v=2jJLMeWU2nk)
+
 CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is a multimodal model that can learn to represent images and text jointly in the same space.
 
 In this project, we aim to propose the first CLIP model trained on Italian data, that in this context can be considered a
