@@ -1,6 +1,6 @@
 # Italian CLIP
 
-[![Youtube Video](https://img.shields.io/badge/youtube-video-red)](https://www.youtube.com/watch?v=2jJLMeWU2nk)
+[![Youtube Video](https://img.shields.io/badge/youtube-video-red)](https://www.youtube.com/watch?v=2jJLMeWU2nk) [![HuggingFace Spaces](https://img.shields.io/badge/HF%20Spaces-Demo-yellow)](https://huggingface.co/spaces/clip-italian/clip-italian-demo)
 
 CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is a multimodal model that can learn to represent images and text jointly in the same space.
 
@@ -28,11 +28,9 @@ Pre-print available [here](https://arxiv.org/abs/2108.08688)
       year={2021}
     }
 
-# Demo
+HuggingFace Spaces demo available [here](https://huggingface.co/spaces/clip-italian/clip-italian-demo).
 
-The link to the demo will be out soon!
-
-Meanwhile, we anticipate what our model can do: 
+What you will find in the demo: 
 
 + **Text to Image**: This task is essentially an image retrieval task. The user is asked to input a string of text and CLIP is going to
 compute the similarity between this string of text with respect to a set of images. The webapp is going to display the images that
