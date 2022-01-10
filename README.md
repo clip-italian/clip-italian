@@ -1,6 +1,8 @@
 # Italian CLIP
 
-[![Youtube Video](https://img.shields.io/badge/youtube-video-red)](https://www.youtube.com/watch?v=2jJLMeWU2nk) [![HuggingFace Spaces](https://img.shields.io/badge/HF%20Spaces-Demo-yellow)](https://huggingface.co/spaces/clip-italian/clip-italian-demo)
+[![Youtube Video](https://img.shields.io/badge/youtube-video-red)](https://www.youtube.com/watch?v=2jJLMeWU2nk)
+[![HuggingFace Spaces](https://img.shields.io/badge/HF%20Spaces-Demo-yellow)](https://huggingface.co/spaces/clip-italian/clip-italian-demo)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SSddpjohAqRS_XxJvwz5HN1YFPevVJmy?usp=sharing)
 
 CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is a multimodal model that can learn to represent images and text jointly in the same space.
 
