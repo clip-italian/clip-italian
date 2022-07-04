@@ -5,35 +5,48 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SSddpjohAqRS_XxJvwz5HN1YFPevVJmy?usp=sharing)
 [![Medium Blog Post](https://raw.githubusercontent.com/aleen42/badges/master/src/medium.svg)](https://towardsdatascience.com/how-to-train-your-clip-45a451dcd303)
 
-
-
 CLIP ([Radford et al., 2021](https://arxiv.org/abs/2103.00020)) is a multimodal model that can learn to represent images and text jointly in the same space.
 
-In this project, we aim to propose the first CLIP model trained on Italian data, that in this context can be considered a
+In this project, we propose the first CLIP model trained on Italian data, that in this context can be considered a
 low resource language. Using a few techniques, we have been able to fine-tune a SOTA Italian CLIP model with **only 1.4 million** training samples. Our Italian CLIP model
 is built upon the pre-trained [Italian BERT](https://huggingface.co/dbmdz/bert-base-italian-xxl-cased) model provided by [dbmdz](https://huggingface.co/dbmdz) and the OpenAI
 [vision transformer](https://huggingface.co/openai/clip-vit-base-patch32).
 
-In building this project we kept in mind the following principles:
+- **Pre-print**: [https://arxiv.org/abs/2108.08688](https://arxiv.org/abs/2108.08688)
 
-+ **Novel Contributions**: We created an impressive dataset of ~1.4 million Italian image-text pairs (**that we will share with the community**) and, to the best of our knowledge, we trained the best Italian CLIP model currently in existence;
-+ **Scientific Validity**: Claim are easy, facts are hard. That's why validation is important to assess the real impact of a model. We thoroughly evaluated our models on two tasks and made the validation reproducible for everybody.
-+ **Broader Outlook**: We always kept in mind which are the possible usages and limitations of this model.
+```bibtex
+@article{bianchi2021contrastive,
+  title={Contrastive Language-Image Pre-training for the Italian Language},
+  author={Bianchi, Federico and Attanasio, Giuseppe and Pisoni, Raphael and Terragni, Silvia and Sarti, Gabriele and Lakshmi, Sri},
+  journal={arXiv preprint arXiv:2108.08688},
+  year={2021}
+}
+```
 
-We put our **hearts** and **souls** into the project during this week! Not only did we work on a cool project, but we were
-able to make new friends and learn a lot from each other to work towards a common goal! 
-Thank you for this amazing opportunity, we hope you will like the results! :heart:
+# Using the Model
 
-Pre-print available [here](https://arxiv.org/abs/2108.08688)
+You can use our checkpoints in PyTorch and Flax/JAX.
 
-    @article{bianchi2021contrastive,
-      title={Contrastive Language-Image Pre-training for the Italian Language},
-      author={Bianchi, Federico and Attanasio, Giuseppe and Pisoni, Raphael and Terragni, Silvia and Sarti, Gabriele and Lakshmi, Sri},
-      journal={arXiv preprint arXiv:2108.08688},
-      year={2021}
-    }
+## PyTorch
 
-HuggingFace Spaces demo available [here](https://huggingface.co/spaces/clip-italian/clip-italian-demo).
+We use the [VisionTextDualEncoder](https://huggingface.co/docs/transformers/model_doc/vision-text-dual-encoder) class from HuggingFace to expose our CLIP model in PyTorch.
+
+You can load the model and the processor as follows.
+
+```python
+model = VisionTextDualEncoderModel.from_pretrained("clip-italian/clip-italian")
+processor = AutoProcessor.from_pretrained("clip-italian/clip-italian")
+```
+
+We have released an official Colab to use our checkpoint for inference, encoding text and images. You can find it here: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SSddpjohAqRS_XxJvwz5HN1YFPevVJmy?usp=sharing)
+
+## JAX
+
+See our [training script](https://github.com/clip-italian/clip-italian/blob/master/hybrid_clip/run_hybrid_clip.py) to learn our to instantiate the model in Flax.
+
+# Demo
+
+You can try the Italian CLIP right away! Our live demo is available at [https://huggingface.co/spaces/clip-italian/clip-italian-demo](https://huggingface.co/spaces/clip-italian/clip-italian-demo).
 
 What you will find in the demo: 
 
@@ -56,6 +69,18 @@ to find where "something" (like a "cat") is in an image. The location of the obj
 <!-- <img src="https://huggingface.co/spaces/clip-italian/clip-italian-demo/raw/main/static/img/gatto_cane.png" alt="drawing" width="95%"/> -->
 ![localization](./images/gatto_cane.png)
 ![localization2](./images/cavallo_squalo.png)
+
+# Italian CLIP: the recipe 
+
+We kept in mind three crucial principles while building Italian CLIP:
+
++ **Novel Contributions**: We created an impressive dataset of ~1.4 million Italian image-text pairs (**that we will share with the community**) and, to the best of our knowledge, we trained the best Italian CLIP model currently in existence;
++ **Scientific Validity**: Claim are easy, facts are hard. That's why validation is important to assess the real impact of a model. We thoroughly evaluated our models on two tasks and made the validation reproducible for everybody.
++ **Broader Outlook**: We always kept in mind which are the possible usages and limitations of this model.
+
+We put our **hearts** and **souls** into the project! Not only did we work on a cool project, but we were
+able to make new friends and learn a lot from each other to work towards a common goal! 
+Thank you for this amazing opportunity, we hope you will like the results! :heart:
 
 # Novel Contributions
 
