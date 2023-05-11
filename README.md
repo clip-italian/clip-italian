@@ -27,6 +27,8 @@ is built upon the pre-trained [Italian BERT](https://huggingface.co/dbmdz/bert-b
 
 You can use our checkpoints in PyTorch and Flax/JAX.
 
+**We strongly encourage** using the PyTorch version of the model due to better compatibility with the transformers library.
+
 ## PyTorch
 
 We use the [VisionTextDualEncoder](https://huggingface.co/docs/transformers/model_doc/vision-text-dual-encoder) class from HuggingFace to expose our CLIP model in PyTorch.
